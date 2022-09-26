@@ -14,16 +14,11 @@
     padding: 0 2em;
     width: 100%;
     box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     gap: 1em;
 }
 
-@media screen and (max-width: 1279px) {
-    .filter{
-        font-size: 1.1rem;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .filter{
@@ -135,18 +130,12 @@
     display: flex;
     width: 100%;
     box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     min-height: 3em;
     align-items: center;
     gap: 2em;
     padding: 0 2em;
-}
-
-@media screen and (max-width: 1279px) {
-    .sorting{
-        font-size: 1.1rem;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -204,23 +193,11 @@
 
 /* CATALOG */
 .catalog{
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 
-}
-
-@media screen and (max-width: 1279px) {
-    .catalog{
-        font-size: 1.1rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .catalog{
-        font-size: 1rem;
-    }
 }
 
 
@@ -229,21 +206,14 @@
 .pages{
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 auto;
     gap: 2em;
     position: relative;
 }
 
-@media screen and (max-width: 1279px) {
-    .pages{
-        font-size: 1.1rem;
-    }
-}
-
 @media screen and (max-width: 767px) {
     .pages{
-        font-size: 1rem;
         gap: 1.5em;
     }
 }

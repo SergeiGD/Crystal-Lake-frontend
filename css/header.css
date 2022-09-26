@@ -1,5 +1,5 @@
 .header{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #FFFFFF;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
@@ -21,7 +21,7 @@
 @media screen and (max-width: 1279px) {
     .header_burger{
         display: block;
-        height: 25px;
+        height: 22px;
         width: 40px;
         border-top: 2px solid #FFFFFF;
         border-bottom: 2px solid #FFFFFF;
@@ -37,6 +37,7 @@
         position: absolute;
         left: 0;
         top: 50%;
+        transform: translate(0, -50%);
     }
 }
 
@@ -114,8 +115,6 @@
 .header_menu_item, .header_link .fa-brands:hover{
     transition: color 0.15s linear;
 }
-
-
 
 .header_menu_item__active:hover{
     color: #FFFFFF;

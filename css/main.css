@@ -25,7 +25,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 1279px) {
     .intro_inner{
-        font-size: 2rem;
+        font-size: 1.7rem;
         height: 12em;
     }
 }
@@ -82,7 +82,7 @@
     max-width: 75%;
     background-color: #FFFFFF;
     color: #E72574;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 5px;
     align-items: center;
     height: 6em;
@@ -95,7 +95,6 @@
 
 @media screen and (max-width: 1279px) {
     .find_rooms{
-        font-size: 1.1rem;
         max-width: 80%;
     }
 }
@@ -107,7 +106,6 @@
         height: 18em;
         bottom: -10em;
         width: 100%;
-        font-size: 1rem;
     }
 }
 
@@ -246,13 +244,12 @@
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1279px) {
     .about_us{
-        font-size: 1.1rem;
         max-width: 100%;
         flex-direction: column-reverse;
         align-items: center;
@@ -262,7 +259,6 @@
 
 @media screen and (max-width: 767px) {
     .about_us{
-        font-size: 1rem;
         margin-top: 10em;
         max-width: 80%;
         border-radius: 5px;
@@ -315,19 +311,6 @@
 .offers{
     display: flex;
     justify-content: space-around;
-    font-size: 1.2rem;
-}
-
-@media screen and (max-width: 1279px) {
-    .offers{
-        font-size: 1.1rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .offers{
-        font-size: 1rem;
-    }
 }
 
 .offers_item{
@@ -381,31 +364,6 @@
 }
 
 
-/* SLIDER */
-
-.slider{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2em;
-    /*width: 25%;*/
-    margin: 0 auto;
-}
-
-.slider_item{
-    content: "";
-    background-color: #E72574;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider_item_active{
-    background-color: #04d94f;
-}
-
-
 /* WHY US */
 
 .why_us_wrapper{
@@ -420,7 +378,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     width: 35%;
     gap: 3em;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 2em 2em;
     box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
     margin-left: auto;
@@ -429,7 +387,6 @@
 
 @media screen and (max-width: 1279px) {
     .why_us{
-        font-size: 1.1rem;
         margin: 0 auto;
         width: 50%;
         padding: 2em 1em;
@@ -438,7 +395,6 @@
 
 @media screen and (max-width: 767px) {
     .why_us{
-        font-size: 1rem;
         margin: 0 auto;
         width: 80%;
     }
@@ -474,22 +430,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 auto;
     box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
     border-radius: 5px;
-}
-
-@media screen and (max-width: 1279px) {
-    .map{
-        font-size: 1.1rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .map{
-        font-size: 1rem;
-    }
 }
 
 .map_img{
@@ -513,7 +457,7 @@
 .call{
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.7rem;
     gap: 1.5em;
     width: 35%;
     margin: 0 auto;
@@ -522,7 +466,7 @@
 
 @media screen and (max-width: 1279px) {
     .call{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
