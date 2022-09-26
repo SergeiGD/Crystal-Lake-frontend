@@ -74,7 +74,7 @@
 
 .input_field{
     padding: 1px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 .name_select{
@@ -86,7 +86,7 @@
 }
 
 .select_field{
-    font-size: 0.8em;
+    font-size: 1em;
     border: none;
 }
 
@@ -201,17 +201,28 @@
     max-width: 100%;
 }
 
-/* OFFERS ROOMS PAGE */
 
-.offers_multiple_lines{
-    flex-wrap: wrap;
-    gap: 3rem;
+/* CATALOG */
+.catalog{
+    font-size: 1.2rem;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 
 }
 
-.offers_item_multiple_lines{
-    flex-basis: 20em;
+@media screen and (max-width: 1279px) {
+    .catalog{
+        font-size: 1.1rem;
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .catalog{
+        font-size: 1rem;
+    }
+}
+
 
 /* PAGES */
 
@@ -275,6 +286,10 @@
 .page_item{
     position: relative;
     cursor: pointer;
+}
+
+.page_item_more{
+    cursor: auto;
 }
 
 .page_item_active:after{
