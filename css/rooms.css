@@ -37,6 +37,11 @@
     align-items: center;
 }
 
+.input_field, select_field{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
 .filter_subname{
     min-width: 1.5em;
 }
