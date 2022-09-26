@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Lake</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/offers.css">
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+
+                <div class="header_upper">
+
+                    <div class="header_upper_section">
+                        <p class="header_upper_contacts">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:999-555-222" class="header_link">999-555-222</a>
+                        </p>
+                        <p class="header_upper_contacts">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:crystal_lake@lake.com" class="header_link">crystal_lake@lake.com</a>
+                        </p>
+                    </div>
+
+                    <div class="header_upper_section">
+                        <p class="header_upper_address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a href="https://goo.gl/maps/hExFkeqs4KMk8HGW8" target=”_blank” class="header_link">Россия, Иркутская область, Кристальные озера</a>
+                        </p>
+                    </div>
+
+                    <div class="header_upper_section header_upper_section_socials">
+                        <a href="#" class="header_link"><i class="fa fa-brands fa-instagram"></i></a>
+                        <a href="#" class="header_link"><i class="fa fa-brands fa-vk"></i></a>
+                        <a href="#" class="header_link"><i class="fa fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="header_under">
+
+                    <a href="index.html" class="header_logo header_link">
+                        Crystal Lake
+                    </a>
+
+                    <div class="header_burger"></div>
+
+                    <nav class="header_menu">
+                        <a href="index.html" class="header_menu_item header_link">Главная</a>
+                        <a href="#" class="header_menu_item header_link header_menu_item__active">Номера</a>
+                        <a href="#" class="header_menu_item header_link">Услуги</a>
+                        <a href="#" class="header_menu_item header_link">Отзывы</a>
+                        <a href="#" class="header_menu_item header_link">Оплата</a>
+                        <a href="#" class="header_menu_item header_link">Контакты</a>
+                        <a href="#" class="header_menu_item header_link">Личный кабинет</a>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section_title">Номера</h2>
+
+            <div class="rooms">
+                <form class="filter_form">
+                    <div class="filter">
+
+                        <div class="filter_column">
+                            <div class="filter_item">
+                                <label class="filter_name" for="name_field">Наименование:</label>
+                                <div class="filter_select name_select">
+                                    <input type="text" name="" id="name_field" class="input_field name_field">
+                                </div>
+                            </div>
+
+                            <div class="filter_item">
+                                <label class="filter_name" for="people_field">Спальных мест:</label>
+                                <div class="filter_select">
+                                    <select id="people_field" class="select_field">
+                                        <option value="1">1 человек(а)</option>
+                                        <option value="2" selected>3 человек(а)</option>
+                                        <option value="3">2 человек(а)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="filter_item">
+                                <p class="filter_name">Время прибывания:</p>
+                                <div class="filter_select">
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="date_from_field">с</label>
+                                        <input type="date" name="" id="date_from_field" class="input_field date_field">
+                                    </div>
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="date_until_field">до</label>
+                                        <input type="date" name="" id="date_until_field" class="input_field date_field">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter_column">
+                            <div class="filter_item">
+                                <label class="filter_name" for="floors_field">Количество этажей:</label>
+                                <div class="filter_select">
+                                    <select id="floors_field" class="select_field">
+                                        <option value="1" selected>1 этаж(а)</option>
+                                        <option value="2">2 этаж(а)</option>
+                                        <option value="3">3 этаж(а)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="filter_item">
+                                <label class="filter_name" for="rooms_field">Количество комнат:</label>
+                                <div class="filter_select">
+                                    <select id="rooms_field" class="select_field">
+                                        <option value="1" selected>1 комант(ы)</option>
+                                        <option value="2">2 комант(ы)</option>
+                                        <option value="3">3 комант(ы)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="filter_item">
+                                <p class="filter_name">Цена за 1 сутки:</p>
+                                <div class="filter_select">
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="price_from_field">от</label>
+                                        <input type="number" name="" id="price_from_field" class="input_field price_field">
+                                    </div>
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="price_until_field">до</label>
+                                        <input type="number" name="" id="price_until_field" class="input_field price_field">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter_column">
+                            <button class="filter_btn find_btn">Применить</button>
+                            <button class="filter_btn clean_btn">Сбросить</button>
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="sorting">
+                    <p class="sorting_item">
+                        <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
+                        Цена
+                    </p>
+                    <p class="sorting_item">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        Спальных мест
+                    </p>
+                    <p class="sorting_item">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        Кол-во комнат
+                    </p>
+                </div>
+
+                <div class="mobile_filter_soring">
+                    <div class="mobile_filter">
+                        <i class="fa-solid fa-sliders"></i>
+                        <p>Фильтр</p>
+                    </div>
+                    <div class="mobile_sorting">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        <p>Сортировать по:</p>
+                        <select class="select_sortby">
+                            <option value="1" selected>убыванию цен</option>
+                            <option value="2">возростанию цен</option>
+                            <option value="3">убыванию спальных мест</option>
+                            <option value="2">возростанию спальных мест</option>
+                            <option value="3">убыванию кол-ва комнат</option>
+                            <option value="2">возростанию кол-ва комнет</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="offers offers_multiple_lines">
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offers_item offers_item_multiple_lines">
+                        <div class="offers_item_inner">
+                            <div class="offer_img_wrapper">
+                                <img src="img/main/house.png" alt="Номер" class="offer_img">
+                            </div>
+                            <div class="offer_info">
+                                <p class=" offer_info_title">Двухэтажный домик у озера</p>
+                                <p class=" offer_info_price">Начиная от: <span class="offer_info_price_money">8.999&#8381;</span></p>
+                                <button class=" offer_info_book">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pages">
+                    <p class="page_item page_item_active">1</p>
+                    <p class="page_item">2</p>
+                    <p class="page_item">3</p>
+                    <p class="page_item">4</p>
+                    <p class="page_item">...</p>
+                    <p class="page_item">15</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer_content">
+
+                <div class="footer_section footer_info">
+                    <h3 class="footer_title">Crystal Lake</h3>
+                    <p class="footer_text">Россия, Иркутская область, Кристальные Озера</p>
+                    <button class="footer_book_btn">Забронировать</button>
+                </div>
+
+                <div class="footer_section footer_menu">
+                    <h3 class="footer_title">Навигация</h3>
+                    <div class="footer_menu_inner">
+
+                        <div class="footer_menu_column">
+                            <a href="index.html" class="footer_link">Главная</a>
+                            <a href="#" class="footer_link">Номера</a>
+                            <a href="#" class="footer_link">Услуги</a>
+                            <a href="#" class="footer_link">Отзывы</a>
+                        </div>
+                        <div class="footer_menu_column">
+                            <a href="#" class="footer_link">Оплата</a>
+                            <a href="#" class="footer_link">Контакты</a>
+                            <a href="#" class="footer_link">Личный кабинет</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer_section footer_socials">
+                    <h3 class="footer_title">Контакты</h3>
+                    <p class="footer_text">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:999-555-222" class="footer_link">999-555-222</a>
+                    </p>
+                    <p class="footer_text">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:crystal_lake@lake.com" class="footer_link">crystal_lake@lake.com</a>
+                    </p>
+                    <div class="footer_socials_inner">
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-vk"></i></a>
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.offers{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1279px) {
+    .offers{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offers{
+        font-size: 1rem;
+    }
+}
+
+.offers_item{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.offers_item_inner{
+    box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-align: center;
+}
+
+.offer_img{
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.offers_item_inner:hover .offer_img{
+    opacity: 0.5;
+}
+
+.offers_item_inner:hover .offer_img_wrapper{
+    background: linear-gradient(to bottom, #FFD20A, #96C6D6);
+}
+
+.offer_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 1em;
+    gap: 1em;
+}
+
+.offer_info_title{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.offer_info_book{
+    font-size: 1.1em;
+    display: inline;
+    padding: 0.5em 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    border-color: #E72574;
+    border-radius: 5px;
+}
+
+.offer_info_book:hover{
+    background-color: #E72574;
+    color: #FFFFFF;
+}
+
+.offer_info_price_money{
+    font-weight: 700;
+}

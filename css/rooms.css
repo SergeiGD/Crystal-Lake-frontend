@@ -1,0 +1,291 @@
+/* ROOMS */
+
+.rooms{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* FILTER */
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    width: 100%;
+    box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    gap: 1em;
+}
+
+@media screen and (max-width: 1279px) {
+    .filter{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter{
+        display: none;
+    }
+}
+
+.filter_select{
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+.filter_select_subfiled{
+    display: flex;
+    align-items: center;
+}
+
+.filter_subname{
+    min-width: 1.5em;
+}
+
+.filter_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.8em 0;
+    gap: 0.8em;
+}
+
+.filter_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .filter_item{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+}
+
+.filter_name{
+    min-width: 10em;
+}
+
+.input_field{
+    padding: 1px;
+    font-size: 0.8em;
+}
+
+.name_select{
+    width: 100%;
+}
+
+.name_field{
+    width: 100%;
+}
+
+.select_field{
+    font-size: 0.8em;
+    border: none;
+}
+
+.date_field, .price_field{
+    max-width: 8em;
+}
+
+.filter_btn{
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border-color: #E72574;
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear, border-color 0.15s linear;
+}
+
+.find_btn{
+    background-color: #E72574;
+    color: #FFFFFF;
+    border-color: #E72574;
+}
+
+.find_btn:hover{
+    background-color: #FFD20A;
+    border-color: #FFD20A;
+    color: #000000;
+}
+
+.clean_btn{
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: #000000;
+}
+
+.clean_btn:hover{
+    background-color: #FF0914;
+    border-color: #FF0914;
+    color: #FFFFFF;
+}
+
+
+/* SORTING */
+
+.sorting{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    min-height: 3em;
+    align-items: center;
+    gap: 2em;
+    padding: 0 2em;
+}
+
+@media screen and (max-width: 1279px) {
+    .sorting{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sorting{
+        display: none;
+    }
+}
+
+.sorting_item{
+    cursor: pointer;
+}
+
+.sorting_icon_active{
+    color: #FFD20A;
+}
+
+
+/* MOBILE FILTER & SORTING */
+
+.mobile_filter_soring{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
+    font-size: 1rem;
+    border-radius: 5px;
+    min-height: 4em;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em 0.5em;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile_filter_soring{
+        display: flex;
+    }
+}
+
+.mobile_filter, .mobile_sorting{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.mobile_sorting{
+    flex-wrap: wrap;
+}
+
+.select_sortby{
+    font-size: 1em;
+    max-width: 100%;
+}
+
+/* OFFERS ROOMS PAGE */
+
+.offers_multiple_lines{
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.offers_item_multiple_lines{
+    flex-basis: 20em;
+}
+
+/* PAGES */
+
+.pages{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    gap: 2em;
+    position: relative;
+}
+
+@media screen and (max-width: 1279px) {
+    .pages{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pages{
+        font-size: 1rem;
+        gap: 1.5em;
+    }
+}
+
+.pages:after, .pages:before{
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-top: 2px solid #000000;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.pages:after{
+    right: -50px;
+    border-right: 2px solid #000000;
+    transform: translate(0, -50%) rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .pages:after{
+        right: -40px;
+    }
+}
+
+.pages:before{
+    left: -50px;
+    border-left: 2px solid #000000;
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .pages:before{
+        left: -40px;
+    }
+}
+
+.page_item{
+    position: relative;
+    cursor: pointer;
+}
+
+.page_item_active:after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+
