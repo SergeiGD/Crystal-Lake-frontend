@@ -4,6 +4,7 @@
     align-items: center;
     gap: 2em;
     margin: 0 auto;
+    margin-top: 1em;
 }
 
 .slider_item{
