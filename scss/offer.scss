@@ -1,4 +1,4 @@
-@import '../css/reset', '../css/header', '../css/footer', '../css/general', '../css/slider';
+@import '../css/reset', '../css/header', '../css/footer', '../css/general', '../css/slider', '../css/sales', '../css/card', '../css/recomendations';
 
 $main_color: #E72574;
 $radius: 5px;
@@ -37,6 +37,24 @@ $blocks_indent: 5em;
     height: fit-content;
     border-radius: $radius;
     gap: $gap;
+}
+
+@mixin book_button($width, $height) {
+    font-size: 1.1em;
+    display: inline;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5em 0;
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    border-color: #E72574;
+    border-radius: 5px;
+    width: $width;
+    height: $height;
+
+    &:hover{
+        background-color: #E72574;
+        color: #FFFFFF;
+    }
 }
 
 @mixin device($breakpoint) {
@@ -142,21 +160,22 @@ $blocks_indent: 5em;
                 height: 100%;
 
                 .button_btn{
-                    font-size: 1.1em;
-                    display: inline;
-                    background-color: rgba(0, 0, 0, 0);
-                    padding: 0.5em 0;
-                    cursor: pointer;
-                    transition: background-color 0.15s linear, color 0.15s linear;
-                    border-color: #E72574;
-                    border-radius: 5px;
-                    width: 100%;
-                    height: 100%;
+                    @include book_button(100%, 100%)
+                    // font-size: 1.1em;
+                    // display: inline;
+                    // background-color: rgba(0, 0, 0, 0);
+                    // padding: 0.5em 0;
+                    // cursor: pointer;
+                    // transition: background-color 0.15s linear, color 0.15s linear;
+                    // border-color: #E72574;
+                    // border-radius: 5px;
+                    // width: 100%;
+                    // height: 100%;
 
-                    &:hover{
-                        background-color: #E72574;
-                        color: #FFFFFF;
-                    }
+                    // &:hover{
+                    //     background-color: #E72574;
+                    //     color: #FFFFFF;
+                    // }
                 }
 
             }
@@ -256,5 +275,104 @@ $blocks_indent: 5em;
         .dates{
             max-width: $block_width_mob;
         }
+    }
+}
+
+
+// BOOK
+
+.book{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: $shadow;
+    margin: 0 auto;
+    gap: 2em;
+    font-size: 1rem;
+    padding: $block_padding 3em;
+
+    @include device(mobile){
+        padding: $block_padding;
+    }
+
+    .book_fields{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .book_btn{
+        @include book_button(50%, fit-content);
+
+        @include device(tablet){
+            width: 100%;
+        }
+    }
+}
+
+.book_field{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    @include device(mobile){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+
+    .field_name{
+        min-width: 10em;
+
+        i{
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        @include device(mobile){
+            min-width: auto;
+        }
+    }
+
+    .book_select{
+        display: flex;
+        gap: 0.5em;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .book_input{
+            font-size: 1em;
+            padding: 1px 5px;
+        }
+
+        .input_name{
+            width: 100%;
+        }
+
+        .input_phone{
+            width: 9em;
+        }
+
+        .loggin_req{
+            font-style: italic;
+        }
+
+        .input_bonus{
+            width: 10.5em;
+        }
+        
+
+        .field_subname{
+            min-width: 1.5em;
+            display: inline-block;
+        }
+
+        .book_subfield{
+            display: flex;
+            align-items: center;
+        }
+
     }
 }

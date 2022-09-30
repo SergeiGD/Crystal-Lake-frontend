@@ -1,0 +1,39 @@
+.recomendations{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recomendations_item{
+    flex-basis: 30%;
+}
+
+.recomendations_item .slider{
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+    .recomendations_item{
+        justify-content: center;
+    }
+
+    .recomendations_item{
+        display: none;
+    }
+
+    .recomendations_item:first-child{
+        display: flex;
+        flex-basis: 60%;
+    }
+
+    .recomendations_item .slider{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .recomendations_item:first-child{
+        flex-basis: 100%;
+        z-index: 1;
+    }
+}

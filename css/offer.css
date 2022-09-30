@@ -223,6 +223,7 @@ input, select {
 .footer_content {
   display: flex;
   justify-content: space-between;
+  gap: 2em;
 }
 
 @media screen and (max-width: 767px) {
@@ -439,6 +440,113 @@ body {
   background-color: #E72574;
 }
 
+.sales {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .sales {
+    max-width: 100%;
+  }
+}
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.card_inner {
+  box-shadow: 0 0 60px -20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-align: center;
+}
+
+.card_img {
+  display: block;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  opacity: 0.85;
+}
+
+.card_inner:hover .card_img {
+  opacity: 1;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 1em;
+  gap: 1em;
+}
+
+.card_info_title {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.card_info_text {
+  flex-wrap: 400;
+  text-align: center;
+}
+
+.card_info_btn {
+  font-size: 1.1em;
+  display: inline;
+  padding: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.15s linear, color 0.15s linear;
+  border-color: #E72574;
+  border-radius: 5px;
+}
+
+.card_info_btn:hover {
+  background-color: #E72574;
+  color: #FFFFFF;
+}
+
+.card_info_price_money {
+  font-weight: 700;
+}
+
+.recomendations {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recomendations_item {
+  flex-basis: 30%;
+}
+
+.recomendations_item .slider {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .recomendations_item {
+    justify-content: center;
+  }
+  .recomendations_item {
+    display: none;
+  }
+  .recomendations_item:first-child {
+    display: flex;
+    flex-basis: 60%;
+  }
+  .recomendations_item .slider {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .recomendations_item:first-child {
+    flex-basis: 100%;
+    z-index: 1;
+  }
+}
 .breadcrumbs .breadcrumbs_item {
   text-decoration: none;
   color: #000;
@@ -635,4 +743,107 @@ body {
   .info_dates .dates {
     max-width: 100%;
   }
+}
+
+.book {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0 0 60px -20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  gap: 2em;
+  font-size: 1rem;
+  padding: 1em 3em;
+}
+@media screen and (max-width: 767px) {
+  .book {
+    padding: 1em;
+  }
+}
+.book .book_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.book .book_btn {
+  font-size: 1.1em;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5em 0;
+  cursor: pointer;
+  transition: background-color 0.15s linear, color 0.15s linear;
+  border-color: #E72574;
+  border-radius: 5px;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.book .book_btn:hover {
+  background-color: #E72574;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1279px) {
+  .book .book_btn {
+    width: 100%;
+  }
+}
+
+.book_field {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .book_field {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+}
+.book_field .field_name {
+  min-width: 10em;
+}
+.book_field .field_name i {
+  font-size: 0.9em;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .book_field .field_name {
+    min-width: auto;
+  }
+}
+.book_field .book_select {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.book_field .book_select .book_input {
+  font-size: 1em;
+  padding: 1px 5px;
+}
+.book_field .book_select .input_name {
+  width: 100%;
+}
+.book_field .book_select .input_phone {
+  width: 9em;
+}
+.book_field .book_select .loggin_req {
+  font-style: italic;
+}
+.book_field .book_select .input_bonus {
+  width: 10.5em;
+}
+.book_field .book_select .field_subname {
+  min-width: 1.5em;
+  display: inline-block;
+}
+.book_field .book_select .book_subfield {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=offer.css.map */

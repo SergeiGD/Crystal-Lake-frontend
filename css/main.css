@@ -285,64 +285,6 @@
 }
 
 
-/* OFFERS */
-
-.offers{
-    display: flex;
-    justify-content: space-around;
-}
-
-.offers_item{
-    flex-basis: 30%;
-}
-
-.offers_item .slider{
-    display: none;
-}
-
-@media screen and (max-width: 1279px) {
-    .offers_item{
-        justify-content: center;
-    }
-
-    .offers_item{
-        display: none;
-    }
-
-    .offers_item:first-child{
-        display: flex;
-        flex-basis: 60%;
-    }
-
-    .offers_item .slider{
-        display: flex;
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .offers_item:first-child{
-        flex-basis: 100%;
-        z-index: 1;
-    }
-}
-
-
-/* SALES */
-
-.sales{
-    width: 100%;
-    max-width: 60%;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 767px) {
-    .sales{
-        max-width: 100%;
-    }
-}
-
-
 /* WHY US */
 
 .why_us_wrapper{

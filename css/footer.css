@@ -10,6 +10,7 @@
 .footer_content{
     display: flex;
     justify-content: space-between;
+    gap: 2em;
 }
 
 @media screen and (max-width: 767px) {

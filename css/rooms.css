@@ -11,7 +11,7 @@
 .filter{
     display: flex;
     justify-content: space-between;
-    padding: 0 2em;
+    padding: 0 1em;
     width: 100%;
     box-shadow: 0 0 60px -20px rgba(0,0,0,0.5);
     font-size: 1rem;
@@ -140,7 +140,7 @@
     min-height: 3em;
     align-items: center;
     gap: 2em;
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
 @media screen and (max-width: 767px) {

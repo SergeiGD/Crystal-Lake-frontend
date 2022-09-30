@@ -58,7 +58,7 @@
 
                     <nav class="header_menu">
                         <a href="index.html" class="header_menu_item header_link">Главная</a>
-                        <a href="#" class="header_menu_item header_link header_menu_item__active">Номера</a>
+                        <a href="rooms.html" class="header_menu_item header_link header_menu_item__active">Номера</a>
                         <a href="#" class="header_menu_item header_link">Услуги</a>
                         <a href="#" class="header_menu_item header_link">Отзывы</a>
                         <a href="#" class="header_menu_item header_link">Оплата</a>
@@ -150,6 +150,265 @@
 
         </div>
     </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section_title">Забронировать</h2>
+
+            <div class="book">
+                <div class="book_fields">
+
+                    <div class="book_field">
+                        <p class="field_name">Время пребывания:</p>
+                        <div class="book_select">
+                            <div class="book_subfield">
+                                <label for="input_date_from" class="field_subname">с</label>
+                                <input type="date" id="input_date_from" class="book_input">  
+                            </div>
+                            <div class="book_subfield">
+                                <label for="input_date_until" class="field_subname">до</label>
+                                <input type="date" id="input_date_until" class="book_input">  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <label for="input_name" class="field_name">Ваше Ф.И.О:</label>
+                        <div class="book_select">
+                            <input type="text" id="input_name" class="book_input input_name"> 
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <label for="input_phone" class="field_name">Номер телефона:</label>
+                        <div class="book_select">
+                            <input type="tel" id="input_phone" class="book_input input_phone" placeholder="+7(___)___-__-__"> 
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <p class="field_name">Ваши баллы: <i class="fa-regular fa-circle-question"></i></p>
+                        <div class="book_select">
+                            <p class="field_info loggin_req">авторизируйтесь</p>
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <label for="input_bonus" class="field_name">Списать баллов:</label>
+                        <div class="book_select">
+                            <input type="number" id="input_bonus" class="book_input input_bonus loggin_req" placeholder="авторизируйтесь" readonly> 
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <label for="input_payment" class="field_name">Оплатить сейчас:</label>
+                        <div class="book_select">
+                            <select id="input_payment" class="book_input input_payment">
+                                <option value="1">полностью</option>
+                                <option value="2" selected>только предоплату</option>
+                            </select>
+                            <!-- <input type="tel" id="input_phone" class="book_input input_phone" placeholder="+7(___)___-__-__">  -->
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <p class="field_name">К оплате сейчас:</p>
+                        <div class="book_select">
+                            <p class="field_info">2.899&#8381;</p>
+                        </div>
+                    </div>
+
+                    <div class="book_field">
+                        <p class="field_name">Суммарная цена:</p>
+                        <div class="book_select">
+                            <p class="field_info">12.399&#8381;</p>
+                        </div>
+                    </div>
+
+                </div> 
+                <button class="book_btn">Продолжить</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="container">
+
+            <h2 class="section_title">Акции на это предложение</h2>
+
+            <article class="card sales">
+                <div class="card_inner">
+                    <img src="img/card/sale.jpg" alt="Акции" class="card_img">
+                    <div class="card_info">
+                        <p class="card_info_text">Скидка 30% на водные прогулки по средам до конца сентярбря</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider_item slider_item_active"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <h2 class="section_title">С этим часто покупают</h2>
+
+            <div class="recomendations">
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/service.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Езда верхом</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider_item slider_item_active"></div>
+                        <div class="slider_item"></div>
+                        <div class="slider_item"></div>
+                    </div>
+                </article>
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/service.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Езда верхом</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/service.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Езда верхом</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <h2 class="section_title">Похожие предложения</h2>
+
+            <div class="recomendations">
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/house.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Двухэтажный домик у озера</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider_item slider_item_active"></div>
+                        <div class="slider_item"></div>
+                        <div class="slider_item"></div>
+                    </div>
+                </article>
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/house.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Двухэтажный домик у озера</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card recomendations_item">
+                    <div class="card_inner">
+                        <img src="img/card/house.png" alt="Номер" class="card_img">
+                        <div class="card_info">
+                            <p class="card_info_title">Двухэтажный домик у озера</p>
+                            <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                            <button class="card_info_btn">Забронировать</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer_content">
+
+                <div class="footer_section footer_info">
+                    <h3 class="footer_title">Crystal Lake</h3>
+                    <p class="footer_text">Россия, Иркутская область, Кристальные Озера</p>
+                    <button class="footer_book_btn">Забронировать</button>
+                </div>
+
+                <div class="footer_section footer_menu">
+                    <h3 class="footer_title">Навигация</h3>
+                    <div class="footer_menu_inner">
+
+                        <div class="footer_menu_column">
+                            <a href="index.html" class="footer_link">Главная</a>
+                            <a href="rooms.html" class="footer_link">Номера</a>
+                            <a href="#" class="footer_link">Услуги</a>
+                            <a href="#" class="footer_link">Отзывы</a>
+                        </div>
+                        <div class="footer_menu_column">
+                            <a href="#" class="footer_link">Оплата</a>
+                            <a href="#" class="footer_link">Контакты</a>
+                            <a href="#" class="footer_link">Личный кабинет</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer_section footer_socials">
+                    <h3 class="footer_title">Контакты</h3>
+                    <p class="footer_text">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:999-555-222" class="footer_link">999-555-222</a>
+                    </p>
+                    <p class="footer_text">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:crystal_lake@lake.com" class="footer_link">crystal_lake@lake.com</a>
+                    </p>
+                    <div class="footer_socials_inner">
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-vk"></i></a>
+                        <a href="#" class="footer_link"><i class="fa fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
