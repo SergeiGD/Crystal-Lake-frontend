@@ -335,14 +335,11 @@ html {
   background-color: #E72574;
   border-color: #FFF;
   color: #FFF;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   cursor: pointer;
   transition: background-color 0.15s linear, color 0.15s linear;
   border-radius: 5px;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   border-color: transparent;
 }
 .footer_section .footer_book_btn:hover {
@@ -476,14 +473,11 @@ html {
   background-color: #fff;
   border-color: #000;
   color: #000;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em;
   cursor: pointer;
   transition: background-color 0.15s linear, color 0.15s linear;
   border-radius: 5px;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 .card .card_inner .card_info .card_info_btn:hover {
   background-color: #E72574;
@@ -752,12 +746,11 @@ html {
   background-color: #fff;
   border-color: #000;
   color: #000;
-  padding: 0.5em 0;
+  padding: 0.8em 0.5em;
   cursor: pointer;
   transition: background-color 0.15s linear, color 0.15s linear;
   border-radius: 5px;
   width: 6em;
-  height: 3em;
 }
 .intro .find_rooms .find_rooms_btn:hover {
   background-color: #E72574;

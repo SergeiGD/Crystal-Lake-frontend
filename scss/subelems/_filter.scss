@@ -84,11 +84,11 @@
 }
 
 .find_btn{
-    @include mixins.button(6em, fit-content, #fff, vars.$pink_color, #000, vars.$yellow_color)
+    @include mixins.button(6em, vars.$base_button_paddings, #fff, vars.$pink_color, #000, vars.$yellow_color)
 }
 
 .clean_btn{
-    @include mixins.button(6em, auto, #000, #fff, #fff, vars.$red_color)
+    @include mixins.button(6em, vars.$base_button_paddings, #000, #fff, #fff, vars.$red_color)
 }
 
 

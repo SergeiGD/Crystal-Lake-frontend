@@ -173,7 +173,7 @@
         }
 
         .find_rooms_btn{
-            @include mixins.button(6em, 3em, #000, #fff, #fff, vars.$pink_color);
+            @include mixins.button(6em, 0.8em, #000, #fff, #fff, vars.$pink_color);
 
             @include mixins.device(mobile){
                 width: 90%;

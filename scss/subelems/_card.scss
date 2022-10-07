@@ -45,7 +45,7 @@
             }
 
             .card_info_btn{
-                @include mixins.button(100%, fit-content, #000, #fff, #fff, vars.$pink_color)
+                @include mixins.button(100%, vars.$base_button_paddings, #000, #fff, #fff, vars.$pink_color)
             }
         }
     }

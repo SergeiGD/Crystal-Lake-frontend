@@ -53,7 +53,7 @@
     }
 
     .footer_book_btn{
-        @include mixins.button(100%, fit-content, #FFF, vars.$pink_color, vars.$pink_color, #FFF);
+        @include mixins.button(100%, vars.$base_button_paddings, #FFF, vars.$pink_color, vars.$pink_color, #FFF);
         border-color: transparent;
     }
 }

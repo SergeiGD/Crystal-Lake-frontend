@@ -71,7 +71,7 @@
                 height: 100%;
 
                 .button_btn{
-                    @include mixins.button(100%, 100%, #000,  #FFF, #FFF, vars.$pink_color)
+                    @include mixins.button(100%, vars.$base_button_paddings, #000,  #FFF, #FFF, vars.$pink_color)
                 }
 
             }

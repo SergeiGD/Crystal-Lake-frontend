@@ -30,18 +30,17 @@
     }
 }
 
-@mixin button($width, $height, $color, $bgcolor, $hcolor, $hbgcolor) {
+@mixin button($width, $height_padding, $color, $bgcolor, $hcolor, $hbgcolor) {
     font-size: 1.1em;
     display: inline;
     background-color: $bgcolor;
     border-color: $color;
     color: $color;
-    padding: 0.5em 0;
+    padding: $height_padding 0.5em;
     cursor: pointer;
     transition: background-color 0.15s linear, color 0.15s linear;
     border-radius: vars.$radius;
     width: $width;
-    height: $height;
 
     &:hover{
         background-color: $hbgcolor;
