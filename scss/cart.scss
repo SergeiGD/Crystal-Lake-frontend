@@ -87,6 +87,11 @@
             top: 0.5em;
             right: 0.5em;
             cursor: pointer;
+            opacity: 0.85;
+
+            &:hover{
+                opacity: 1;
+            }
         }
     }
 }

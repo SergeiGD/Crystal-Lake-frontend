@@ -483,6 +483,10 @@ html {
   top: 0.5em;
   right: 0.5em;
   cursor: pointer;
+  opacity: 0.85;
+}
+.cart_services .cart_item .cart_item_delete:hover {
+  opacity: 1;
 }
 
 .cart_info {

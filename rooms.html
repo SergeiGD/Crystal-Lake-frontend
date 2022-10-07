@@ -67,215 +67,221 @@
         </div>
     </header>
 
-    <section class="section">
-        <div class="container">
-            <h2 class="section_title">Номера</h2>
+    
+    <main>
 
-            <div class="breadcrumbs">
-                <a href="index.html" class="breadcrumbs_item">Главная</a>
-                <span>></span>
-                <a href="rooms.html" class="breadcrumbs_item">Номера</a>
-            </div>   
-
-            <div class="rooms">
-                <form class="filter">
-
-                    <div class="filter_column">
-                        <div class="filter_item">
-                            <label class="filter_name" for="name_field">Наименование:</label>
-                            <div class="filter_select filter_select__name">
-                                <input type="text" name="" id="name_field" class="input_field input_field__name">
-                            </div>
-                        </div>
-
-                        <div class="filter_item">
-                            <label class="filter_name" for="people_field">Спальных мест:</label>
-                            <div class="filter_select">
-                                <select id="people_field" class="select_field">
-                                    <option value="1">1 человек(а)</option>
-                                    <option value="2" selected>3 человек(а)</option>
-                                    <option value="3">2 человек(а)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="filter_item">
-                            <p class="filter_name">Время прибывания:</p>
-                            <div class="filter_select">
-                                <div class="filter_select_subfiled">
-                                    <label class="filter_subname" for="date_from_field">с</label>
-                                    <input type="date" name="" id="date_from_field" class="input_field input_field__date">
-                                </div>
-                                <div class="filter_select_subfiled">
-                                    <label class="filter_subname" for="date_until_field">до</label>
-                                    <input type="date" name="" id="date_until_field" class="input_field input_field__date">
+        <section class="section">
+            <div class="container">
+                <h2 class="section_title">Номера</h2>
+    
+                <div class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs_item">Главная</a>
+                    <span>></span>
+                    <a href="rooms.html" class="breadcrumbs_item">Номера</a>
+                </div>   
+    
+                <div class="rooms">
+                    <form class="filter">
+    
+                        <div class="filter_column">
+                            <div class="filter_item">
+                                <label class="filter_name" for="name_field">Наименование:</label>
+                                <div class="filter_select filter_select__name">
+                                    <input type="text" name="" id="name_field" class="input_field input_field__name">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="filter_column">
-                        <div class="filter_item">
-                            <label class="filter_name" for="floors_field">Количество этажей:</label>
-                            <div class="filter_select">
-                                <select id="floors_field" class="select_field">
-                                    <option value="1" selected>1 этаж(а)</option>
-                                    <option value="2">2 этаж(а)</option>
-                                    <option value="3">3 этаж(а)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="filter_item">
-                            <label class="filter_name" for="rooms_field">Количество комнат:</label>
-                            <div class="filter_select">
-                                <select id="rooms_field" class="select_field">
-                                    <option value="1" selected>1 комант(ы)</option>
-                                    <option value="2">2 комант(ы)</option>
-                                    <option value="3">3 комант(ы)</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="filter_item">
-                            <p class="filter_name">Цена за 1 сутки:</p>
-                            <div class="filter_select">
-                                <div class="filter_select_subfiled">
-                                    <label class="filter_subname" for="price_from_field">от</label>
-                                    <input type="number" name="" id="price_from_field" class="input_field input_field__price">
+    
+                            <div class="filter_item">
+                                <label class="filter_name" for="people_field">Спальных мест:</label>
+                                <div class="filter_select">
+                                    <select id="people_field" class="select_field">
+                                        <option value="1">1 человек(а)</option>
+                                        <option value="2" selected>3 человек(а)</option>
+                                        <option value="3">2 человек(а)</option>
+                                    </select>
                                 </div>
-                                <div class="filter_select_subfiled">
-                                    <label class="filter_subname" for="price_until_field">до</label>
-                                    <input type="number" name="" id="price_until_field" class="input_field input_field__price">
+                            </div>
+    
+                            <div class="filter_item">
+                                <p class="filter_name">Время прибывания:</p>
+                                <div class="filter_select">
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="date_from_field">с</label>
+                                        <input type="date" name="" id="date_from_field" class="input_field input_field__date">
+                                    </div>
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="date_until_field">до</label>
+                                        <input type="date" name="" id="date_until_field" class="input_field input_field__date">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+    
+                        <div class="filter_column">
+                            <div class="filter_item">
+                                <label class="filter_name" for="floors_field">Количество этажей:</label>
+                                <div class="filter_select">
+                                    <select id="floors_field" class="select_field">
+                                        <option value="1" selected>1 этаж(а)</option>
+                                        <option value="2">2 этаж(а)</option>
+                                        <option value="3">3 этаж(а)</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="filter_item">
+                                <label class="filter_name" for="rooms_field">Количество комнат:</label>
+                                <div class="filter_select">
+                                    <select id="rooms_field" class="select_field">
+                                        <option value="1" selected>1 комант(ы)</option>
+                                        <option value="2">2 комант(ы)</option>
+                                        <option value="3">3 комант(ы)</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="filter_item">
+                                <p class="filter_name">Цена за 1 сутки:</p>
+                                <div class="filter_select">
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="price_from_field">от</label>
+                                        <input type="number" name="" id="price_from_field" class="input_field input_field__price">
+                                    </div>
+                                    <div class="filter_select_subfiled">
+                                        <label class="filter_subname" for="price_until_field">до</label>
+                                        <input type="number" name="" id="price_until_field" class="input_field input_field__price">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="filter_column">
+                            <button class="filter_btn find_btn">Применить</button>
+                            <button class="filter_btn clean_btn">Сбросить</button>
+                        </div>
+    
+                    </form>
+    
+                    <form class="sorting">
+                        <p class="sorting_item">
+                            <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
+                            Цена
+                        </p>
+                        <p class="sorting_item">
+                            <i class="fa-solid fa-arrow-down-wide-short"></i>
+                            Спальных мест
+                        </p>
+                        <p class="sorting_item">
+                            <i class="fa-solid fa-arrow-down-wide-short"></i>
+                            Кол-во комнат
+                        </p>
+                    </form>
+    
+                    <form class="mobile_filter_soring">
+                        <div class="mobile_filter">
+                            <i class="fa-solid fa-sliders"></i>
+                            <p>Фильтр</p>
+                        </div>
+                        <div class="mobile_sorting">
+                            <i class="fa-solid fa-arrow-up-wide-short"></i>
+                            <p>Сортировать по:</p>
+                            <select class="select_sortby">
+                                <option value="1" selected>убыванию цен</option>
+                                <option value="2">возростанию цен</option>
+                                <option value="3">убыванию спальных мест</option>
+                                <option value="2">возростанию спальных мест</option>
+                                <option value="3">убыванию кол-ва комнат</option>
+                                <option value="2">возростанию кол-ва комнет</option>
+                            </select>
+                        </div>
+                    </form>
+    
+                    <div class="catalog">
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="card">
+                            <div class="card_inner">
+                                <img src="img/card/house.png" alt="Номер" class="card_img">
+                                <div class="card_info">
+                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
+                                    <button class="card_info_btn">Забронировать</button>
+                                </div>
+                            </div>
+                        </article>
+    
                     </div>
-
-                    <div class="filter_column">
-                        <button class="filter_btn find_btn">Применить</button>
-                        <button class="filter_btn clean_btn">Сбросить</button>
+    
+                    <div class="pages">
+                        <p class="page_item page_item_active">1</p>
+                        <p class="page_item">2</p>
+                        <p class="page_item">3</p>
+                        <p class="page_item">4</p>
+                        <p class="page_item page_item_more">...</p>
+                        <p class="page_item">15</p>
                     </div>
-
-                </form>
-
-                <form class="sorting">
-                    <p class="sorting_item">
-                        <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
-                        Цена
-                    </p>
-                    <p class="sorting_item">
-                        <i class="fa-solid fa-arrow-down-wide-short"></i>
-                        Спальных мест
-                    </p>
-                    <p class="sorting_item">
-                        <i class="fa-solid fa-arrow-down-wide-short"></i>
-                        Кол-во комнат
-                    </p>
-                </form>
-
-                <form class="mobile_filter_soring">
-                    <div class="mobile_filter">
-                        <i class="fa-solid fa-sliders"></i>
-                        <p>Фильтр</p>
-                    </div>
-                    <div class="mobile_sorting">
-                        <i class="fa-solid fa-arrow-up-wide-short"></i>
-                        <p>Сортировать по:</p>
-                        <select class="select_sortby">
-                            <option value="1" selected>убыванию цен</option>
-                            <option value="2">возростанию цен</option>
-                            <option value="3">убыванию спальных мест</option>
-                            <option value="2">возростанию спальных мест</option>
-                            <option value="3">убыванию кол-ва комнат</option>
-                            <option value="2">возростанию кол-ва комнет</option>
-                        </select>
-                    </div>
-                </form>
-
-                <div class="catalog">
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="card_inner">
-                            <img src="img/card/house.png" alt="Номер" class="card_img">
-                            <div class="card_info">
-                                <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
-                                <button class="card_info_btn">Забронировать</button>
-                            </div>
-                        </div>
-                    </article>
-
+    
                 </div>
-
-                <div class="pages">
-                    <p class="page_item page_item_active">1</p>
-                    <p class="page_item">2</p>
-                    <p class="page_item">3</p>
-                    <p class="page_item">4</p>
-                    <p class="page_item page_item_more">...</p>
-                    <p class="page_item">15</p>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>    
 
+    </main>
+
+    
     <footer class="footer">
 
         <div class="container">
