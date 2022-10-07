@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Lake</title>
-    <link rel="stylesheet" href="css/reset.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/rooms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,9 +55,9 @@
                         <a href="index.html" class="header_menu_item header_link">Главная</a>
                         <a href="#" class="header_menu_item header_link header_menu_item__active">Номера</a>
                         <a href="#" class="header_menu_item header_link">Услуги</a>
-                        <a href="#" class="header_menu_item header_link">Отзывы</a>
                         <a href="#" class="header_menu_item header_link">Оплата</a>
                         <a href="#" class="header_menu_item header_link">Контакты</a>
+                        <a href="#" class="header_menu_item header_link">Корзина</a>
                         <a href="#" class="header_menu_item header_link">Личный кабинет</a>
                     </nav>
 
@@ -76,14 +71,20 @@
         <div class="container">
             <h2 class="section_title">Номера</h2>
 
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumbs_item">Главная</a>
+                <span>></span>
+                <a href="rooms.html" class="breadcrumbs_item">Номера</a>
+            </div>   
+
             <div class="rooms">
                 <form class="filter">
 
                     <div class="filter_column">
                         <div class="filter_item">
                             <label class="filter_name" for="name_field">Наименование:</label>
-                            <div class="filter_select name_select">
-                                <input type="text" name="" id="name_field" class="input_field name_field">
+                            <div class="filter_select filter_select__name">
+                                <input type="text" name="" id="name_field" class="input_field input_field__name">
                             </div>
                         </div>
 
@@ -103,11 +104,11 @@
                             <div class="filter_select">
                                 <div class="filter_select_subfiled">
                                     <label class="filter_subname" for="date_from_field">с</label>
-                                    <input type="date" name="" id="date_from_field" class="input_field date_field">
+                                    <input type="date" name="" id="date_from_field" class="input_field input_field__date">
                                 </div>
                                 <div class="filter_select_subfiled">
                                     <label class="filter_subname" for="date_until_field">до</label>
-                                    <input type="date" name="" id="date_until_field" class="input_field date_field">
+                                    <input type="date" name="" id="date_until_field" class="input_field input_field__date">
                                 </div>
                             </div>
                         </div>
@@ -141,11 +142,11 @@
                             <div class="filter_select">
                                 <div class="filter_select_subfiled">
                                     <label class="filter_subname" for="price_from_field">от</label>
-                                    <input type="number" name="" id="price_from_field" class="input_field price_field">
+                                    <input type="number" name="" id="price_from_field" class="input_field input_field__price">
                                 </div>
                                 <div class="filter_select_subfiled">
                                     <label class="filter_subname" for="price_until_field">до</label>
-                                    <input type="number" name="" id="price_until_field" class="input_field price_field">
+                                    <input type="number" name="" id="price_until_field" class="input_field input_field__price">
                                 </div>
                             </div>
                         </div>
@@ -199,7 +200,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -210,7 +211,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -221,7 +222,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -232,7 +233,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -243,7 +244,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -254,7 +255,7 @@
                             <img src="img/card/house.png" alt="Номер" class="card_img">
                             <div class="card_info">
                                 <p class="card_info_title">Двухэтажный домик у озера</p>
-                                <p class="card_info_text">Начиная от: <span class="card_info_price_money">8.999&#8381;</span></p>
+                                <p class="card_info_text">Начиная от: <span class="card_info_highlighted">8.999&#8381;</span></p>
                                 <button class="card_info_btn">Забронировать</button>
                             </div>
                         </div>
@@ -279,34 +280,34 @@
 
         <div class="container">
 
-            <div class="footer_content">
+            <div class="footer_inner">
 
-                <div class="footer_section footer_info">
+                <div class="footer_section footer_section__info">
                     <h3 class="footer_title">Crystal Lake</h3>
                     <p class="footer_text">Россия, Иркутская область, Кристальные Озера</p>
                     <button class="footer_book_btn">Забронировать</button>
                 </div>
 
-                <div class="footer_section footer_menu">
+                <div class="footer_section footer_section__menu">
                     <h3 class="footer_title">Навигация</h3>
                     <div class="footer_menu_inner">
 
                         <div class="footer_menu_column">
                             <a href="index.html" class="footer_link">Главная</a>
-                            <a href="#" class="footer_link">Номера</a>
+                            <a href="rooms.html" class="footer_link">Номера</a>
                             <a href="#" class="footer_link">Услуги</a>
-                            <a href="#" class="footer_link">Отзывы</a>
+                            <a href="#" class="footer_link">Акции</a>
                         </div>
                         <div class="footer_menu_column">
-                            <a href="#" class="footer_link">Оплата</a>
                             <a href="#" class="footer_link">Контакты</a>
+                            <a href="#" class="footer_link">Корзина</a>
                             <a href="#" class="footer_link">Личный кабинет</a>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="footer_section footer_socials">
+                <div class="footer_section footer_section__socials">
                     <h3 class="footer_title">Контакты</h3>
                     <p class="footer_text">
                         <i class="fa-solid fa-phone"></i>
@@ -329,6 +330,7 @@
         </div>
 
     </footer>
+
 
 </body>
 </html>

@@ -1,0 +1,119 @@
+@use '../base/vars' as vars;
+@use '../base/mixins' as mixins;
+
+.header{
+    font-size: 1rem;
+    color: #FFF;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.15s linear;
+
+    &:hover{
+        background-color: #000000;
+    }
+}
+
+.header_burger{
+    display: none;
+
+    @include mixins.device(tablet){
+        display: block;
+        height: 22px;
+        width: 40px;
+        border-top: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        position: relative;
+        cursor: pointer;
+
+        &::after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: #FFFFFF;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+.header_inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_upper{
+    display: flex;
+    justify-content: space-between;
+    min-height: 1.5em;
+    align-items: center;
+    position: relative;
+
+    &::after{
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #FFF;
+        display: block;
+        margin-top: 5px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+    }
+
+    @include mixins.device(tablet){
+        display: none;
+    }
+
+    .header_upper_section{
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        font-size: 0.8em;
+    }
+
+    .header_upper_section_socials{
+        gap: 1em;
+    }
+}
+
+.header_under{
+    display: flex;
+    justify-content: space-between;
+    min-height: 2.5em;
+    align-items: center;
+
+    .header_logo{
+        font-family: vars.$logo_font;
+    }
+
+    .header_menu{
+        display: flex;
+        gap: 2em;
+
+        @include mixins.device(tablet){
+            display: none;
+        }
+
+        .header_menu_item__active{
+            &::after{
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: #FFF;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+
+    }
+}
+
+.header_link{
+    @include mixins.link(#FFF);
+}

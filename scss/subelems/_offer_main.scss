@@ -1,0 +1,108 @@
+@use '../base/vars' as vars;
+@use '../base/mixins' as mixins;
+@use '../base/offer_vars' as offer_vars;
+@use '../base/offer_mixins' as offer_mixins;
+
+
+// OFFER
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    gap: offer_vars.$blocks_indent;
+}
+
+
+// PHOTOS DESCRIPTION
+
+.photos_description{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    .photos{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+        flex-basis: offer_vars.$block_width_decs;
+        .photos_img{
+            box-shadow: vars.$shadow;
+            display: block;
+            width: 100%;
+            border-radius: vars.$radius;
+        }
+    }
+    .description{
+        @include offer_mixins.content_block(2em);
+        flex-basis: offer_vars.$block_width_decs;
+
+        .description_title{
+            margin-bottom: 1em;
+            @extend %subtitle;
+        }
+
+        .description_text{
+            line-height: 1.5;
+        }
+
+        .description_extra{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            gap: 1em;
+
+            .description_info{
+                font-size: 1.1em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                flex-basis: 50%;
+
+                .description_highlight{
+                    font-weight: 700;
+                }
+            }
+
+            .book_link{
+                flex-basis: 50%;
+                text-decoration: none;
+                height: 100%;
+
+                .button_btn{
+                    @include mixins.button(100%, 100%, #000,  #FFF, #FFF, vars.$pink_color)
+                }
+
+            }
+        }
+    }
+
+    @include mixins.device(tablet){
+        flex-direction: column;
+        align-items: center;
+        gap: offer_vars.$blocks_indent;
+
+        .photos{
+            flex-basis: auto;
+            width: 100%;
+            max-width: offer_vars.$block_width_tab;
+        }
+
+        .description{
+            flex-basis: auto;
+            width: 100%;
+            max-width: offer_vars.$block_width_tab;
+        }
+    }
+
+    @include mixins.device(mobile){
+        .photos{
+            max-width: offer_vars.$block_width_mob;
+        }
+
+        .description{
+            max-width: offer_vars.$block_width_mob;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use '../base/vars' as vars;
+@use '../base/mixins' as mixins;
+
+.recomendations{
+    display: flex;
+    justify-content: space-around;
+
+    .recomendations_item{
+        flex-basis: 30%;
+
+        .slider{
+            display: none;
+
+            @include mixins.device(tablet){
+                display: flex;
+            }
+        }
+
+        @include mixins.device(tablet){
+            justify-content: center;
+            display: none;
+
+            &:first-child{
+                display: flex;
+                flex-basis: 60%;
+            }
+        }
+
+        @include mixins.device(mobile){
+            &:first-child{
+                flex-basis: 100%;
+                z-index: 1;
+            }
+        }
+    }
+}

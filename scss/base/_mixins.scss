@@ -1,0 +1,51 @@
+@use 'vars' as vars;
+
+@mixin link($color) {
+    text-decoration: none;
+    color: $color;
+    transition: color 0.15s linear;
+
+    &:hover{
+        color: vars.$pink_color;
+    }
+}
+
+@mixin device($breakpoint) {
+    @if $breakpoint == tablet{
+        @media screen and (max-width: 1279px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == rotated{
+        @media screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == mobile{
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+}
+
+@mixin button($width, $height, $color, $bgcolor, $hcolor, $hbgcolor) {
+    font-size: 1.1em;
+    display: inline;
+    background-color: $bgcolor;
+    border-color: $color;
+    color: $color;
+    padding: 0.5em 0;
+    cursor: pointer;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    border-radius: vars.$radius;
+    width: $width;
+    height: $height;
+
+    &:hover{
+        background-color: $hbgcolor;
+        border-color: $hcolor;
+        color: $hcolor;
+    }
+}

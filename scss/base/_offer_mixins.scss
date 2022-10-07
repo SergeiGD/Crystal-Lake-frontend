@@ -1,0 +1,17 @@
+@use 'vars' as vars;
+@use 'offer_vars' as offer_vars;
+
+%subtitle{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@mixin content_block($gap){
+        box-shadow: vars.$shadow;
+        padding: offer_vars.$block_padding;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        border-radius: vars.$radius;
+        gap: $gap;
+    }
