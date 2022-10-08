@@ -1,7 +1,7 @@
 @use 'base/vars' as vars;
 @use 'base/mixins' as mixins;
 
-@import '../css/reset', 'subelems/common_elems', 'subelems/header', 'subelems/footer';
+@import '../css/reset', 'subelems/common_elems', 'subelems/header', 'subelems/footer', 'subelems/breadcrumbs';
 
 .cart{
     display: flex;

@@ -9,7 +9,7 @@
     box-shadow: vars.$shadow;
     font-size: 1rem;
     border-radius: 5px;
-    gap: 1em;
+    gap: 0.8em;
 
     @include mixins.device(mobile){
         display: none;
@@ -58,20 +58,13 @@
             }
         }
 
-        .input_field, .select_field{
+        .input_field, .select_field, .select_sortby{
             font-weight: 400;
             font-family: 'Roboto', sans-serif;
-        }
-
-        .input_field{
             padding: 2px;
             font-size: 1em;
         }
 
-        .select_field{
-            font-size: 1em;
-            border: none;
-        }
     }
 
     .filter_select__name{
@@ -83,12 +76,12 @@
     }
 }
 
-.find_btn{
-    @include mixins.button(6em, vars.$base_button_paddings, #fff, vars.$pink_color, #000, vars.$yellow_color)
+.filter_btn__find{
+    @include mixins.button(6.5em, vars.$base_button_paddings, #fff, vars.$pink_color, #000, vars.$yellow_color)
 }
 
-.clean_btn{
-    @include mixins.button(6em, vars.$base_button_paddings, #000, #fff, #fff, vars.$red_color)
+.filter_btn__clean{
+    @include mixins.button(6.5em, vars.$base_button_paddings, #000, #fff, #fff, vars.$red_color)
 }
 
 
@@ -142,13 +135,17 @@
         display: flex;
         gap: 0.5em;
         align-items: center;
+        max-width: 100%;
     }
 
     .mobile_sorting{
         flex-wrap: wrap;
 
         .select_sortby{
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
             font-size: 1em;
+            padding: 2px;
             max-width: 100%;
         }
     }

@@ -810,6 +810,14 @@ html {
 .book_field .book_select .loggin_req {
   font-style: italic;
 }
+.book_field .book_select .loggin_link {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.15s linear;
+}
+.book_field .book_select .loggin_link:hover {
+  color: #E72574;
+}
 .book_field .book_select .book_input__bonus {
   width: 10.5em;
 }
