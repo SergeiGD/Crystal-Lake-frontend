@@ -1,0 +1,98 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+.book{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: vars.$shadow;
+    margin: 0 auto;
+    gap: 2em;
+    font-size: 1rem;
+    padding: 1em 3em;
+
+    @include mixins.device(mobile){
+        padding: 1em;
+    }
+
+    .book_fields{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .book_btn{
+        @include mixins.button(100%, vars.$base_button_paddings, #000,  #FFF, #FFFFFF, vars.$pink_color);
+    }
+}
+
+.book_field{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    @include mixins.device(mobile){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+
+    .field_name{
+        min-width: 10em;
+
+        i{
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+
+        @include mixins.device(mobile){
+            min-width: auto;
+        }
+    }
+
+    .book_select{
+        display: flex;
+        gap: 0.5em;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .book_input{
+            font-size: 1em;
+            padding: 1px 5px;
+        }
+
+        .book_input__name{
+            width: 100%;
+        }
+
+        .book_input__phone{
+            width: 9em;
+        }
+
+        .loggin_req{
+            font-style: italic;
+        }
+
+        .loggin_link{
+            @include mixins.link(#000);
+        }
+
+        .book_input__bonus{
+            width: 10.5em;
+        }
+        
+
+        .field_subname{
+            min-width: 1.5em;
+            display: inline-block;
+        }
+
+        .book_subfield{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+}

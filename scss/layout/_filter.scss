@@ -1,0 +1,153 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    width: 100%;
+    box-shadow: vars.$shadow;
+    font-size: 1rem;
+    border-radius: 5px;
+    gap: 0.8em;
+
+    @include mixins.device(mobile){
+        display: none;
+    }
+
+    .filter_column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0.8em 0;
+        gap: 0.8em;
+    }
+
+}
+
+.filter_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include mixins.device(rotated){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+    }
+
+    .filter_name{
+        min-width: 10em;
+    }
+
+    .filter_select{
+        display: flex;
+        gap: 0.5em;
+        flex-wrap: wrap;
+
+        .filter_select_subfiled{
+            display: flex;
+            align-items: center;
+
+            .filter_subname{
+                min-width: 1.5em;
+            }
+
+            .input_field__date, .input_field__price{
+                max-width: 8em;
+            }
+        }
+
+        .input_field, .select_field, .select_sortby{
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            padding: 2px;
+            font-size: 1em;
+        }
+
+    }
+
+    .filter_select__name{
+        width: 100%;
+
+        .input_field__name{
+            width: 100%;
+        }
+    }
+}
+
+.filter_btn__find{
+    @include mixins.button(6.5em, vars.$base_button_paddings, #fff, vars.$pink_color, #000, vars.$yellow_color)
+}
+
+.filter_btn__clean{
+    @include mixins.button(6.5em, vars.$base_button_paddings, #000, #fff, #fff, vars.$red_color)
+}
+
+
+// SORTING
+
+.sorting{
+    display: flex;
+    width: 100%;
+    box-shadow: vars.$shadow;
+    font-size: 1rem;
+    border-radius:  vars.$radius;
+    min-height: 3em;
+    align-items: center;
+    gap: 2em;
+    padding: 0 1em;
+
+    @include mixins.device(mobile){
+        display: none;
+    }
+
+    .sorting_item{
+        cursor: pointer;
+    }
+
+    .sorting_icon_active{
+        color: vars.$yellow_color;
+    }
+}
+
+
+// MOBILE FILTER & SORTING 
+
+.mobile_filter_soring{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: vars.$shadow;
+    font-size: 1rem;
+    border-radius: vars.$radius;
+    min-height: 4em;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em 0.5em;
+    flex-wrap: wrap;
+
+    @include mixins.device(mobile){
+        display: flex;
+    }
+
+    .mobile_filter, .mobile_sorting{
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .mobile_sorting{
+        flex-wrap: wrap;
+
+        .select_sortby{
+            font-weight: 400;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+            padding: 2px;
+            max-width: 100%;
+        }
+    }
+
+}

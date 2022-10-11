@@ -1,0 +1,9 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+
+.find{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}

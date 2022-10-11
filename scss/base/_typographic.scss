@@ -1,0 +1,18 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+html {
+    font-size: 1.2rem;
+
+    @include mixins.device(tablet){
+        font-size: 1.1rem;
+    }
+
+    @include mixins.device(mobile){
+        font-size: 1rem;
+    }
+}
+
+body{
+    font-family: vars.$base_font;
+}
