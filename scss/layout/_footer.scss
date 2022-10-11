@@ -53,8 +53,16 @@
     }
 
     .footer_book_btn{
-        @include mixins.button(100%, vars.$base_button_paddings, #FFF, vars.$pink_color, vars.$pink_color, #FFF);
+        @extend %button;
+        width: 100%;
+        color: #FFF;
         border-color: transparent;
+        background-color: vars.$pink_color;
+
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
     }
 }
 

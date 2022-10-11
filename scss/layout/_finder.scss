@@ -1,6 +1,13 @@
 @use '../utils/vars' as vars;
 @use '../utils/mixins' as mixins; 
 
+.finder{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-bottom: 3em;
+}
+
 .filter{
     display: flex;
     justify-content: space-between;
@@ -23,12 +30,15 @@
         gap: 0.8em;
     }
 
+
 }
 
 .filter_item{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
 
     @include mixins.device(rotated){
         flex-direction: column;
@@ -37,12 +47,13 @@
     }
 
     .filter_name{
-        min-width: 10em;
+        min-width: 9em;
     }
 
     .filter_select{
         display: flex;
         gap: 0.5em;
+        flex-grow: 1;
         flex-wrap: wrap;
 
         .filter_select_subfiled{
@@ -54,7 +65,7 @@
             }
 
             .input_field__date, .input_field__price{
-                max-width: 8em;
+                max-width: 7em;
             }
         }
 
@@ -65,23 +76,45 @@
             font-size: 1em;
         }
 
+        .select_field{
+            flex-shrink: 1;
+            overflow: hidden;
+        }
+
     }
 
     .filter_select__name{
-        width: 100%;
-
         .input_field__name{
             width: 100%;
         }
     }
 }
 
+.filter_btn{
+    @extend %button;
+}
+
 .filter_btn__find{
-    @include mixins.button(6.5em, vars.$base_button_paddings, #fff, vars.$pink_color, #000, vars.$yellow_color)
+    color: #fff;
+    background-color: vars.$pink_color;
+    border-color: transparent;
+
+    &:hover{
+        color: #000;
+        background-color: vars.$yellow_color;
+    }
 }
 
 .filter_btn__clean{
-    @include mixins.button(6.5em, vars.$base_button_paddings, #000, #fff, #fff, vars.$red_color)
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+
+    &:hover{
+        color: #fff;
+        background-color: vars.$red_color;
+        border-color: transparent;
+    }
 }
 
 

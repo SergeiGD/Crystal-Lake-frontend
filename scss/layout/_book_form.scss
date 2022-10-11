@@ -24,7 +24,18 @@
     }
 
     .book_btn{
-        @include mixins.button(100%, vars.$base_button_paddings, #000,  #FFF, #FFFFFF, vars.$pink_color);
+        .card_info_btn{
+            @extend %button;
+            width: 100%;
+            color: #000;
+            border-color: #000;
+
+            &:hover{
+                background-color: vars.$pink_color;
+                color: #fff;
+                border-color: transparent;
+            }
+        }
     }
 }
 

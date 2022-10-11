@@ -15,98 +15,6 @@
 
 .cart_services{
     flex-basis: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-
-    .cart_delete{
-        position: absolute;
-        color: vars.$red_color;
-        font-size: 1.8em;
-        top: 0.5em;
-        right: 0.5em;
-        cursor: pointer;
-        opacity: 0.6;
-
-        &:hover{
-            opacity: 1;
-        }
-    }
-
-
-    // .cart_item{
-    //     display: flex;
-    //     box-shadow: vars.$shadow;
-    //     border-radius: vars.$radius;
-    //     position: relative;
-
-    //     @include mixins.device(mobile){
-    //         flex-direction: column-reverse;
-    //     }
-    
-    //     .cart_item_img{
-    //         display: block;
-    //         height: 100%;
-    //         max-width: 12em;
-    //         border-radius: 5px 0 0 5px;
-    //         cursor: pointer;
-    //         opacity: 0.85;
-
-    //         @include mixins.device(tablet){
-    //             max-width: 15em;
-    //         }
-
-    //         @include mixins.device(mobile){
-    //             max-width: 100%;
-    //             border-radius: 0 0 5px 5px;
-    //         }
-
-    //         &:hover{
-    //             opacity: 1;
-    //         }
-    //     }
-
-    //     .cart_item_desciption{
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: space-around;
-    //         padding: 1em;
-    //         line-height: 1.2;
-
-    //         .cart_item_name{
-    //             @include mixins.link(#000);
-    //             font-weight: 700;
-    //             font-size: 1.2em;
-    //             padding: 0 2em 1em 0;
-    //         }
-
-    //         .cart_item_stats{
-    //             display: flex;
-    //             flex-direction: column;
-    //             gap: 0.75em;
-
-    //             .cart_item_text{
-    //                 display: flex;
-    //                 flex-wrap: wrap;
-    //                 gap: 8px;
-    //             }
-    //         }
-    //     }
-
-    //     .cart_item_delete{
-    //         position: absolute;
-    //         color: vars.$red_color;
-    //         font-size: 1.8em;
-    //         top: 0.5em;
-    //         right: 0.5em;
-    //         cursor: pointer;
-    //         opacity: 0.6;
-
-    //         &:hover{
-    //             opacity: 1;
-    //         }
-    //     }
-    // }
 }
 
 
@@ -136,7 +44,17 @@
     }
 
     .pay_button{
-        @include mixins.button(100%, vars.$base_button_paddings, #000, #fff, #fff, vars.$pink_color);
+        @extend %button;
+        width: 100%;
+        color: #000;
+        border-color: #000;
+        background-color: #fff;
+
+        &:hover{
+            background-color: vars.$pink_color;
+            color: #fff;
+            border-color: transparent;
+        }
         
         @include mixins.device(tablet){
             width: 30%;

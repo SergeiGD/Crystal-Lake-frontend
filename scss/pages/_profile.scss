@@ -1,9 +1,12 @@
 @use '../utils/vars' as vars;
 @use '../utils/mixins' as mixins; 
 
-
-.find{
+.profile{
+    font-size: 1rem;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2em;
+
 }
+

@@ -24,17 +24,19 @@
 @import 'layout/book_form';
 @import 'layout/callback';
 @import 'layout/catalog';
-@import 'layout/filter';
+@import 'layout/catalog_long';
+@import 'layout/finder';
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/map';
 @import 'layout/offer_info';
 @import 'layout/offer_main';
 @import 'layout/recomendations';
+@import 'layout/profile_menu';
 
 
 // PAGES SPECIFIC STYLES
 @import 'pages/main';
-@import 'pages/find';
 @import 'pages/contacts';
 @import 'pages/cart';
+@import 'pages/profile';

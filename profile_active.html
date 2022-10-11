@@ -75,7 +75,7 @@
 
             <div class="container">
 
-                <h2 class="section_title">Активные заказы</h2>
+                <h2 class="section_title">Личный кабинет</h2>
 
                 <div class="breadcrumbs">
                     <a href="index.html" class="breadcrumbs_item">Главная</a>
@@ -85,6 +85,229 @@
                     <a href="#" class="breadcrumbs_item">Активные заказы</a>
                 </div> 
 
+                <div class="profile">
+
+                    <div class="profile_burger">
+                        <div class="profile_menu">
+                            <div class="profile_menu_item">
+                                <i class="fa-solid fa-book"></i>
+                                <p class="profile_menu_title profile_menu_title__active">Активные заказы</p>
+                            </div>
+                            <div class="profile_menu_item">
+                                <i class="fa-solid fa-book"></i>
+                                <p class="profile_menu_title">Активные заказы</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="profile_content">
+
+                        <div class="finder">
+
+                            <form class="filter">
+    
+                                <div class="filter_column">
+                                    <div class="filter_item">
+                                        <label class="filter_name filter_name__long" for="name_field">Наименование:</label>
+                                        <div class="filter_select filter_select__name">
+                                            <input type="text" name="" id="name_field" class="input_field input_field__name">
+                                        </div>
+                                    </div>
+            
+                                    <div class="filter_item">
+                                        <label class="filter_name filter_name__long" for="type_field">Тип заказа:</label>
+                                        <div class="filter_select">
+                                            <select id="type_field" class="select_field">
+                                                <option value="1" selected>все</option>
+                                                <option value="2">бронирование номера</option>
+                                                <option value="3">доп. услуга</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter_item">
+                                        <p class="filter_name filter_name__long">Дата заказа:</p>
+                                        <div class="filter_select">
+                                            <div class="filter_select_subfiled">
+                                                <label class="filter_subname" for="date_from_field">от</label>
+                                                <input type="date" name="" id="date_from_field" class="input_field input_field__date">
+                                            </div>
+                                            <div class="filter_select_subfiled">
+                                                <label class="filter_subname" for="date_until_field">до</label>
+                                                <input type="date" name="" id="date_until_field" class="input_field input_field__date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+            
+                                    
+                                </div>
+            
+                                <div class="filter_column">
+
+                                    <div class="filter_item">
+                                        <label class="filter_name filter_name__long" for="status_field">Статус оплаты:</label>
+                                        <div class="filter_select">
+                                            <select id="status_field" class="select_field">
+                                                <option value="1" selected>все</option>
+                                                <option value="2">польностью оплачено</option>
+                                                <option value="3">внесена предоплата</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="filter_item">
+                                        <p class="filter_name filter_name__long">Цена заказа:</p>
+                                        <div class="filter_select">
+                                            <div class="filter_select_subfiled">
+                                                <label class="filter_subname" for="price_from_field">от</label>
+                                                <input type="number" name="" id="price_from_field" class="input_field input_field__price">
+                                            </div>
+                                            <div class="filter_select_subfiled">
+                                                <label class="filter_subname" for="price_until_field">до</label>
+                                                <input type="number" name="" id="price_until_field" class="input_field input_field__price">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="filter_column">
+                                    <button class="filter_btn filter_btn__find">Применить</button>
+                                    <button class="filter_btn filter_btn__clean">Сбросить</button>
+                                </div>
+            
+                            </form>
+            
+                            <form class="sorting">
+                                <p class="sorting_item">
+                                    <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
+                                    Дате
+                                </p>
+                                <p class="sorting_item">
+                                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                    Цене
+                                </p>
+                            </form>
+            
+                            <form class="mobile_filter_soring">
+                                <div class="mobile_filter">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <p>Фильтр</p>
+                                </div>
+                                <div class="mobile_sorting">
+                                    <i class="fa-solid fa-arrow-up-wide-short"></i>
+                                    <p>Сортировать по:</p>
+                                    <select class="select_sortby">
+                                        <option value="1" selected>ближайшие</option>
+                                        <option value="2">дальние</option>
+                                        <option value="3">убыванию цен</option>
+                                        <option value="4">возрастанию цен</option>
+                                    </select>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="catalog_long">
+
+                            <div class="card_long">
+    
+                                <img src="img/card/house.png" alt="Двухэтажный домик у озера" class="card_long_img">
+        
+                                <div class="card_long_inner">
+                                    <div class="card_long_desciption">
+                                        <a href="house.html" class="card_long_name">Двухэтажный домик у озера</a>
+                                        <div class="card_long_stats">
+                                            <div class="card_long_text">
+                                                <p>Даты брони:</p>
+                                                <span class="highlighted">14.09.2022 - 21.09.2022</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Суммарная цена: </p>
+                                                <span class="highlighted">23.535&#8381;</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Баллов списано:</p>
+                                                <span class="highlighted">749</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Статус оплаты:</p>
+                                                <span class="highlighted">внесена предоплата</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_long_buttons">
+                                        <button class="manage_btn manage_btn__reschedule">Перенести</button>
+                                        <button class="manage_btn manage_btn__pay">Доплатить</button>
+                                        <button class="manage_btn manage_btn__cancel">Отменить</button>
+                                    </div>
+                                </div>
+                               
+
+                                
+                
+                            </div>
+        
+                            <div class="card_long">
+        
+                                <img src="img/card/service.png" alt="Двухэтажный домик у озера" class="card_long_img">
+        
+                                <div class="card_long_inner">
+
+                                    <div class="card_long_desciption">
+                                        <a href="#" class="card_long_name">Езда верхом</a>
+                                        <div class="card_long_stats">
+                                            <div class="card_long_text">
+                                                <p>Дата брони:</p> 
+                                                <span class="highlighted">14.09.2022</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Человек в группе:</p> 
+                                                <span class="highlighted">2</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Суммарная цена:</p> 
+                                                <span class="highlighted">3.600&#8381;</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Баллов списано:</p> 
+                                                <span class="highlighted">0</span>
+                                            </div>
+                                            <div class="card_long_text">
+                                                <p>Статус оплаты:</p>
+                                                <span class="highlighted">полностью оплачено</span>
+                                            </div>
+                                        </div>
+                                    </div>    
+
+                                    <div class="card_long_buttons">
+                                        <button class="manage_btn manage_btn__reschedule">Перенести</button>
+                                        <button class="manage_btn manage_btn__pay manage_btn__inactive">Доплатить</button>
+                                        <button class="manage_btn manage_btn__cancel">Отменить</button>
+                                    </div>
+
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+                        
+                        <div class="pages">
+                            <p class="page_item page_item_active">1</p>
+                            <p class="page_item">2</p>
+                            <p class="page_item">3</p>
+                            <p class="page_item">4</p>
+                            <p class="page_item page_item_more">...</p>
+                            <p class="page_item">15</p>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 

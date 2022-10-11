@@ -41,7 +41,17 @@
             }
 
             .card_info_btn{
-                @include mixins.button(100%, vars.$base_button_paddings, #000, #fff, #fff, vars.$pink_color)
+                @extend %button;
+                width: 100%;
+                color: #000;
+                border-color: #000;
+                background-color: #fff;
+
+                &:hover{
+                    background-color: vars.$pink_color;
+                    color: #fff;
+                    border-color: transparent;
+                }
             }
         }
     }

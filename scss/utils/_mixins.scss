@@ -5,6 +5,15 @@
     font-size: 1.2rem;
 }
 
+%button{
+    font-size: 1.1rem;
+    display: inline;
+    cursor: pointer;
+    border-radius: vars.$radius;
+    transition: background-color 0.15s linear, color 0.15s linear;
+    padding: 0.5em;
+}
+
 @mixin link($color) {
     text-decoration: none;
     color: $color;
@@ -32,25 +41,6 @@
         @media screen and (max-width: 767px) {
             @content;
         }
-    }
-}
-
-@mixin button($width, $height_padding, $color, $bgcolor, $hcolor, $hbgcolor) {
-    font-size: 1.1em;
-    display: inline;
-    background-color: $bgcolor;
-    border-color: $color;
-    color: $color;
-    padding: $height_padding 0.5em;
-    cursor: pointer;
-    transition: background-color 0.15s linear, color 0.15s linear;
-    border-radius: vars.$radius;
-    width: $width;
-
-    &:hover{
-        background-color: $hbgcolor;
-        border-color: $hcolor;
-        color: $hcolor;
     }
 }
 

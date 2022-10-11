@@ -80,122 +80,126 @@
                     <a href="#" class="breadcrumbs_item">Номера</a>
                 </div>   
     
-                <div class="find">
-                    <form class="filter">
+                <div class="offers">
+                    
+                    <div class="finder">
+                        <form class="filter">
     
-                        <div class="filter_column">
-                            <div class="filter_item">
-                                <label class="filter_name" for="name_field">Наименование:</label>
-                                <div class="filter_select filter_select__name">
-                                    <input type="text" name="" id="name_field" class="input_field input_field__name">
-                                </div>
-                            </div>
-    
-                            <div class="filter_item">
-                                <label class="filter_name" for="people_field">Спальных мест:</label>
-                                <div class="filter_select">
-                                    <select id="people_field" class="select_field">
-                                        <option value="1">1 человек(а)</option>
-                                        <option value="2" selected>3 человек(а)</option>
-                                        <option value="3">2 человек(а)</option>
-                                    </select>
-                                </div>
-                            </div>
-    
-                            <div class="filter_item">
-                                <p class="filter_name">Время прибывания:</p>
-                                <div class="filter_select">
-                                    <div class="filter_select_subfiled">
-                                        <label class="filter_subname" for="date_from_field">с</label>
-                                        <input type="date" name="" id="date_from_field" class="input_field input_field__date">
-                                    </div>
-                                    <div class="filter_select_subfiled">
-                                        <label class="filter_subname" for="date_until_field">до</label>
-                                        <input type="date" name="" id="date_until_field" class="input_field input_field__date">
+                            <div class="filter_column">
+                                <div class="filter_item">
+                                    <label class="filter_name filter_name__long" for="name_field">Наименование:</label>
+                                    <div class="filter_select filter_select__name">
+                                        <input type="text" name="" id="name_field" class="input_field input_field__name">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-    
-                        <div class="filter_column">
-                            <div class="filter_item">
-                                <label class="filter_name" for="floors_field">Количество этажей:</label>
-                                <div class="filter_select">
-                                    <select id="floors_field" class="select_field">
-                                        <option value="1" selected>1 этаж(а)</option>
-                                        <option value="2">2 этаж(а)</option>
-                                        <option value="3">3 этаж(а)</option>
-                                    </select>
-                                </div>
-                            </div>
-    
-                            <div class="filter_item">
-                                <label class="filter_name" for="rooms_field">Количество комнат:</label>
-                                <div class="filter_select">
-                                    <select id="rooms_field" class="select_field">
-                                        <option value="1" selected>1 комант(ы)</option>
-                                        <option value="2">2 комант(ы)</option>
-                                        <option value="3">3 комант(ы)</option>
-                                    </select>
-                                </div>
-                            </div>
-    
-                            <div class="filter_item">
-                                <p class="filter_name">Цена за 1 сутки:</p>
-                                <div class="filter_select">
-                                    <div class="filter_select_subfiled">
-                                        <label class="filter_subname" for="price_from_field">от</label>
-                                        <input type="number" name="" id="price_from_field" class="input_field input_field__price">
+        
+                                <div class="filter_item">
+                                    <label class="filter_name filter_name__long" for="people_field">Спальных мест:</label>
+                                    <div class="filter_select">
+                                        <select id="people_field" class="select_field">
+                                            <option value="1">1 человек(а)</option>
+                                            <option value="2" selected>3 человек(а)</option>
+                                            <option value="3">2 человек(а)</option>
+                                        </select>
                                     </div>
-                                    <div class="filter_select_subfiled">
-                                        <label class="filter_subname" for="price_until_field">до</label>
-                                        <input type="number" name="" id="price_until_field" class="input_field input_field__price">
+                                </div>
+        
+                                <div class="filter_item">
+                                    <p class="filter_name filter_name__long">Даты прибывания:</p>
+                                    <div class="filter_select">
+                                        <div class="filter_select_subfiled">
+                                            <label class="filter_subname" for="date_from_field">с</label>
+                                            <input type="date" name="" id="date_from_field" class="input_field input_field__date">
+                                        </div>
+                                        <div class="filter_select_subfiled">
+                                            <label class="filter_subname" for="date_until_field">до</label>
+                                            <input type="date" name="" id="date_until_field" class="input_field input_field__date">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-    
-                        <div class="filter_column">
-                            <button class="filter_btn filter_btn__find">Применить</button>
-                            <button class="filter_btn filter_btn__clean">Сбросить</button>
-                        </div>
-    
-                    </form>
-    
-                    <form class="sorting">
-                        <p class="sorting_item">
-                            <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
-                            Цена
-                        </p>
-                        <p class="sorting_item">
-                            <i class="fa-solid fa-arrow-down-wide-short"></i>
-                            Спальных мест
-                        </p>
-                        <p class="sorting_item">
-                            <i class="fa-solid fa-arrow-down-wide-short"></i>
-                            Кол-во комнат
-                        </p>
-                    </form>
-    
-                    <form class="mobile_filter_soring">
-                        <div class="mobile_filter">
-                            <i class="fa-solid fa-sliders"></i>
-                            <p>Фильтр</p>
-                        </div>
-                        <div class="mobile_sorting">
-                            <i class="fa-solid fa-arrow-up-wide-short"></i>
-                            <p>Сортировать по:</p>
-                            <select class="select_sortby">
-                                <option value="1" selected>убыванию цен</option>
-                                <option value="2">возрастанию цен</option>
-                                <option value="3">убыванию спальных мест</option>
-                                <option value="2">возрастанию спальных мест</option>
-                                <option value="3">убыванию кол-ва комнат</option>
-                                <option value="2">возрастанию кол-ва комнет</option>
-                            </select>
-                        </div>
-                    </form>
-    
+        
+                            <div class="filter_column">
+                                <div class="filter_item">
+                                    <label class="filter_name filter_name__long" for="floors_field">Количество этажей:</label>
+                                    <div class="filter_select">
+                                        <select id="floors_field" class="select_field">
+                                            <option value="1" selected>1 этаж(а)</option>
+                                            <option value="2">2 этаж(а)</option>
+                                            <option value="3">3 этаж(а)</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="filter_item">
+                                    <label class="filter_name filter_name__long" for="rooms_field">Количество комнат:</label>
+                                    <div class="filter_select">
+                                        <select id="rooms_field" class="select_field">
+                                            <option value="1" selected>1 комант(ы)</option>
+                                            <option value="2">2 комант(ы)</option>
+                                            <option value="3">3 комант(ы)</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+                                <div class="filter_item">
+                                    <p class="filter_name filter_name__long">Цена за 1 сутки:</p>
+                                    <div class="filter_select">
+                                        <div class="filter_select_subfiled">
+                                            <label class="filter_subname" for="price_from_field">от</label>
+                                            <input type="number" name="" id="price_from_field" class="input_field input_field__price">
+                                        </div>
+                                        <div class="filter_select_subfiled">
+                                            <label class="filter_subname" for="price_until_field">до</label>
+                                            <input type="number" name="" id="price_until_field" class="input_field input_field__price">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="filter_column">
+                                <button class="filter_btn filter_btn__find">Применить</button>
+                                <button class="filter_btn filter_btn__clean">Сбросить</button>
+                            </div>
+        
+                        </form>
+        
+                        <form class="sorting">
+                            <p class="sorting_item">
+                                <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
+                                Цена
+                            </p>
+                            <p class="sorting_item">
+                                <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                Спальных мест
+                            </p>
+                            <p class="sorting_item">
+                                <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                Кол-во комнат
+                            </p>
+                        </form>
+        
+                        <form class="mobile_filter_soring">
+                            <div class="mobile_filter">
+                                <i class="fa-solid fa-sliders"></i>
+                                <p>Фильтр</p>
+                            </div>
+                            <div class="mobile_sorting">
+                                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                                <p>Сортировать по:</p>
+                                <select class="select_sortby">
+                                    <option value="1" selected>убыванию цен</option>
+                                    <option value="2">возрастанию цен</option>
+                                    <option value="3">убыванию спальных мест</option>
+                                    <option value="2">возрастанию спальных мест</option>
+                                    <option value="3">убыванию кол-ва комнат</option>
+                                    <option value="2">возрастанию кол-ва комнет</option>
+                                </select>
+                            </div>
+                        </form>
+        
+                    </div>
+
                     <div class="catalog">
     
                         <article class="card">

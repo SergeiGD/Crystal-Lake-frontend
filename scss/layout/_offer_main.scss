@@ -65,8 +65,18 @@
                 text-decoration: none;
                 height: 100%;
 
-                .button_btn{
-                    @include mixins.button(100%, vars.$base_button_paddings, #000,  #FFF, #FFF, vars.$pink_color)
+                .book_btn{
+                    @extend %button;
+                    width: 100%;
+                    color: #000;
+                    border-color: #000;
+                    background-color: #fff;
+
+                    &:hover{
+                        background-color: #000;
+                        color: #fff;
+                        border-color: transparent;
+                    }
                 }
 
             }
