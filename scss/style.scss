@@ -29,10 +29,12 @@
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/map';
-@import 'layout/offer_info';
-@import 'layout/offer_main';
 @import 'layout/recomendations';
 @import 'layout/profile_menu';
+@import 'layout/description';
+@import 'layout/photo';
+@import 'layout/info';
+@import 'layout/free_dates';
 
 
 // PAGES SPECIFIC STYLES
@@ -40,3 +42,5 @@
 @import 'pages/contacts';
 @import 'pages/cart';
 @import 'pages/profile';
+@import 'pages/offer';
+@import 'pages/history_item';

@@ -24,17 +24,16 @@
     }
 
     .book_btn{
-        .card_info_btn{
-            @extend %button;
-            width: 100%;
-            color: #000;
-            border-color: #000;
+        @extend %button;
+        width: 100%;
+        color: #000;
+        border-color: #000;
+        background-color: #fff;
 
-            &:hover{
-                background-color: vars.$pink_color;
-                color: #fff;
-                border-color: transparent;
-            }
+        &:hover{
+            background-color: vars.$pink_color;
+            color: #fff;
+            border-color: transparent;
         }
     }
 }

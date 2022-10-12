@@ -60,7 +60,7 @@
                         <a href="#" class="header_menu_item header_link">Акции</a>
                         <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
                         <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                        <a href="#" class="header_menu_item header_link  header_menu_item__active">Личный кабинет</a>
+                        <a href="profile_active.html" class="header_menu_item header_link  header_menu_item__active">Личный кабинет</a>
                     </nav>
 
                 </div>
@@ -80,7 +80,7 @@
                 <div class="breadcrumbs">
                     <a href="index.html" class="breadcrumbs_item">Главная</a>
                     <span>&#10148;</span>
-                    <a href="#" class="breadcrumbs_item">Активные заказы</a>
+                    <a href="#" class="breadcrumbs_item">История заказов</a>
                 </div> 
 
                 <div class="profile">
@@ -92,11 +92,11 @@
                     <div class="profile_menu">
                         <div class="profile_menu_item">
                             <i class="fa-solid fa-list-ul"></i>
-                            <a href="#" class="profile_menu_title profile_menu_title__active">Активные заказы</a>
+                            <a href="profile_active.html" class="profile_menu_title">Активные заказы</a>
                         </div>
                         <div class="profile_menu_item">
                             <i class="fa-solid fa-clock-rotate-left"></i>
-                            <a href="profile_history.html" class="profile_menu_title">История заказов</a>
+                            <a href="#" class="profile_menu_title profile_menu_title__active">История заказов</a>
                         </div>
                         <div class="profile_menu_item">
                             <i class="fa-regular fa-user"></i>
@@ -152,12 +152,12 @@
                                 <div class="filter_column">
 
                                     <div class="filter_item">
-                                        <label class="filter_name filter_name__long" for="status_field">Статус оплаты:</label>
+                                        <label class="filter_name filter_name__long" for="status_field">Статус заказа:</label>
                                         <div class="filter_select">
                                             <select id="status_field" class="select_field">
                                                 <option value="1" selected>все</option>
-                                                <option value="2">польностью оплачено</option>
-                                                <option value="3">внесена предоплата</option>
+                                                <option value="2">завершенные</option>
+                                                <option value="3">отмененные</option>
                                             </select>
                                         </div>
                                     </div>
@@ -222,31 +222,25 @@
         
                                 <div class="card_long_inner">
                                     <div class="card_long_desciption">
-                                        <a href="house.html" class="card_long_name">Двухэтажный домик у озера</a>
+                                        <a href="profile_history_item.html" class="card_long_name">Двухэтажный домик у озера</a>
                                         <div class="card_long_stats">
                                             <div class="card_long_text">
-                                                <p>Даты брони:</p>
-                                                <span class="highlighted">14.09.2022 12:00 - 21.09.2022 11:00</span>
+                                                <p>Дата отмены:</p> 
+                                                <span class="highlighted">12.09.2022 15:34</span>
                                             </div>
                                             <div class="card_long_text">
                                                 <p>Суммарная цена: </p>
                                                 <span class="highlighted">23.535&#8381;</span>
                                             </div>
                                             <div class="card_long_text">
-                                                <p>Баллов списано:</p>
-                                                <span class="highlighted">749</span>
-                                            </div>
-                                            <div class="card_long_text">
-                                                <p>Статус оплаты:</p>
-                                                <span class="highlighted">внесена предоплата</span>
+                                                <p>Статус заказа:</p>
+                                                <span class="highlighted">отменен</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="card_long_buttons">
-                                        <button class="manage_btn manage_btn__reschedule">Перенести</button>
-                                        <button class="manage_btn manage_btn__pay">Доплатить</button>
-                                        <button class="manage_btn manage_btn__cancel">Отменить</button>
+                                        <button class="manage_btn manage_btn__more">Подробнее</button>
                                     </div>
                                 </div>
                                
@@ -265,8 +259,8 @@
                                         <a href="#" class="card_long_name">Езда верхом</a>
                                         <div class="card_long_stats">
                                             <div class="card_long_text">
-                                                <p>Даты брони:</p> 
-                                                <span class="highlighted">14.09.2022 13:00 - 14.09.2022 14:30</span>
+                                                <p>Дата завершения:</p> 
+                                                <span class="highlighted">14.09.2022 13:30</span>
                                             </div>
                                             <div class="card_long_text">
                                                 <p>Человек/штук:</p> 
@@ -277,20 +271,14 @@
                                                 <span class="highlighted">3.600&#8381;</span>
                                             </div>
                                             <div class="card_long_text">
-                                                <p>Баллов списано:</p> 
-                                                <span class="highlighted">0</span>
-                                            </div>
-                                            <div class="card_long_text">
-                                                <p>Статус оплаты:</p>
-                                                <span class="highlighted">полностью оплачено</span>
+                                                <p>Статус заказа:</p>
+                                                <span class="highlighted">завершен</span>
                                             </div>
                                         </div>
                                     </div>    
 
                                     <div class="card_long_buttons">
-                                        <button class="manage_btn manage_btn__reschedule">Перенести</button>
-                                        <button class="manage_btn manage_btn__pay manage_btn__inactive">Доплатить</button>
-                                        <button class="manage_btn manage_btn__cancel">Отменить</button>
+                                        <button class="manage_btn manage_btn__more">Подробнее</button>
                                     </div>
 
                                 </div>
@@ -344,7 +332,7 @@
                         <div class="footer_menu_column">
                             <a href="#" class="footer_link">Контакты</a>
                             <a href="cart.html" class="footer_link">Корзина</a>
-                            <a href="#" class="footer_link">Личный кабинет</a>
+                            <a href="profile_active.html" class="footer_link">Личный кабинет</a>
                         </div>
 
                     </div>

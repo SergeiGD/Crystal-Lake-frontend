@@ -1,0 +1,27 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+.photos{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    flex-basis: vars.$block_width_decs;
+
+    @include mixins.device(tablet){
+        flex-basis: auto;
+        width: 100%;
+        max-width: vars.$block_width_tab;
+    }
+
+    @include mixins.device(mobile){
+        max-width: vars.$block_width_mob;
+    }
+
+    .photos_img{
+        box-shadow: vars.$shadow;
+        display: block;
+        width: 100%;
+        border-radius: vars.$radius;
+    }
+
+}

@@ -10,6 +10,11 @@
     width: 40px;
     position: relative;
     cursor: pointer;
+    display: none;
+
+    @include mixins.device(mobile){
+        display: block;
+    }
 
     &::after{
         content: "";
@@ -32,22 +37,27 @@
 }
 
 .profile_menu{
-    display: none;
-    
-    //display: flex;
+    display: flex;
     font-size: 1rem;
-    flex-direction: column;
+    justify-content: space-around;
     gap: 1em;
     box-shadow: vars.$shadow;
-    height: fit-content;
-    padding: 2em 0;
+    padding: 1em 0.5em;
     border-radius: vars.$radius;
+
+    @include mixins.device(mobile){
+        display: none;
+    }
 
     .profile_menu_item{
         display: flex;
         gap: 0.5em;
         align-items: center;
         justify-content: center;
+
+        .profile_menu_title{
+            @include mixins.link(#000);
+        }
 
         .profile_menu_title__active{
             position: relative;
@@ -63,4 +73,5 @@
             }
         }
     }
+
 }
