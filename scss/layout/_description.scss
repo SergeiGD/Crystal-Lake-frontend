@@ -40,23 +40,17 @@
 
         }
 
-        .description_btn_wrapper{
+        .description_button_wrapper{
             flex-basis: 50%;
             text-decoration: none;
             height: 100%;
 
-            .description_btn{
+            .button__description{
                 @extend %button;
                 width: 100%;
                 color: #000;
                 border-color: #000;
                 background-color: #fff;
-
-                &:hover{
-                    background-color: #000;
-                    color: #fff;
-                    border-color: transparent;
-                }
             }
 
         }

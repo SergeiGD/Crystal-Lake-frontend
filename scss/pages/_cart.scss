@@ -43,18 +43,12 @@
         gap: 0.8em;
     }
 
-    .pay_button{
+    .button__pay{
         @extend %button;
         width: 100%;
         color: #000;
         border-color: #000;
         background-color: #fff;
-
-        &:hover{
-            background-color: vars.$pink_color;
-            color: #fff;
-            border-color: transparent;
-        }
         
         @include mixins.device(tablet){
             width: 30%;

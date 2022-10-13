@@ -52,17 +52,12 @@
         gap: 0.5em;
     }
 
-    .footer_book_btn{
+    .button__footer{
         @extend %button;
         width: 100%;
-        color: #FFF;
+        color: #000;
         border-color: transparent;
-        background-color: vars.$pink_color;
-
-        &:hover{
-            background-color: #fff;
-            color: #000;
-        }
+        background-color: #fff;
     }
 }
 

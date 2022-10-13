@@ -1,0 +1,80 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+.profile_info{
+    box-shadow: vars.$shadow;
+    font-size: 1rem;
+    padding: 2em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.profile_info_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    .profile_info_item{
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+
+        .profile_label{
+            min-width: 8em;
+            //position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.2em;
+
+            .info_icon{
+                cursor: pointer;
+                &:hover{
+                    color: vars.$pink_color;
+                }
+            }
+        }
+
+        .input_field__name{
+            width: 20em;
+        }
+
+        .input_field__phone{
+            width: 8em;
+        }
+
+        .input_field__email{
+            width: 15em;
+        }
+
+        .input_field__date{
+            width: 7.5em;
+        }
+    }
+}
+
+.profile_info_btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+
+    .button__profile{
+        width: 100%;
+        @extend %button;
+    }
+
+    .button__profile__save{
+        color: #000;
+        border-color: transparent;
+        background-color: vars.$yellow_color;
+    }
+
+    .button__profile__passwd{
+        color: #000;
+        border-color: #000;
+        background-color: #fff;
+    }
+
+    
+}

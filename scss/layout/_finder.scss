@@ -65,21 +65,10 @@
             }
 
             .input_field__date, .input_field__price{
-                max-width: 7em;
+                max-width: 7.5em;
             }
         }
 
-        .input_field, .select_field, .select_sortby{
-            font-weight: 400;
-            font-family: 'Roboto', sans-serif;
-            padding: 2px;
-            font-size: 1em;
-        }
-
-        .select_field{
-            flex-shrink: 1;
-            overflow: hidden;
-        }
 
     }
 
@@ -90,31 +79,21 @@
     }
 }
 
-.filter_btn{
+
+.filter_button{
     @extend %button;
 }
 
-.filter_btn__find{
-    color: #fff;
-    background-color: vars.$pink_color;
+.filter_button__find{
+    color: #000;
     border-color: transparent;
-
-    &:hover{
-        color: #000;
-        background-color: vars.$yellow_color;
-    }
+    background-color: vars.$yellow_color;
 }
 
-.filter_btn__clean{
-    color: #000;
-    background-color: #fff;
-    border-color: #000;
-
-    &:hover{
-        color: #fff;
-        background-color: vars.$red_color;
-        border-color: transparent;
-    }
+.filter_button__clean{
+    color: #fff;
+    border-color: transparent;
+    background-color: vars.$red_color;
 }
 
 

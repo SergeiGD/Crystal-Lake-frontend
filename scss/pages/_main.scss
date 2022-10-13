@@ -174,18 +174,12 @@
             
         }
 
-        .find_rooms_btn{
+        .button__find{
             @extend %button;
             color: #000;
             background-color: #fff;
             border-color: #000;
             width: 7em;
-
-            &:hover{
-                color: #fff;
-                background-color: vars.$pink_color;
-                border-color: transparent;
-            }
 
             @include mixins.device(mobile){
                 width: 90%;

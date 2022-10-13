@@ -1,0 +1,10 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+
+.input_field{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 2px 4px;
+    font-size: 1rem;
+}

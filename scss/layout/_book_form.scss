@@ -23,18 +23,13 @@
         gap: 1.5em;
     }
 
-    .book_btn{
+    .button__book{
         @extend %button;
         width: 100%;
         color: #000;
         border-color: #000;
         background-color: #fff;
 
-        &:hover{
-            background-color: vars.$pink_color;
-            color: #fff;
-            border-color: transparent;
-        }
     }
 }
 
@@ -62,23 +57,19 @@
         }
     }
 
-    .book_select{
+    .field_select{
         display: flex;
         gap: 0.5em;
         width: 100%;
         flex-wrap: wrap;
 
-        .book_input{
-            font-size: 1em;
-            padding: 1px 5px;
-        }
 
-        .book_input__name{
+        .input_field__name{
             width: 100%;
         }
 
-        .book_input__phone{
-            width: 9em;
+        .input_field__phone{
+            width: 8em;
         }
 
         .loggin_req{
@@ -89,7 +80,7 @@
             @include mixins.link(#000);
         }
 
-        .book_input__bonus{
+        .input_field__bonus{
             width: 10.5em;
         }
         

@@ -94,41 +94,35 @@
             gap: 1em;
         }
 
-        .manage_btn{
+        .card_button{
             @extend %button;
-        
-            &:hover{
-                background-color: vars.$pink_color;
-                color: #fff;
-                border-color: transparent;
-            }
         }
-        
-        .manage_btn__reschedule{
+
+        .card_button__reschedule{
             background-color: #fff;
             color: #000;
             border-color: #000;
         }
         
-        .manage_btn__pay{
+        .card_button__pay{
             background-color: vars.$yellow_color;
             color: #000;
             border-color: transparent;
         }
         
-        .manage_btn__cancel{
+        .card_button__cancel{
             background-color: vars.$red_color;
             color: #fff;
             border-color: transparent;
         }
 
-        .manage_btn__more{
+        .card_button__more{
             background-color: #fff;
             color: #000;
             border-color: #000;
         }
         
-        .manage_btn__inactive{
+        .card_button__inactive{
             cursor: auto;
             opacity: 0.6;
             pointer-events: none;

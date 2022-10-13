@@ -1,0 +1,8 @@
+@use '../utils/vars' as vars;
+@use '../utils/mixins' as mixins; 
+
+
+.select_field{
+    flex-shrink: 1;
+    overflow: hidden;
+}
