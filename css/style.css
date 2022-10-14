@@ -103,7 +103,7 @@ html {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -112,7 +112,7 @@ html {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -142,7 +142,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -150,7 +150,7 @@ body {
   transition: background-color 0.15s linear, color 0.15s linear;
   padding: 0.5em;
 }
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -161,7 +161,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -170,7 +170,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -204,7 +204,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card_long .card_long_buttons .card_button, .card .card_inner .card_info .button__card {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -213,7 +213,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card_long .card_long_buttons .card_button:hover, .card .card_inner .card_info .button__card:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -266,7 +266,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -275,7 +275,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -406,7 +406,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -415,7 +415,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -491,7 +491,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -500,7 +500,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -535,7 +535,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -544,7 +544,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -562,7 +562,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -571,7 +571,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -587,7 +587,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -596,7 +596,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -618,7 +618,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -627,7 +627,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -681,7 +681,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .book .button__book, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -690,7 +690,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .book .button__book:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -712,7 +712,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -721,7 +721,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -746,11 +746,6 @@ body {
     padding: 1em;
   }
 }
-.book .book_fields {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
 .book .button__book {
   width: 100%;
   color: #000;
@@ -758,63 +753,47 @@ body {
   background-color: #fff;
 }
 
-.book_field {
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .book_field {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5em;
-  }
-}
-.book_field .field_name {
+.field_name {
   min-width: 10em;
 }
-.book_field .field_name i {
+.field_name i {
   font-size: 0.9em;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
-  .book_field .field_name {
+  .field_name {
     min-width: auto;
   }
 }
-.book_field .field_select {
-  display: flex;
-  gap: 0.5em;
-  width: 100%;
-  flex-wrap: wrap;
+
+.field_subname {
+  min-width: 1.5em;
+  display: inline-block;
 }
-.book_field .field_select .input_field__name {
+
+.input_field__name {
   width: 100%;
 }
-.book_field .field_select .input_field__phone {
+
+.input_field__phone {
   width: 8em;
 }
-.book_field .field_select .loggin_req {
+
+.loggin_req {
   font-style: italic;
 }
-.book_field .field_select .loggin_link {
+
+.loggin_link {
   text-decoration: none;
   color: #000;
   transition: color 0.15s linear;
 }
-.book_field .field_select .loggin_link:hover {
+.loggin_link:hover {
   color: #E72574;
 }
-.book_field .field_select .input_field__bonus {
+
+.input_field__bonus {
   width: 10.5em;
-}
-.book_field .field_select .field_subname {
-  min-width: 1.5em;
-  display: inline-block;
-}
-.book_field .field_select .book_subfield {
-  display: flex;
-  align-items: center;
 }
 
 .dates .dates_title, .info .info_title, .description .description_title {
@@ -822,7 +801,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -831,7 +810,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -883,7 +862,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -892,7 +871,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -910,7 +889,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .filter_button, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -919,7 +898,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .filter_button:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -936,7 +915,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .footer_section .button__footer, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -945,7 +924,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .footer_section .button__footer:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1093,7 +1072,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1102,7 +1081,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1217,7 +1196,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1226,7 +1205,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1351,7 +1330,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1360,7 +1339,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1394,7 +1373,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1403,7 +1382,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1446,7 +1425,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .description .description_extra .description_button_wrapper .button__description, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1455,7 +1434,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .description .description_extra .description_button_wrapper .button__description:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1539,7 +1518,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1548,7 +1527,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1615,7 +1594,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1624,7 +1603,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1662,7 +1641,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1671,7 +1650,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1733,7 +1712,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1742,7 +1721,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -1783,7 +1762,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .intro .find_rooms .button__find, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -1792,7 +1771,56 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .intro .find_rooms .button__find:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover {
+  background-color: #E72574;
+  color: #fff;
+  border-color: transparent;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.field_item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .field_item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+}
+.field_item .field_content {
+  display: flex;
+  gap: 0.5em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.field_item .field_content .field_subcontent {
+  display: flex;
+  align-items: center;
+}
+
+.description .description_title, .info .info_title, .dates .dates_title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find {
+  font-size: 1.1rem;
+  display: inline;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.15s linear, color 0.15s linear;
+  padding: 0.5em;
+}
+
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2092,7 +2120,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .cart_info .button__pay, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find {
+.profile_info .profile_info_btns .button__profile, .cart_info .button__pay, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2101,7 +2129,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover {
+.profile_info .profile_info_btns .button__profile:hover, .cart_info .button__pay:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2148,7 +2176,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
+.profile_info .profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2157,7 +2185,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
+.profile_info .profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2228,7 +2256,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
+.profile_info .profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2237,7 +2265,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
+.profile_info .profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2280,7 +2308,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
+.profile_info .profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2289,7 +2317,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
+.profile_info .profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2308,7 +2336,7 @@ body {
   font-size: 1.2rem;
 }
 
-.profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
+.profile_info .profile_info_btns .button__profile, .card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2317,7 +2345,7 @@ body {
   padding: 0.5em;
 }
 
-.profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
+.profile_info .profile_info_btns .button__profile:hover, .card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2341,7 +2369,7 @@ body {
   font-size: 1.2rem;
 }
 
-.card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay, .profile_info_btns .button__profile {
+.card .card_inner .card_info .button__card, .card_long .card_long_buttons .card_button, .book .button__book, .filter_button, .footer_section .button__footer, .description .description_extra .description_button_wrapper .button__description, .intro .find_rooms .button__find, .cart_info .button__pay, .profile_info .profile_info_btns .button__profile {
   font-size: 1.1rem;
   display: inline;
   cursor: pointer;
@@ -2350,7 +2378,7 @@ body {
   padding: 0.5em;
 }
 
-.card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover, .profile_info_btns .button__profile:hover {
+.card .card_inner .card_info .button__card:hover, .card_long .card_long_buttons .card_button:hover, .book .button__book:hover, .filter_button:hover, .footer_section .button__footer:hover, .description .description_extra .description_button_wrapper .button__description:hover, .intro .find_rooms .button__find:hover, .cart_info .button__pay:hover, .profile_info .profile_info_btns .button__profile:hover {
   background-color: #E72574;
   color: #fff;
   border-color: transparent;
@@ -2360,62 +2388,61 @@ body {
   box-shadow: 0 0 60px -20px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   padding: 2em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.profile_info_content {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  margin-bottom: 1em;
+  gap: 1.5em;
+  margin: 0 auto;
 }
-.profile_info_content .profile_info_item {
-  display: flex;
-  gap: 0.5em;
-  align-items: center;
+@media screen and (max-width: 1279px) {
+  .profile_info {
+    width: 70%;
+  }
 }
-.profile_info_content .profile_info_item .profile_label {
-  min-width: 8em;
+@media screen and (max-width: 767px) {
+  .profile_info {
+    width: 100%;
+    padding: 1em;
+  }
+}
+.profile_info .profile_label {
+  min-width: 9em;
   display: flex;
   align-items: center;
   gap: 0.2em;
 }
-.profile_info_content .profile_info_item .profile_label .info_icon {
+.profile_info .profile_label .info_icon {
   cursor: pointer;
 }
-.profile_info_content .profile_info_item .profile_label .info_icon:hover {
+.profile_info .profile_label .info_icon:hover {
   color: #E72574;
 }
-.profile_info_content .profile_info_item .input_field__name {
-  width: 20em;
-}
-.profile_info_content .profile_info_item .input_field__phone {
-  width: 8em;
-}
-.profile_info_content .profile_info_item .input_field__email {
-  width: 15em;
-}
-.profile_info_content .profile_info_item .input_field__date {
-  width: 7.5em;
-}
-
-.profile_info_btns {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.profile_info_btns .button__profile {
+.profile_info .input_field__name {
   width: 100%;
 }
-.profile_info_btns .button__profile__save {
+.profile_info .input_field__phone {
+  width: 7.5em;
+}
+.profile_info .input_field__email {
+  width: 100%;
+}
+.profile_info .input_field__date {
+  width: 7.5em;
+}
+.profile_info .profile_info_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.profile_info .profile_info_btns .button__profile {
+  width: 100%;
+}
+.profile_info .profile_info_btns .button__profile__save {
   color: #000;
   border-color: transparent;
   background-color: #FFD20A;
 }
-.profile_info_btns .button__profile__passwd {
+.profile_info .profile_info_btns .button__profile__passwd {
   color: #000;
   border-color: #000;
   background-color: #fff;

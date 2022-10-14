@@ -109,43 +109,55 @@
 
                         <form class="profile_info">
 
-                            <div class="profile_info_content">
+                            <div class="fields">
 
-                                <div class="profile_info_item">
+                                <div class="field_item">
                                     <label for="profile_name" class="profile_label">Ваше Ф.И.О:</label>
-                                    <input type="text" id="profile_name" value="Кузнецов Петр Иванович" class="input_field input_field__name">
+                                    <div class="field_content">
+                                        <input type="text" id="profile_name" value="Кузнецов Петр Иванович" class="input_field input_field__name">
+                                    </div>
                                 </div>
 
-                                <div class="profile_info_item">
-                                    <label for="profile_phone" class="profile_label">Номер телефона:</label>
-                                    <input type="tel" id="profile_phone" value="+79858385238" placeholder="+7(___)___-__-__" class="input_field input_field__phone">
-                                </div>
-
-                                <div class="profile_info_item">
+                                <div class="field_item">
                                     <label for="profile_email" class="profile_label">Эл. почта:</label>
-                                    <input type="email" id="profile_email" value="kpivanovich@gmail.com" class="input_field input_field__email">
+                                    <div class="field_content">
+                                        <input type="email" id="profile_email" value="kpivanovich@gmail.com" class="input_field input_field__email">
+                                    </div>
                                 </div>
 
-                                <div class="profile_info_item">
+                                <div class="field_item">
+                                    <label for="profile_phone" class="profile_label">Номер телефона:</label>
+                                    <div class="field_content">
+                                        <input type="tel" id="profile_phone" value="+79858385238" placeholder="+7(___)___-__-__" class="input_field input_field__phone">
+                                    </div>
+                                </div>
+
+                                <div class="field_item">
                                     <label for="profile_date" class="profile_label">Дата рождения:</label>
-                                    <input type="text" id="profile_date" placeholder="не указана" class="input_field input_field__date">
+                                    <div class="field_content">
+                                        <input type="text" id="profile_date" placeholder="не указана" class="input_field input_field__date">
+                                    </div>
                                 </div>
 
-                                <div class="profile_info_item">
+                                <div class="field_item">
                                     <label for="profile_gender" class="profile_label">Пол:</label>
-                                    <select class="select_field input_field" id="profile_gender">
-                                        <option value="1">мужской</option>
-                                        <option value="2">женский</option>
-                                        <option value="3" selected>не указан</option>
-                                    </select>
+                                    <div class="field_content">
+                                        <select class="select_field input_field" id="profile_gender">
+                                            <option value="1">мужской</option>
+                                            <option value="2">женский</option>
+                                            <option value="3" selected>не указан</option>
+                                        </select>
+                                    </div>
                                 </div>
 
-                                <div class="profile_info_item">
+                                <div class="field_item">
                                     <p class="profile_label">
                                         <span>Баллов:</span>  
                                         <i class="fa-regular fa-circle-question info_icon"></i>
                                     </p>
-                                    <p>538 б.</p>
+                                    <div class="field_content">
+                                        <p>538 б.</p>
+                                    </div>
                                 </div>
 
                             </div>

@@ -17,11 +17,6 @@
         padding: 1em;
     }
 
-    .book_fields{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-    }
 
     .button__book{
         @extend %button;
@@ -29,71 +24,110 @@
         color: #000;
         border-color: #000;
         background-color: #fff;
-
     }
+
 }
 
-.book_field{
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
+
+.field_name{
+    min-width: 10em;
+
+    i{
+        font-size: 0.9em;
+        cursor: pointer;
+    }
 
     @include mixins.device(mobile){
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5em;
-    }
-
-    .field_name{
-        min-width: 10em;
-
-        i{
-            font-size: 0.9em;
-            cursor: pointer;
-        }
-
-        @include mixins.device(mobile){
-            min-width: auto;
-        }
-    }
-
-    .field_select{
-        display: flex;
-        gap: 0.5em;
-        width: 100%;
-        flex-wrap: wrap;
-
-
-        .input_field__name{
-            width: 100%;
-        }
-
-        .input_field__phone{
-            width: 8em;
-        }
-
-        .loggin_req{
-            font-style: italic;
-        }
-
-        .loggin_link{
-            @include mixins.link(#000);
-        }
-
-        .input_field__bonus{
-            width: 10.5em;
-        }
-        
-
-        .field_subname{
-            min-width: 1.5em;
-            display: inline-block;
-        }
-
-        .book_subfield{
-            display: flex;
-            align-items: center;
-        }
-
+        min-width: auto;
     }
 }
+
+.field_subname{
+    min-width: 1.5em;
+    display: inline-block;
+}
+
+.input_field__name{
+    width: 100%;
+}
+
+.input_field__phone{
+    width: 8em;
+}
+
+.loggin_req{
+    font-style: italic;
+}
+
+.loggin_link{
+    @include mixins.link(#000);
+}
+
+.input_field__bonus{
+    width: 10.5em;
+}
+
+// .book_field{
+//     font-size: 1rem;
+//     display: flex;
+//     align-items: center;
+
+    // @include mixins.device(mobile){
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     gap: 0.5em;
+    // }
+
+    // .field_name{
+    //     min-width: 10em;
+
+    //     i{
+    //         font-size: 0.9em;
+    //         cursor: pointer;
+    //     }
+
+    //     @include mixins.device(mobile){
+    //         min-width: auto;
+    //     }
+    // }
+
+    // .field_select{
+    //     display: flex;
+    //     gap: 0.5em;
+    //     width: 100%;
+    //     flex-wrap: wrap;
+
+
+        // .input_field__name{
+        //     width: 100%;
+        // }
+
+        // .input_field__phone{
+        //     width: 8em;
+        // }
+
+        // .loggin_req{
+        //     font-style: italic;
+        // }
+
+        // .loggin_link{
+        //     @include mixins.link(#000);
+        // }
+
+        // .input_field__bonus{
+        //     width: 10.5em;
+        // }
+        
+
+        // .field_subname{
+        //     min-width: 1.5em;
+        //     display: inline-block;
+        // }
+
+        // .book_subfield{
+        //     display: flex;
+        //     align-items: center;
+        // }
+
+//    }
+//}
