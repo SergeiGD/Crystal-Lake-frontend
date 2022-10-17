@@ -1,0 +1,4 @@
+$custom-colors: (
+  "custom-color": #FF64FC
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);

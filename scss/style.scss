@@ -1,3 +1,5 @@
+// CLIENTS-SITE PAGES STYLE (NO BOOTSTRAP)
+
 // BASE
 @import 'base/reset';
 @import 'base/typographic';
@@ -10,17 +12,17 @@
 
 // COMPONENTS 
 @import 'components/breadcrumbs';
-@import 'components/card';
+@import 'components/card_short';
 @import 'components/card_long';
 @import 'components/pages';
 @import 'components/slider';
 @import 'components/highlighted';
 @import 'components/input_field';
 @import 'components/select_field';
+@import 'components/content_container';
 
 
 // LAYOUT 
-@import 'layout/container';
 @import 'layout/section';
 @import 'layout/active_sales';
 @import 'layout/book_form';

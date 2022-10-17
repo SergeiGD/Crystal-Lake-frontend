@@ -1,0 +1,22 @@
+{
+  "name": "crystal-lake-frontend",
+  "version": "1.0.0",
+  "description": "Фронтэнд часть сайт Crystal Lake Hotel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeiGD/Crystal-Lake-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeiGD/Crystal-Lake-frontend/issues"
+  },
+  "homepage": "https://github.com/SergeiGD/Crystal-Lake-frontend#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}

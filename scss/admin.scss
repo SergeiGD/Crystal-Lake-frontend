@@ -1,0 +1,19 @@
+// ADMIN-SITE PAGES STYLE (WITH BOOTSTRAP)
+
+// functions
+@import "../node_modules/bootstrap/scss/functions";
+
+// vars override
+@import 'vendors/bootstrap_vars';
+
+// vars default
+@import "../node_modules/bootstrap/scss/variables";
+
+// maps override
+@import "vendors/bootstrap_maps";
+
+// maps default
+@import "../node_modules/bootstrap/scss/maps";
+
+// the rest remaining
+@import "../node_modules/bootstrap/scss/bootstrap";
