@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Lake</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-main">
+    
+    <header class="w-100 bg-black header">
+        <div class="d-flex justify-content-between align-items-center container-xl py-3">
+
+            <a href="index.html" class="text-white fs-4 font-logo text-decoration-none link-hover">Crystal Lake</a>
+
+            <div class="d-flex gap-5 align-items-center fs-5">
+                <span class="text-white">Иван Иванович Иванов</span>
+                <a href="index.html" class="text-white text-decoration-none link-hover">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    
+    
+
+    <section class="pt-5">
+
+        <div class="container-xl d-flex flex-column gap-5">
+
+            <h2 class="text-center h-2 section_title">Клиенты</h2>
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb link-hover text-dark text-decoration-none fs-5">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="link-hover text-dark text-decoration-none">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Клиенты</li>
+                </ol>
+            </nav>
+
+            <ul class="nav justify-content-center shadow rounded-2 fs-5 py-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark link-hover link-active" aria-current="page" href="#">Клиенты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Номера</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Страницы</a>
+                </li>
+
+            </ul>
+
+            <main>
+                
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4">
+
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column gap-4">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Ф.И.О.</span>
+                                <input type="text" class="form-control" value="Иванов Иван Иванович">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Номер телефона</span>
+                                <input type="tel" class="form-control w-10r flex-grow-0 flex-shrink-1" value="+79358317348">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Пол</span>
+                                <select class="form-select w-10r flex-grow-0 flex-shrink-1">
+                                    <option selected>Мужской</option>
+                                    <option value="1">Женский</option>
+                                    <option value="2">Не выбран</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column gap-4">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">email</span>
+                                <input type="text" class="form-control" value="ivanov1999@gmail.com	">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Дата рождения</span>
+                                <input type="date" class="form-control w-10r flex-grow-0 flex-shrink-1" value="не указана">
+                            </div>
+
+                            <div>
+                                <span class="lead">Баллов: </span>
+                                <span class="lead">529</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <!-- accordion -->
+                    <div class="accordion" id="clients_table">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#clients_table-1" aria-expanded="true" aria-controls="clients_table-1">
+                              Заказы клиента
+                            </button>
+                          </h2>
+                          <div id="clients_table-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#clients_table">
+                            <div class="accordion-body">
+
+
+                                <table class="table table-striped table-hover table-bordered mt-5">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Ф.И.О.</th>
+                                        <th scope="col">Номер телефона</th>
+                                        <th scope="col">Электронная почта</th>
+                                        <th scope="col">Баллов</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-0" colspan="6">
+                                                <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Создать</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion end -->
+
+                    <div class="row align-content-end">
+                        <div class="col-4 d-flex justify-content-between">
+                            <button type="button-" class="btn btn-lg btn-c_yellow-700">Сохранить</button>
+                            <button type="button" class="btn btn-lg btn-danger">Удалить</button>
+                            <button type="button" class="btn btn-lg btn-c_grey-100">Отмена</button>
+                        </div>
+                    </div>
+                    
+
+                </form>
+
+                
+
+            </main>
+
+        </div>
+
+    </section>
+
+       
+
+    
+    <footer class="mt-5 bg-black">
+        <div class="container-xl mx-auto row justify-content-between py-3">
+            <div class="col-5 row">
+                <div class="col-6 d-flex flex-column justify-content-between gap-1">
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Заказы</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Акции</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Страницы</a>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between gap-1">
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Номера</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">На главную</a>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between align-items-end">
+                <p class="text-white fs-5">Иван Иванович Иванов</p>
+                <a href="index.html" class="text-white text-decoration-none link-hover fs-5">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

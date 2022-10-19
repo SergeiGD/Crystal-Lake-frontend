@@ -2,7 +2,7 @@
   "name": "crystal-lake-frontend",
   "version": "1.0.0",
   "description": "Фронтэнд часть сайт Crystal Lake Hotel",
-  "main": "index.js",
+  "source": "./pages/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

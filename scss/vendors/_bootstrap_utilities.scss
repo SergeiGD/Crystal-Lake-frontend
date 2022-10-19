@@ -1,0 +1,21 @@
+$width: (
+  7r: 7rem,
+  10r: 10rem,
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          $width,
+        ),
+      ),
+    ),
+  )
+);
+
+

@@ -1,0 +1,43 @@
+.header{
+    opacity: .75;
+    transition: opacity linear 0.15s;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.link-hover{
+    transition: color linear 0.15s;
+    &:hover{
+        color: #E72574 !important;
+    }
+}
+
+.link-active{
+    position: relative;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+        }
+}
+
+.section_title{
+    position: relative;
+    &::after{
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        content: "";
+    }
+}
