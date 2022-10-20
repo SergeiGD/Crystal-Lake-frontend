@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Lake</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-main">
+    
+    <header class="w-100 bg-black header">
+        <div class="d-flex justify-content-between align-items-center container-xl py-3">
+
+            <a href="index.html" class="text-white fs-4 font-logo text-decoration-none link-hover">Crystal Lake</a>
+
+            <div class="d-flex gap-5 align-items-center fs-5">
+                <span class="text-white">Иван Иванович Иванов</span>
+                <a href="index.html" class="text-white text-decoration-none link-hover">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    
+    
+
+    <section class="pt-5">
+
+        <div class="container-xl d-flex flex-column gap-5">
+
+            <h2 class="text-center h-2 section_title">Администирование</h2>
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb link-hover text-dark text-decoration-none fs-5">
+                    <li class="breadcrumb-item">
+                        <a href="index.html" class="link-hover text-dark text-decoration-none">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="admin_rooms.html" class="link-hover text-dark text-decoration-none">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Редактирование номера</li>
+                </ol>
+            </nav>
+
+            <ul class="nav justify-content-center shadow rounded-2 fs-5 py-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover link-active" href="admin_rooms.html">Номера</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Сотрудники</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark link-hover" href="#">Страницы</a>
+                </li>
+
+            </ul>
+
+            <main>
+                
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4">
+
+                    <div class="text-center">
+                        <span class="lead">id номера: </span>
+                        <span class="lead fw-bold">19</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column gap-4">
+
+                            <div class="input-group">
+                                <label for="manage_name" class="input-group-text w-10r" id="basic-addon1">Наименование</label>
+                                <input id="manage_name" type="text" class="form-control" value="Иванов Иван Иванович">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_def_price" class="input-group-text w-10r" id="basic-addon1">Обычная цена</label>
+                                <input id="manage_def_price" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="8999">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_wek_price" class="input-group-text w-10r" id="basic-addon1">Праздничная цена</label>
+                                <input id="manage_wek_price" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="9999">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_bonus" class="input-group-text w-10r" id="basic-addon1">Макс. бонусов (%)</label>
+                                <input id="manage_bonus" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="40">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_quantity" class="input-group-text w-10r" id="basic-addon1">Кол-во подобных</label>
+                                <input id="manage_quantity" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="4">
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 d-flex flex-column gap-4">
+                            
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_beds" class="input-group-text w-10r" id="basic-addon1">Спальных мест</label>
+                                <input id="manage_beds" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="7">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_rooms" class="input-group-text w-10r" id="basic-addon1">Комнат</label>
+                                <input id="manage_rooms" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="4">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_square" class="input-group-text w-10r" id="basic-addon1">Площадь (м&#178;)</label>
+                                <input id="manage_square" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="142">
+                            </div>
+
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_floors" class="input-group-text w-10r" id="basic-addon1">Этажность</label>
+                                <input id="manage_floors" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <label class="input-group-text rounded-top rounded-0" for="room_descrip">Описание номера</label>
+                            <textarea name="" id="room_descrip" class="form-control rounded-bottom rounded-0 h-15r">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum tenetur illum nemo minima consequatur nulla ducimus excepturi itaque hic cumque pariatur beatae veniam, a dolores iste inventore repellat voluptas? Porro, quisquam veniam expedita numquam enim amet quis architecto dolor harum repudiandae, eius quas nihil omnis impedit doloremque aspernatur optio nam nobis fuga facere nostrum. 
+                            </textarea>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
+                            <div class="img_wrapper">
+                                <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                <button class="btn btn-primary upload_img">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    Загрузить фотографию
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- accordion images -->
+
+                    <div class="accordion" id="images-accord">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#images" aria-expanded="true" aria-controls="images">
+                              Дополнительные фотографии
+                            </button>
+                          </h2>
+                          <div id="images" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#images-accord">
+                            <div class="accordion-body row">
+
+                                <div class="col-6 d-flex flex-column gap-4 align-items-center">
+
+                                    <div class="w-100">
+                                        <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
+                                        <div class="img_wrapper">
+                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+
+                                            <button class="btn btn-primary upload_img w-10r">
+                                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                Обновить
+                                            </button>
+
+                                            <button class="btn btn-danger delete_img w-10r">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="btn btn-c_yellow-700 w-10r">Загрузить еще</button>
+        
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div class="w-100">
+                                        <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
+                                        <div class="img_wrapper">
+                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+
+                                            <button class="btn btn-primary upload_img w-10r">
+                                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                Обновить
+                                            </button>
+
+                                            <button class="btn btn-danger delete_img w-10r">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                Удалить
+                                            </button>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion imges end -->
+                    
+                    <!-- accordion tags -->
+                    <div class="accordion" id="clients_accord">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clients_table" aria-expanded="true" aria-controls="clients_table">
+                              Теги
+                            </button>
+                          </h2>
+                            <div id="clients_table" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#clients_accord">
+                                <div class="accordion-body">
+
+                                    <div class="shadow p-3 rounded-2 d-flex justify-content-between">
+
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <label for="tag_name" class="form-label w-10r">Наименование:</label>
+                                            <input id="tag_name" type="text" class="form-control">
+                                        </div>
+
+                                        <button class="btn btn-c_yellow-700 w-7r align-self-end">Найти</button>
+                    
+                                    </div>
+
+                                    <div class="shadow rounded-2 mt-4 p-3 ">
+
+                                        <button class="btn btn-c_grey-100 py-2 fw-bold">+ Добавить</button>
+
+                                        <div class="d-flex gap-4 mt-3">
+                                            <div class="d-flex text-bg-c_blue_100 fs-5 rounded overflow-hidden">
+                                                <span class="py-1 px-3">Два этажа</span>
+                                                <button class="btn btn-danger rounded-0">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex text-bg-c_blue_100 fs-5 rounded overflow-hidden">
+                                                <span class="py-1 px-3">Два этажа</span>
+                                                <button class="btn btn-danger rounded-0">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex text-bg-c_blue_100 fs-5 rounded overflow-hidden">
+                                                <span class="py-1 px-3">Два этажа</span>
+                                                <button class="btn btn-danger rounded-0">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                            <div class="d-flex text-bg-c_blue_100 fs-5 rounded overflow-hidden">
+                                                <span class="py-1 px-3">Два этажа</span>
+                                                <button class="btn btn-danger rounded-0">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion tags end -->
+
+                    <!-- accordion properties --> 
+
+                    <div class="accordion" id="properties_accord">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#properties" aria-expanded="true" aria-controls="properties">
+                              Дополнительные свойства
+                            </button>
+                          </h2>
+                          <div id="properties" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#properties_accord">
+                            <div class="accordion-body">
+
+                                <div class="shadow p-3 rounded-2">
+
+                                    <div class="row align-items-center justify-between">
+                
+                                        <div class="col-5 d-flex flex-column gap-4">
+
+                                            <div>
+                                                <label for="property_id" class="form-label">id свойства:</label>
+                                                <input type="text" class="form-control w-10r" id="property_id">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-5 d-flex flex-column gap-4">
+
+                                            <div>
+                                                <label for="property_name" class="form-label">Наименование:</label>
+                                                <input type="email" class="form-control" id="property_name">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-2 d-flex flex-column gap-4">
+                                            <button class="btn btn-c_yellow-700 w-7r align-self-end">Найти</button>
+                                            <button class="btn btn-danger w-7r align-self-end">Отчистить</button>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4">
+
+                                    <button class="btn btn-c_yellow-700 ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>id</span>    
+                                    </button>
+                
+                                    <button class="btn btn-light ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>Наименование</span>    
+                                    </button>
+                
+                                </div>
+
+                                <table class="table table-striped table-hover table-bordered mt-4">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">id свойства</th>
+                                        <th scope="col">Наименование свойства</th>
+                                        <th scope="col">Установленное значение</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-0" colspan="5">
+                                                <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Количество гамаков</td>
+                                            <td>2</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Изменить</button>
+                                            </td>
+                                            <td class="p-0">
+                                                <button class="btn btn-danger w-100 rounded-0">Удалить</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Окна</td>
+                                            <td>На озеро</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Изменить</button>
+                                            </td>
+                                            <td class="p-0">
+                                                <button class="btn btn-danger w-100 rounded-0">Удалить</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <nav class="d-flex justify-content-center mt-4">
+                                    <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                    </ul>
+                                </nav>  
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion properties end -->
+                    
+
+                    <!-- accordion dates -->
+                    <div class="accordion" id="dates-accord">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dates" aria-expanded="true" aria-controls="dates">
+                              Свободные даты
+                            </button>
+                          </h2>
+                          <div id="dates" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#dates-accord">
+                            <div class="accordion-body">
+
+                                <div class="w-50 mx-auto">
+                                    <span class="input-group-text rounded-top rounded-0">Общие даты (1 день):</span>
+                                    <img src="../img/offer/calendar.png" alt="Общие даты" class="img-fluid w-100 img">
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-6">
+                                        <span class="input-group-text rounded-top rounded-0">Домик 1:</span>
+                                        <img src="../img/offer/calendar.png" alt="Номер 1" class="img-fluid w-100 img">
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="input-group-text rounded-top rounded-0">Домик 2:</span>
+                                        <img src="../img/offer/calendar.png" alt="Номер 2" class="img-fluid w-100 img">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion dates end -->
+
+
+                    <!-- accordion orders -->
+
+                    <div class="accordion" id="orders_accord">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#orders_table" aria-expanded="true" aria-controls="orders_table">
+                              Заказы на этот номер
+                            </button>
+                          </h2>
+                          <div id="orders_table" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#orders_accord">
+                            <div class="accordion-body">
+
+                                <div class="shadow p-3 rounded-2">
+
+                                    <div class="row align-items-center justify-between">
+                
+                                        <div class="col-5 d-flex flex-column gap-4">
+                                            <div>
+                                                <label for="client_id" class="form-label">id клиента:</label>
+                                                <input type="text" class="form-control w-10r" id="client_id">
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="client_name" class="form-label">Ф.И.О:</label>
+                                                <input type="text" class="form-control" id="client_name">
+                                            </div>
+                                        </div>
+                                        <div class="col-5 d-flex flex-column gap-4">
+                                            <div>
+                                                <label for="client_phone" class="form-label">Номер телефона:</label>
+                                                <input type="tel" class="form-control w-10r" id="client_phone">
+                                            </div>
+                                            
+                                            <div>
+                                                <label for="client_email" class="form-label">Электронная почта:</label>
+                                                <input type="email" class="form-control" id="client_email">
+                                            </div>
+                                        </div>
+                                        <div class="col-2 d-flex flex-column gap-4">
+                                            <button class="btn btn-c_yellow-700 w-7r align-self-end">Найти</button>
+                                            <button class="btn btn-danger w-7r align-self-end">Отчистить</button>
+                                        </div>
+                
+                                    </div>
+                
+                                </div>
+
+                                <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4">
+
+                                    <button class="btn btn-c_yellow-700 ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>id</span>    
+                                    </button>
+                
+                                    <button class="btn btn-light ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>Ф.И.О.</span>    
+                                    </button>
+                
+                                    <button class="btn btn-light ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>Эл. почта</span>    
+                                    </button>
+                
+                                    <button class="btn btn-light ">
+                                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                        <span>Кол-во баллов</span>    
+                                    </button>
+                
+                                </div>
+
+                                <table class="table table-striped table-hover table-bordered mt-4">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">id</th>
+                                        <th scope="col">Ф.И.О.</th>
+                                        <th scope="col">Номер телефона</th>
+                                        <th scope="col">Электронная почта</th>
+                                        <th scope="col">Баллов</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-0" colspan="6">
+                                                <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Создать</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>+79358317348</td>
+                                            <td>ivanov1999@gmail.com</td>
+                                            <td>438</td>
+                                            <td class="p-0">
+                                                <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <nav class="d-flex justify-content-center mt-4">
+                                    <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                    </ul>
+                                </nav>  
+
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- accordion orders end -->
+
+                    
+
+                    <div class="row align-content-end">
+                        <div class="col-4 d-flex justify-content-between gap-3">
+                            <button type="button-" class="btn btn-lg btn-c_yellow-700">Сохранить</button>
+                            <button type="button" class="btn btn-lg btn-danger">Удалить</button>
+                            <button type="button" class="btn btn-lg btn-c_grey-100">Отмена</button>
+                        </div>
+                    </div>
+                    
+
+                </form>
+
+                
+
+            </main>
+
+        </div>
+
+    </section>
+
+       
+
+    
+    <footer class="mt-5 bg-black">
+        <div class="container-xl mx-auto row justify-content-between py-3">
+            <div class="col-5 row">
+                <div class="col-6 d-flex flex-column justify-content-between gap-1">
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Заказы</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Акции</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Страницы</a>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between gap-1">
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Номера</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">На главную</a>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between align-items-end">
+                <p class="text-white fs-5">Иван Иванович Иванов</p>
+                <a href="index.html" class="text-white text-decoration-none link-hover fs-5">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Выйти</span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

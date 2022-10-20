@@ -45,16 +45,16 @@
                             Главная
                         </a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Клиенты</li>
+                    <li class="breadcrumb-item active" aria-current="page">Номера</li>
                 </ol>
             </nav>
 
             <ul class="nav justify-content-center shadow rounded-2 fs-5 py-2">
                 <li class="nav-item">
-                    <a class="nav-link active text-dark link-hover link-active" aria-current="page" href="#">Клиенты</a>
+                    <a class="nav-link active text-dark link-hover" aria-current="page" href="#">Клиенты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Номера</a>
+                    <a class="nav-link text-dark link-hover link-active" href="#">Номера</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Услуги</a>
@@ -68,38 +68,101 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Страницы</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li> -->
             </ul>
+
             <main>
                 <form class="shadow p-3 rounded-2">
 
-                    <div class="row align-items-center justify-between">
+                    <div class="row align-items-start justify-between">
 
                         <div class="col-5 d-flex flex-column gap-4">
                             <div>
-                                <label for="client_id" class="form-label">id клиента:</label>
-                                <input type="text" class="form-control w-10r" id="client_id">
+                                <label for="room_id" class="form-label">id номера:</label>
+                                <input type="text" class="form-control w-10r" id="room_id">
                             </div>
                             
                             <div>
-                                <label for="client_name" class="form-label">Ф.И.О:</label>
-                                <input type="text" class="form-control" id="client_name">
+                                <label for="room_beds" class="form-label">Кол-во спальных мест:</label>
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="room_beds" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
                             </div>
+
+                            <div>
+                                <label for="room_def_price" class="form-label">Обычная цена:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="room_def_price" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="room_free" class="form-label">Свободен:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="room_free" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="date" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-5 d-flex flex-column gap-4">
                             <div>
-                                <label for="client_phone" class="form-label">Номер телефона:</label>
-                                <input type="tel" class="form-control w-10r" id="client_phone">
+                                <label for="room_name" class="form-label">Наименование:</label>
+                                <input type="text" class="form-control" id="room_name">
                             </div>
                             
                             <div>
-                                <label for="client_email" class="form-label">Электронная почта:</label>
-                                <input type="email" class="form-control" id="client_email">
+                                <label for="room_rooms" class="form-label">Кол-во комнат:</label>
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="room_rooms" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="room_wek_price" class="form-label">Цена по праздникам:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="room_wek_price" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-2 d-flex flex-column gap-4">
+                        
+                        <div class="col-2 d-flex flex-column gap-4 align-self-center">
                             <button class="btn btn-c_yellow-700 w-7r align-self-end">Найти</button>
                             <button class="btn btn-danger w-7r align-self-end">Отчистить</button>
                         </div>
@@ -117,17 +180,27 @@
 
                     <button class="btn btn-light ">
                         <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Ф.И.О.</span>    
+                        <span>Наименование</span>    
                     </button>
 
                     <button class="btn btn-light ">
                         <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Эл. почта</span>    
+                        <span>Обычная цена</span>    
                     </button>
 
                     <button class="btn btn-light ">
                         <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Кол-во баллов</span>    
+                        <span>Цена по праздникам</span>    
+                    </button>
+
+                    <button class="btn btn-light ">
+                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                        <span>Кол-во спальных мест</span>    
+                    </button>
+
+                    <button class="btn btn-light ">
+                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                        <span>Кол-во комнат</span>    
                     </button>
 
                 </form>
@@ -137,54 +210,59 @@
                         <thead>
                         <tr>
                             <th scope="col">id</th>
-                            <th scope="col">Ф.И.О.</th>
-                            <th scope="col">Номер телефона</th>
-                            <th scope="col">Электронная почта</th>
-                            <th scope="col">Баллов</th>
+                            <th scope="col">Наименование</th>
+                            <th scope="col" class="w-10r">Спальных мест</th>
+                            <th scope="col" class="w-10r">Комнат</th>
+                            <th scope="col" class="w-10r">Обычная цена</th>
+                            <th scope="col" class="w-10r">Празд. цена</th>
                         </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="p-0" colspan="6">
+                                <td class="p-0" colspan="7">
                                     <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Создать</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Иванов Иван Иванович</td>
-                                <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>Двухэтажный домик у озера</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>8.999</td>
+                                <td>9.999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Иванов Иван Иванович</td>
-                                <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>Двухэтажный домик у озера</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>8.999</td>
+                                <td>9.999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Иванов Иван Иванович</td>
-                                <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>Двухэтажный домик у озера</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>8.999</td>
+                                <td>9.999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Иванов Иван Иванович</td>
-                                <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <th scope="row">4</th>
+                                <td>Двухэтажный домик у озера</td>
+                                <td>7</td>
+                                <td>5</td>
+                                <td>8.999</td>
+                                <td>9.999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
@@ -209,8 +287,7 @@
                         </a>
                     </li>
                     </ul>
-                </nav>  
-                          
+                </nav>            
             </main>
 
         </div>
