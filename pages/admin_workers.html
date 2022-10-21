@@ -45,7 +45,7 @@
                             Главная
                         </a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Сотрудники</li>
+                    <li class="breadcrumb-item active" aria-current="page">Клиенты</li>
                 </ol>
             </nav>
 
@@ -54,16 +54,16 @@
                     <a class="nav-link text-dark link-hover" href="#">Заказы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-dark link-hover link-active" aria-current="page" href="#">Клиенты</a>
+                    <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Номера</a>
+                    <a class="nav-link text-dark link-hover" href="admin_rooms.html">Номера</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Услуги</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="admin_workers.html">Сотрудники</a>
+                    <a class="nav-link text-dark link-hover link-active" href="#">Сотрудники</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Акции</a>
@@ -80,9 +80,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Профиль</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li> -->
             </ul>
             <main>
                 <form class="shadow p-3 rounded-2">
@@ -90,26 +87,40 @@
                     <div class="row align-items-start justify-between">
 
                         <div class="col-5 d-flex flex-column gap-4">
+
                             <div>
-                                <label for="client_id" class="form-label">id клиента:</label>
-                                <input type="text" class="form-control w-10r" id="client_id">
+                                <label for="worker_id" class="form-label">id сотрудника:</label>
+                                <input id="worker_id" type="text" class="form-control w-10r">
+                            </div>
+
+                            <div>
+                                <label for="worker_name" class="form-label">Ф.И.О:</label>
+                                <input id="worker_name" type="text" class="form-control">
                             </div>
                             
-                            <div>
-                                <label for="client_name" class="form-label">Ф.И.О:</label>
-                                <input type="text" class="form-control" id="client_name">
-                            </div>
                         </div>
                         <div class="col-5 d-flex flex-column gap-4">
+
                             <div>
                                 <label for="client_phone" class="form-label">Номер телефона:</label>
                                 <input type="tel" class="form-control w-10r" id="client_phone">
                             </div>
-                            
+
                             <div>
-                                <label for="client_email" class="form-label">Электронная почта:</label>
-                                <input type="email" class="form-control" id="client_email">
+                                <label for="worker_salary" class="form-label">Зарплата:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="worker_salary" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
                             </div>
+                            
                         </div>
 
                         <div class="col-2 d-flex flex-column gap-4 align-self-center">
@@ -135,12 +146,7 @@
 
                     <button class="btn btn-light ">
                         <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Эл. почта</span>    
-                    </button>
-
-                    <button class="btn btn-light ">
-                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Кол-во баллов</span>    
+                        <span>Зарплата</span>    
                     </button>
 
                 </form>
@@ -152,52 +158,47 @@
                             <th scope="col">id</th>
                             <th scope="col">Ф.И.О.</th>
                             <th scope="col" class="w-10r">Номер телефона</th>
-                            <th scope="col">Электронная почта</th>
-                            <th scope="col">Баллов</th>
+                            <th scope="col" class="w-10r">Зарплата</th>
                         </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="p-0" colspan="6">
+                                <td class="p-0" colspan="5">
                                     <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Создать</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Иванов Иван Иванович</td>
+                                <td>Петров Алексей Дмитриевич</td>
                                 <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>39999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Иванов Иван Иванович</td>
+                                <td>Петров Алексей Дмитриевич</td>
                                 <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>39999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Иванов Иван Иванович</td>
+                                <td>Петров Алексей Дмитриевич</td>
                                 <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>39999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Иванов Иван Иванович</td>
+                                <th scope="row">4</th>
+                                <td>Петров Алексей Дмитриевич</td>
                                 <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
+                                <td>39999</td>
                                 <td class="p-0">
                                     <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
                                 </td>
@@ -237,12 +238,12 @@
 
                 <div class="d-flex flex-column gap-2">
                     <a href="" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
-                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
+                    <a href="admin_clients.html" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
                     <a href="admin_rooms.html" class="text-white text-decoration-none link-hover fs-5">Номера</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
-                    <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
+                    <a href="" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Акции</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Главная</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Теги</a>
