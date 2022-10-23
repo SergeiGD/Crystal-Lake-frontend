@@ -49,15 +49,15 @@
                 </ol>
             </nav>
 
-            <ul class="nav justify-content-center shadow rounded-2 fs-5 py-2">
+            <ul class="nav justify-content-center gap-2 shadow rounded-2 fs-5 py-2">
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Заказы</a>
+                    <a class="nav-link text-dark link-hover" href="admin_orders.html">Заказы</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-dark link-hover link-active" aria-current="page" href="#">Клиенты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Номера</a>
+                    <a class="nav-link text-dark link-hover" href="admin_rooms.html">Номера</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="#">Услуги</a>
@@ -78,7 +78,7 @@
                     <a class="nav-link text-dark link-hover" href="#">Доп. свойства</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Профиль</a>
+                    <a class="nav-link text-dark link-hover" href="#">Мой профиль</a>
                 </li>
                 <!-- <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
@@ -145,13 +145,13 @@
 
                 </form>
                 
-                <div class="shadow mt-4">
+                <div class="shadow mt-4 rounded-2 overflow-hidden">
                     <table class="table table-striped table-hover table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">Ф.И.О.</th>
-                            <th scope="col" class="w-10r">Номер телефона</th>
+                            <th scope="col">Номер телефона</th>
                             <th scope="col">Электронная почта</th>
                             <th scope="col">Баллов</th>
                         </tr>
@@ -168,8 +168,8 @@
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
@@ -178,8 +178,18 @@
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Иванов Иван Иванович</td>
+                                <td>+79358317348</td>
+                                <td>ivanov1999@gmail.com</td>
+                                <td>438</td>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
@@ -188,18 +198,8 @@
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Иванов Иван Иванович</td>
-                                <td>+79358317348</td>
-                                <td>ivanov1999@gmail.com</td>
-                                <td>438</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -236,7 +236,7 @@
             <div class="col-7 d-flex gap-5">
 
                 <div class="d-flex flex-column gap-2">
-                    <a href="" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
+                    <a href="admin_orders.html" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
                     <a href="#" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
                     <a href="admin_rooms.html" class="text-white text-decoration-none link-hover fs-5">Номера</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>

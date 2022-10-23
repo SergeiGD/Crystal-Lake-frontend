@@ -49,9 +49,9 @@
                 </ol>
             </nav>
 
-            <ul class="nav justify-content-center shadow rounded-2 fs-5 py-2">
+            <ul class="nav justify-content-center gap-2 shadow rounded-2 fs-5 py-2">
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Заказы</a>
+                    <a class="nav-link text-dark link-hover" href="admin_rooms.html">Заказы</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
@@ -127,7 +127,7 @@
                                 
                                 <div class="d-flex justify-content-start gap-0">
                                     <div class="input-group flex-nowrap w-auto">
-                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <span class="input-group-text rounded-start" id="basic-addon1">с</span>
                                         <input id="room_free" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
                                     </div>
                                     <div class="input-group flex-nowrap w-auto">
@@ -217,16 +217,16 @@
 
                 </form>
                 
-                <div class="shadow mt-4">
+                <div class="shadow mt-4 rounded-2 overflow-hidden">
                     <table class="table table-striped table-hover table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">Наименование</th>
-                            <th scope="col" class="w-10r">Спальных мест</th>
-                            <th scope="col" class="w-10r">Комнат</th>
-                            <th scope="col" class="w-10r">Обычная цена</th>
-                            <th scope="col" class="w-10r">Празд. цена</th>
+                            <th scope="col">Спальных мест</th>
+                            <th scope="col">Комнат</th>
+                            <th scope="col">Обычная цена</th>
+                            <th scope="col">Празд. цена</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -242,8 +242,8 @@
                                 <td>5</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
@@ -253,8 +253,8 @@
                                 <td>5</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
@@ -264,8 +264,8 @@
                                 <td>5</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                             <tr>
@@ -275,8 +275,8 @@
                                 <td>5</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
-                                <td class="p-0">
-                                    <button class="btn btn-primary w-100 rounded-0">Подробнее</button>
+                                <td class="p-0 position-relative w-10r">
+                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -312,9 +312,9 @@
             <div class="col-7 d-flex gap-5">
 
                 <div class="d-flex flex-column gap-2">
-                    <a href="" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
+                    <a href="admin_orders.html" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
                     <a href="admin_clients.html" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Номера</a>
+                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Номера</a>
                     <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
                 </div>
                 <div class="d-flex flex-column gap-2">

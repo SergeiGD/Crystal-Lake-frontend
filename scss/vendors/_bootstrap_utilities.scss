@@ -3,11 +3,13 @@ $width: (
   7r: 7rem,
   9r: 9rem,
   10r: 10rem,
+  15r: 15rem,
 );
 
 $max-width: (
   7r: 7rem,
   10r: 10rem,
+  15r: 15rem,
 );
 
 $height: (
@@ -59,5 +61,6 @@ $utilities: map-merge(
     ),
   )
 );
+
 
 

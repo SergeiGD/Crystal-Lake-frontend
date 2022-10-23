@@ -8,6 +8,7 @@
 
 .link-hover{
     transition: color linear 0.15s;
+    text-decoration: none;
     &:hover{
         color: #E72574 !important;
     }
@@ -50,18 +51,24 @@
             opacity: 0.5;
         }
 
-        .upload_img, .delete_img{
+        .update_img, .delete_img, .upload_img{
             display: block !important;
         }
     }
 
-    .upload_img, .delete_img{
+    .update_img, .delete_img, .upload_img{
         display: none !important; 
         position: absolute;
         
     }
     
     .upload_img{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -40%) !important;
+    }
+
+    .update_img{
         left: 50%;
         top: 40%;
         transform: translate(-50%, -40%) !important;
@@ -73,6 +80,11 @@
         transform: translate(-50%, -60%) !important;
     }
 }
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
 
 
 
