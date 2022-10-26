@@ -45,7 +45,7 @@
                             Главная
                         </a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Номера</li>
+                    <li class="breadcrumb-item active" aria-current="page">Услуги</li>
                 </ol>
             </nav>
 
@@ -57,10 +57,10 @@
                     <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover link-active" href="#">Номера</a>
+                    <a class="nav-link text-dark link-hover" href="admin_rooms.html">Номера</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Услуги</a>
+                    <a class="nav-link text-dark link-hover link-active" href="#">Услуги</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="admin_workers.html">Сотрудники</a>
@@ -92,84 +92,85 @@
                         <div class="col-lg-10 col-12 row">
 
                             <div class="col-lg-2 col-md-2 col-12">
-                                <label for="room_id" class="form-label">id заказа:</label>
-                                <input type="text" class="form-control w-auto mw-100" id="room_id">
+                                <label for="service_id" class="form-label">id заказа:</label>
+                                <input id="service_id" type="text" class="form-control w-auto mw-100">
                             </div>
 
-                            <div class="col-lg-5 col-md-5 col-6 mt-md-0 mt-3">
-                                <label for="room_beds" class="form-label">Кол-во спальных мест:</label>
-                                <div class="d-flex justify-content-start gap-0">
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_beds_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
-                                        <input id="room_beds_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
-                                    </div>
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_beds_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
-                                        <input id="room_beds_until" type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-5 col-md-5 col-6 mt-md-0 mt-3">
-                                <label for="room_rooms" class="form-label">Кол-во комнат:</label>
-                                <div class="d-flex justify-content-start gap-0">
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_rooms_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
-                                        <input id="room_rooms_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
-                                    </div>
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label  for="room_rooms_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
-                                        <input id="room_rooms_until"  type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
-                                    </div>
-                                </div>
+                            <div class="col-md-10 col-12 mt-md-0 mt-3">
+                                <label for="service_name" class="form-label">Наименование:</label>
+                                <input type="text" class="form-control" id="service_name">
                             </div>
 
                             <div class="col-md-6 col-12 mt-3">
-                                <label for="room_name" class="form-label">Наименование:</label>
-                                <input type="text" class="form-control" id="room_name">
-                            </div>
-
-                            <div class="col-md-6 col-12 mt-3">
-                                <label for="room_free" class="form-label">Свободен:</label>
+                                <label for="service_date_from" class="form-label">Запись на (дата):</label>
                                 
                                 <div class="d-flex justify-content-start gap-0">
                                     <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_free_from" class="input-group-text rounded-start" id="basic-addon1">с</label>
-                                        <input id="room_free_from" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                        <label for="service_date_from" class="input-group-text rounded-start" id="basic-addon1">с</label>
+                                        <input id="service_date_from" type="date" class="form-control w-100 mw-8r rounded-0 flex-grow-0 flex-shrink-1">
                                     </div>
                                     <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_free_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
-                                        <input id="room_free_until" type="date" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12 mt-3">
-                                <label for="room_def_price" class="form-label">Обычная цена:</label>
-                                
-                                <div class="d-flex justify-content-start gap-0">
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_def_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
-                                        <input id="room_def_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
-                                    </div>
-                                    <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_def_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
-                                        <input id="room_def_until" type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                        <label for="service_date_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
+                                        <input id="service_date_until" type="date" class="form-control w-100 mw-8r rounded-end flex-grow-0 flex-shrink-1">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-12 mt-3">
-                                <label for="room_wek_price" class="form-label">Цена по праздникам:</label>
+                                <label for="service_time_from" class="form-label">Запись на (время):</label>
                                 
                                 <div class="d-flex justify-content-start gap-0">
                                     <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_wek_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
-                                        <input id="room_wek_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                        <label for="service_time_from" class="input-group-text rounded-start" id="basic-addon1">с</label>
+                                        <input id="service_time_from" type="time" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
                                     </div>
                                     <div class="input-group flex-nowrap w-auto">
-                                        <label for="room_wek_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
-                                        <input id="room_wek_until "type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                        <label for="service_time_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
+                                        <input id="service_time_until" type="time" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mt-3">
+                                <label for="service_people" class="form-label">Запись (человек):</label>
+                                <input type="number" class="form-control w-auto mw-100" id="service_people">
+                            </div>
+
+                            <div class="col-6 mt-3">
+                                <label for="service_timetable" class="form-label">Тип расписания:</label>
+                                <select id="service_timetable" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                    <option selected>Все</option>
+                                    <option value="1">Динамическое</option>
+                                    <option value="2">Статическое</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 col-12 mt-3">
+                                <label for="service_def_from" class="form-label">Обычная цена:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <label for="service_def_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
+                                        <input id="service_def_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <label for="service_def_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
+                                        <input id="service_def_until" type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12 mt-3">
+                                <label for="service_weekend_from" class="form-label">Цена по праздникам:</label>
+                                
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <label for="service_weekend_from" class="input-group-text rounded-start" id="basic-addon1">от</label>
+                                        <input id="service_weekend_from" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <label for="service_weekend_until" class="input-group-text  rounded-0" id="basic-addon1">до</label>
+                                        <input id="service_weekend_until "type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
                                     </div>
                                 </div>
                             </div>
@@ -202,21 +203,6 @@
                         <span>Обычная цена</span>    
                     </button>
 
-                    <button class="btn btn-light text-nowrap">
-                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Цена по праздникам</span>    
-                    </button>
-
-                    <button class="btn btn-light text-nowrap">
-                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Кол-во спальных мест</span>    
-                    </button>
-
-                    <button class="btn btn-light text-nowrap">
-                        <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                        <span>Кол-во комнат</span>    
-                    </button>
-
                 </form>
                 
                 <div class="shadow mt-4 rounded-2 overflow-auto">
@@ -225,8 +211,7 @@
                         <tr>
                             <th scope="col">id</th>
                             <th scope="col">Наименование</th>
-                            <th scope="col">Спальных мест</th>
-                            <th scope="col">Комнат</th>
+                            <th scope="col">Тип расписания</th>
                             <th scope="col">Обычная цена</th>
                             <th scope="col">Празд. цена</th>
                             <th scope="col" class="px-3 text-center" >Подробнее</th>
@@ -240,9 +225,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Двухэтажный домик у озера</td>
-                                <td>7</td>
-                                <td>5</td>
+                                <td>Езда верхом</td>
+                                <td>Статическое</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
                                 <td class="p-0 position-relative">
@@ -251,9 +235,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Двухэтажный домик у озера</td>
-                                <td>7</td>
-                                <td>5</td>
+                                <td>Аренда мангала</td>
+                                <td>Динамическое</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
                                 <td class="p-0 position-relative">
@@ -262,20 +245,8 @@
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Двухэтажный домик у озера</td>
-                                <td>7</td>
-                                <td>5</td>
-                                <td>8.999</td>
-                                <td>9.999</td>
-                                <td class="p-0 position-relative">
-                                    <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Двухэтажный домик у озера</td>
-                                <td>7</td>
-                                <td>5</td>
+                                <td>Угли для мангала (1 кг)</td>
+                                <td>Динамическое</td>
                                 <td>8.999</td>
                                 <td>9.999</td>
                                 <td class="p-0 position-relative">
@@ -317,8 +288,8 @@
                 <div class="d-flex flex-column gap-2">
                     <a href="admin_orders.html" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
                     <a href="admin_clients.html" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
-                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Номера</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
+                    <a href="admin_rooms.html" class="text-white text-decoration-none link-hover fs-5">Номера</a>
+                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
