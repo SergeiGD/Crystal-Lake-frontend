@@ -59,31 +59,39 @@
                     <a class="nav-link text-dark link-hover" href="admin_orders.html">Заказы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_manage_client.html">Клиенты</a>
+                    <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover link-active" href="admin_rooms.html">Номера</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Услуги</a>
+                    <a class="nav-link text-dark link-hover" href="admin_services.html">Услуги</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="admin_workers.html">Сотрудники</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Акции</a>
+                    <a class="nav-link text-dark link-hover" href="admin_roles.html">Роли</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Главная</a>
+                    <a class="nav-link text-dark link-hover" href="admin_sales.html ">Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Теги</a>
+                    <a class="nav-link text-dark link-hover" href="#">Кабинет</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Доп. свойства</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Профиль</a>
+                    <div class="dropdown">
+                        <a class="nav-link text-dark link-hover dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Дополнительно
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="admin_tags.html">Теги</a></li>
+                          <li><a class="dropdown-item" href="admin_properties.html">Доп. свойства</a></li>
+                          <li><a class="dropdown-item" href="admin_weekends.html">Даты праздников</a></li>
+                          <li><a class="dropdown-item" href="#">Настройка главной</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
 
@@ -174,6 +182,13 @@
                             <div class="input-group flex-nowrap w-auto">
                                 <label for="manage_prepayment_money" class="input-group-text w-10r" id="basic-addon1">Предоплата (&#8381;)</label>
                                 <input id="manage_prepayment_money" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_prepayment_money" class="input-group-text w-10r" id="basic-addon1">Возврат (%)</label>
+                                <input id="manage_prepayment_money" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="25">
                             </div>
                         </div>
 
@@ -598,17 +613,27 @@
                     <a href="admin_orders.html" class="text-white text-decoration-none link-hover fs-5 w-auto">Заказы</a>
                     <a href="admin_clients.html" class="text-white text-decoration-none link-hover fs-5">Клиенты</a>
                     <a href="admin_rooms.html" class="text-white text-decoration-none link-hover fs-5">Номера</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
+                    <a href="admin_services.html" class="text-white text-decoration-none link-hover fs-5">Услуги</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Акции</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Главная</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Теги</a>
+                    <a href="admin_roles.html" class="text-white text-decoration-none link-hover fs-5">Роли</a>
+                    <a href="admin_sales.html" class="text-white text-decoration-none link-hover fs-5">Акции</a>
+                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Доп. свойства</a>
-                    <a href="" class="text-white text-decoration-none link-hover fs-5">Профиль</a>
+                    <div class="dropdown">
+                        <a class="text-white text-decoration-none link-hover fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Дополнительно
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="admin_tags.html">Теги</a></li>
+                          <li><a class="dropdown-item" href="admin_properties.html">Доп. свойства</a></li>
+                          <li><a class="dropdown-item" href="admin_weekends.html">Даты праздников</a></li>
+                          <li><a class="dropdown-item" href="#">Настройка главной</a></li>
+                        </ul>
+                    </div>
                     <a href="index.html" class="text-white text-decoration-none link-hover fs-5">На главную</a>
                 </div>
 
