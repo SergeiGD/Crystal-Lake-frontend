@@ -29,6 +29,14 @@
         }
 }
 
+.col-hover{
+    transition: background-color linear 0.15s;
+    &:hover{
+        background-color: #FFF04B;
+    }
+}
+
+
 .section_title{
     position: relative;
     &::after{

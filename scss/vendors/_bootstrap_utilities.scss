@@ -23,6 +23,10 @@ $height: (
   45: 45%,
 );
 
+$bg-color:(
+  "c_yellow-700": #FFD20A,
+);
+
 $utilities: map-merge(
   $utilities,
   (
@@ -62,6 +66,21 @@ $utilities: map-merge(
         values: map-merge(
           map-get(map-get($utilities, "height"), "values"),
           $height,
+        ),
+      ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "background-color"), "values"),
+          $bg-color,
         ),
       ),
     ),

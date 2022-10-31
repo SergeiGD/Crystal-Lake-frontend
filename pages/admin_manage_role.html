@@ -13,7 +13,7 @@
 </head>
 <body class="font-main">
     
-    <header class="w-100 bg-black header">
+    <header class="w-100 bg-black">
         <div class="d-flex justify-content-between align-items-center container-xl py-3">
 
             <a href="index.html" class="text-white fs-4 font-logo text-decoration-none link-hover">Crystal Lake</a>
@@ -77,7 +77,7 @@
                     <a class="nav-link text-dark link-hover" href="admin_sales.html ">Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Кабинет</a>
+                    <a class="nav-link text-dark link-hover" href="admin_profile.html">Кабинет</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
@@ -99,7 +99,7 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
+                    <i class="fa-solid fa-delete-left text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">id роли: </span>
@@ -129,15 +129,18 @@
 
                 <!-- permissions -->
 
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
+
+                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">Права, доступные с этой ролью:</span>
                     </div>
 
                     <div class="shadow rounded-2 p-3 justify-content-between row w-100 mx-auto">
+                        
 
-                        <div class="col-lg-10 col-12 row justify-content-between">
+                        <div class="col-12 row justify-content-between mx-auto p-0">
 
                             <div class="col-md-3 col-6">
                                 <div>
@@ -155,8 +158,8 @@
 
                         </div>
 
-                        <div class="col-lg-2 col-12 d-flex flex-column gap-4 align-self-center mt-lg-0 mt-3">
-                            <button class="btn btn-c_yellow-700 align-self-center w-100 ">Найти</button>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
                         </div>
 
     
@@ -182,7 +185,7 @@
                             <tr>
                                 <th scope="col">id</th>
                                 <th scope="col">Наименование</th>
-                                <th scope="col" class="px-3 text-center">Отвязать</th>
+                                <th scope="col" class="px-3 text-center">Убрать</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -197,7 +200,7 @@
                                         Изменение заказа
                                     </td>
                                     <td class="p-0 position-relative w-10r">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -206,7 +209,7 @@
                                         Создание заказа
                                     </td>
                                     <td class="p-0 position-relative w-10r">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -215,7 +218,7 @@
                                         Просмотр списка клиентов
                                     </td>
                                     <td class="p-0 position-relative">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -246,7 +249,9 @@
 
                 <!-- workers -->
 
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
+
+                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">Сотрудники с этой ролью:</span>
@@ -254,7 +259,7 @@
 
                     <div class="shadow rounded-2 p-3 justify-content-between row w-100 mx-auto">
 
-                        <div class="col-lg-10 col-12 row justify-content-between">
+                        <div class="col-12 row justify-content-between mx-auto p-0">
 
                             <div class="col-md-3 col-6">
                                 <div>
@@ -272,8 +277,8 @@
 
                         </div>
 
-                        <div class="col-lg-2 col-12 d-flex flex-column gap-4 align-self-center mt-lg-0 mt-3">
-                            <button class="btn btn-c_yellow-700 align-self-center w-100 ">Найти</button>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
                         </div>
 
     
@@ -299,7 +304,7 @@
                             <tr>
                                 <th scope="col">id</th>
                                 <th scope="col">Ф.И.О.</th>
-                                <th scope="col" class="px-3 text-center">Отвязать</th>
+                                <th scope="col" class="px-3 text-center">Убрать</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -316,7 +321,7 @@
                                         </a>
                                     </td>
                                     <td class="p-0 position-relative w-10r">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -327,7 +332,7 @@
                                         </a>
                                     </td>
                                     <td class="p-0 position-relative w-10r">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -338,7 +343,7 @@
                                         </a>
                                     </td>
                                     <td class="p-0 position-relative w-10r">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Отвязать</button>
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -391,7 +396,7 @@
                     <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
                     <a href="admin_roles.html" class="text-white text-decoration-none link-hover fs-5">Роли</a>
                     <a href="admin_sales.html" class="text-white text-decoration-none link-hover fs-5">Акции</a>
-                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
+                    <a href="admin_profile.html" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <div class="dropdown">

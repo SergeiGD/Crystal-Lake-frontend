@@ -13,7 +13,7 @@
 </head>
 <body class="font-main">
     
-    <header class="w-100 bg-black header">
+    <header class="w-100 bg-black">
         <div class="d-flex justify-content-between align-items-center container-xl py-3">
 
             <a href="index.html" class="text-white fs-4 font-logo text-decoration-none link-hover">Crystal Lake</a>
@@ -77,7 +77,7 @@
                     <a class="nav-link text-dark link-hover" href="admin_sales.html ">Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Кабинет</a>
+                    <a class="nav-link text-dark link-hover" href="admin_profile.html">Кабинет</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
@@ -99,7 +99,7 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
+                    <i class="fa-solid fa-delete-left text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">id заказа: </span>
@@ -109,145 +109,161 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <div class="input-group flex-nowrap w-auto">
-                                <span class="input-group-text w-10r" id="basic-addon1">Клиент</span>
-                                <div class="d-flex">
-                                    <a href="admin_manage_client.html"  class="form-control rounded-0 text-dark link-hover">Иванов Иван Иванович</a>
-                                    <button class="btn btn-primary w-5r rounded-0 rounded-end">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
+
+                            <div class="">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Клиент</span>
+                                    <div class="d-flex">
+                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-15r flex-grow-1">Иванов Иван Иванович</a>
+                                        <button class="btn btn-primary w-5r rounded-0 rounded-end flex-grow-0">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-lg-6 col-12 mt-lg-0 mt-4">
-                            <div class="input-group flex-nowrap w-auto">
-                                <span class="input-group-text w-10r" id="basic-addon1">Заказ на</span>
-                                <div class="d-flex">
-                                    <a href="admin_manage_client.html"  class="form-control rounded-0 text-dark link-hover">Двухэтажный домик у озера</a>
-                                    <button class="btn btn-primary w-5r rounded-0 rounded-end">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </button>
+                            <div class="mt-3">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <label  for="manage_status" class="input-group-text w-10r" id="basic-addon1">Статус заказа</label>
+                                    <select id="manage_status" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                        <option value="1" selected>В процессе</option>
+                                        <option value="2">Завершен</option>
+                                        <option value="3">Отменен</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
 
-
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto">
-                                <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Заселение</label>
-                                <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-15">
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <label for="manage_paid" class="input-group-text w-10r" id="basic-addon1">Внесено средств</label>
+                                    <input id="manage_paid" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="8999">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto">
-                                <label  for="manage_status" class="input-group-text w-10r" id="basic-addon1">Статус заказа</label>
-                                <select id="manage_status" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
-                                    <option value="1" selected>В процессе</option>
-                                    <option value="2">Завершен</option>
-                                    <option value="3">Отменен</option>
-                                </select>
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Осталось оплатить</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">4835</span>
+                                </div>
                             </div>
-                        </div>
 
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto">
-                                <label for="manage_paid" class="input-group-text w-10r" id="basic-addon1">Внесено средств</label>
-                                <input id="manage_paid" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="8999">
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Статус оплаты</span>
+                                    <span class="form-control w-100 mw-15r flex-grow-0 flex-shrink-1">Полностью оплачен</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto">
-                                <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Выселение</label>
-                                <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-30">
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1 ">Стоимость</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">21424</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Статус оплаты</span>
-                                <span class="form-control w-100 mw-15r flex-grow-0 flex-shrink-1">Полностью оплачен</span>
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Предоплата</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">3524</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1 ">Цена заказа</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">21424</span>
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Бонусов списано</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">723</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Дата создания</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:00</span>
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Сумма при отмене</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">213</span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Предоплата</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">3524</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Дата предоплаты</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:05</span>
-                            </div>
                         </div>
 
                         
+                        <div class="col-lg-6 col-12">
+
+                            <div class="mt-lg-0 mt-4">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Заказ на</span>
+                                    <div class="d-flex">
+                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-15r flex-grow-1">Двухэтажный домик у озера</a>
+                                        <button class="btn btn-primary w-5r rounded-0 rounded-end flex-grow-0">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Заселение</label>
+                                    <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-15">
+                                </div>
+                            </div>
+    
+    
+                            
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto">
+                                    <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Выселение</label>
+                                    <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-30">
+                                </div>
+                            </div>
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Дата создания</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:00</span>
+                                </div>
+                            </div>
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Дата предоплаты</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:05</span>
+                                </div>
+                            </div>
+    
+                            
+    
+                            
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Дата оплаты</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
+                                </div>
+                            </div>
+    
+                            
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Дата завершения</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
+                                </div>
+                            </div>
+    
+                            
+    
+                            <div class="mt-4">
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Дата отмены</span>
+                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">нет</span>
+                                </div>
+                            </div>
+    
+                            
+                        </div>
 
                         
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Дата оплаты</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Осталось оплатить</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">4835</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Дата завершения</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Бонусов списано</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">723</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Дата отмены</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">нет</span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="input-group flex-nowrap w-auto  opacity-75">
-                                <span class="input-group-text w-10r" id="basic-addon1">Сумма при отмене</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">213</span>
-                            </div>
-                        </div>
-
                         <div class="col-12 mt-4">
 
                             <label class="input-group-text rounded-top rounded-0" for="manage_info">Комментарий к заказу</label>
@@ -270,7 +286,9 @@
 
                 <!-- logs -->
 
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
+
+                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">События заказа</span>
@@ -278,7 +296,7 @@
 
                     <div class="shadow p-3 rounded-2 justify-content-between row w-100 mx-auto">
 
-                        <div class="col-lg-10 col-12 row justify-content-between">
+                        <div class="col-12 row justify-content-between mx-auto p-0">
 
                             <div class="col-md-3 col-6">
                                 <div class="d-flex gap-2 align-items-center">
@@ -306,8 +324,8 @@
 
                         </div>
 
-                        <div class="col-lg-2 col-12 d-flex flex-column gap-4 align-self-center mt-lg-0 mt-3">
-                            <button class="btn btn-c_yellow-700 align-self-center w-100 ">Найти</button>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
                         </div>
 
     
@@ -412,7 +430,7 @@
                     <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
                     <a href="admin_roles.html" class="text-white text-decoration-none link-hover fs-5">Роли</a>
                     <a href="admin_sales.html" class="text-white text-decoration-none link-hover fs-5">Акции</a>
-                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
+                    <a href="admin_profile.html" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <div class="dropdown">

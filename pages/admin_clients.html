@@ -13,7 +13,7 @@
 </head>
 <body class="font-main">
     
-    <header class="w-100 bg-black header">
+    <header class="w-100 bg-black">
         <div class="d-flex justify-content-between align-items-center container-xl py-3">
 
             <a href="index.html" class="text-white fs-4 font-logo text-decoration-none link-hover">Crystal Lake</a>
@@ -72,7 +72,7 @@
                     <a class="nav-link text-dark link-hover" href="admin_sales.html ">Акции</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="#">Кабинет</a>
+                    <a class="nav-link text-dark link-hover" href="admin_profile.html">Кабинет</a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
@@ -96,7 +96,7 @@
 
                     <div class="row align-items-start justify-content-between">
 
-                        <div class="col-lg-10 col-12 row">
+                        <div class="col-12 row mx-auto p-0">
 
                             <div class="col-md-3 col-6">
                                 <div>
@@ -127,15 +127,15 @@
                         </div>
 
 
-                        <div class="col-lg-2 col-12 d-flex flex-column gap-4 align-self-center mt-lg-0 mt-3">
-                            <button class="btn btn-c_yellow-700 align-self-center w-100 ">Найти</button>
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
                         </div>
 
                     </div>
 
                 </form>
 
-                <form class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
+                <!-- <form class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
 
                     <button class="btn btn-c_yellow-700 text-nowrap">
                         <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
@@ -157,18 +157,28 @@
                         <span>Кол-во баллов</span>    
                     </button>
 
-                </form>
+                </form> -->
                 
                 <div class="shadow mt-4 rounded-2 overflow-auto">
                     <table class="table table-striped table-hover table-bordered">
                         <thead>
                         <tr>
-                            <th scope="col">id</th>
-                            <th scope="col">Ф.И.О.</th>
-                            <th scope="col">Номер телефона</th>
-                            <th scope="col">Электронная почта</th>
-                            <th scope="col">Баллов</th>
-                            <th scope="col" class="px-3 text-center" >Подробнее</th>
+                            <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
+                                id <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <th scope="col"  class="text-nowrap col-hover" role="button">
+                                Ф.И.О. <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <th scope="col" class="text-nowrap col-hover" role="button">
+                                Номер телефона <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <th scope="col" class="text-nowrap col-hover" role="button">
+                                Электронная почта <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <th scope="col" class="text-nowrap col-hover" role="button">
+                                Баллов <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <!-- <th scope="col" class="px-3 text-center" >Подробнее</th> -->
                         </tr>
                         </thead>
                         <tbody>
@@ -177,45 +187,45 @@
                                     <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Создать</button>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr role="button">
                                 <th scope="row">1</th>
                                 <td class="text-nowrap">Иванов Иван Иванович</td>
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0 position-relative">
+                                <!-- <td class="p-0 position-relative">
                                     <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
-                                </td>
+                                </td> -->
                             </tr>
-                            <tr>
+                            <tr role="button">
                                 <th scope="row">2</th>
                                 <td class="text-nowrap">Иванов Иван Иванович</td>
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0 position-relative">
+                                <!-- <td class="p-0 position-relative">
                                     <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
-                                </td>
+                                </td> -->
                             </tr>
-                            <tr>
+                            <tr role="button">
                                 <th scope="row">4</th>
                                 <td class="text-nowrap">Иванов Иван Иванович</td>
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0 position-relative">
+                                <!-- <td class="p-0 position-relative">
                                     <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
-                                </td>
+                                </td> -->
                             </tr>
-                            <tr>
+                            <tr role="button">
                                 <th scope="row">3</th>
                                 <td class="text-nowrap">Иванов Иван Иванович</td>
                                 <td>+79358317348</td>
                                 <td>ivanov1999@gmail.com</td>
                                 <td>438</td>
-                                <td class="p-0 position-relative">
+                                <!-- <td class="p-0 position-relative">
                                     <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Подробнее</button>
-                                </td>
+                                </td> -->
                             </tr>
                         </tbody>
                     </table>
@@ -260,7 +270,7 @@
                     <a href="admin_workers.html" class="text-white text-decoration-none link-hover fs-5">Сотрудники</a>
                     <a href="admin_roles.html" class="text-white text-decoration-none link-hover fs-5">Роли</a>
                     <a href="admin_sales.html" class="text-white text-decoration-none link-hover fs-5">Акции</a>
-                    <a href="#" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
+                    <a href="admin_profile.html" class="text-white text-decoration-none link-hover fs-5">Кабинет</a>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <div class="dropdown">
