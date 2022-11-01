@@ -455,7 +455,7 @@
         
                         </div>
 
-                        <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
+                        <!-- <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
 
                             <button class="btn btn-c_yellow-700 ">
                                 <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
@@ -467,28 +467,38 @@
                                 <span>Сотрудник</span>    
                             </button>
         
-                        </div>
+                        </div> -->
 
                         <div class="mt-4 overflow-auto">
                             <table class="table table-striped table-hover table-bordered">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Дата</th>
-                                    <th scope="col">Время</th>
-                                    <th scope="col">Сотрудник</th>
+                                    <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
+                                        Дата <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Начало <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Конец <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Сотрудник <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
                                     <th scope="col" class="px-3 text-center" >Изменить</th>
                                     <th scope="col" class="px-3 text-center" >Удалить</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="p-0" colspan="5">
+                                        <td class="p-0" colspan="6">
                                             <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="text-nowrap">06.07.2022</td>
-                                        <td>15:00 - 16:00</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
                                         <td>
                                             <a href="#" class="link-hover">Иванов Иван Иванович</a>
                                         </td>
@@ -501,7 +511,8 @@
                                     </tr>
                                     <tr>
                                         <td class="text-nowrap">06.07.2022</td>
-                                        <td>15:00 - 16:00</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
                                         <td>
                                             <a href="#" class="link-hover">Иванов Иван Иванович</a>
                                         </td>
@@ -514,7 +525,8 @@
                                     </tr>
                                     <tr>
                                         <td class="text-nowrap">06.07.2022</td>
-                                        <td>15:00 - 16:00</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
                                         <td>
                                             <a href="#" class="link-hover">Иванов Иван Иванович</a>
                                         </td>
@@ -592,7 +604,7 @@
         
                         </div>
 
-                        <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
+                        <!-- <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
 
                             <button class="btn btn-c_yellow-700 ">
                                 <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
@@ -604,14 +616,18 @@
                                 <span>Ф.И.О.</span>    
                             </button>
         
-                        </div>
+                        </div> -->
 
                         <div class="mt-4 overflow-auto">
                             <table class="table table-striped table-hover table-bordered">
                                 <thead>
                                 <tr>
-                                    <th scope="col">id</th>
-                                    <th scope="col">Ф.И.О.</th>
+                                    <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
+                                        id <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Ф.И.О. <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
                                     <th scope="col" class="px-3 text-center" >Убрать</th>
                                 </tr>
                                 </thead>
@@ -691,7 +707,8 @@
                             <tr>
                                 <th scope="col">id</th>
                                 <th scope="col">Наименование</th>
-                                <th scope="col">Даты</th>
+                                <th scope="col">Начало</th>
+                                <th scope="col">Окончание</th>
                                 <th scope="col">Скидка</th>
                                 <th scope="col">Доп. условия</th>
                                 <th scope="col">Итого цена</th>
@@ -700,7 +717,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="p-0" colspan="7">
+                                    <td class="p-0" colspan="8">
                                         <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
                                     </td>
                                 </tr>
@@ -709,7 +726,8 @@
                                     <td>
                                         <a href="#" class="link-hover">Новогодние скидки</a> 
                                     </td>
-                                    <td>01.01.2022 - 10.01.2022</td>
+                                    <td>01.01.2022</td>
+                                    <td>10.01.2022</td>
                                     <td>15%</td>
                                     <td>Нет</td>
                                     <td>12354&#8381;</td>
@@ -722,7 +740,8 @@
                                     <td>
                                         <a href="#" class="link-hover">Новогодние скидки</a> 
                                     </td>
-                                    <td>01.01.2022 - 10.01.2022</td>
+                                    <td>01.01.2022</td>
+                                    <td>10.01.2022</td>
                                     <td>15%</td>
                                     <td>Нет</td>
                                     <td>12354&#8381;</td>
@@ -735,7 +754,8 @@
                                     <td>
                                         <a href="#" class="link-hover">Живи дольше, плати меньше</a> 
                                     </td>
-                                    <td>17.01.2022 - 30.01.2022</td>
+                                    <td>01.01.2022</td>
+                                    <td>10.01.2022</td>
                                     <td>3525&#8381;</td>
                                     <td>Да</td>
                                     <td>12354&#8381;</td>
