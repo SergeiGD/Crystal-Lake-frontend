@@ -56,8 +56,8 @@
 
                     <nav class="header_menu">
                         <a href="index.html" class="header_menu_item header_link">Главная</a>
-                        <a href="#" class="header_menu_item header_link header_menu_item__active">Номера</a>
-                        <a href="services.html" class="header_menu_item header_link">Услуги</a>
+                        <a href="rooms.html" class="header_menu_item header_link">Номера</a>
+                        <a href="#" class="header_menu_item header_link header_menu_item__active">Услуги</a>
                         <a href="sales.html" class="header_menu_item header_link">Акции</a>
                         <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
                         <a href="cart.html" class="header_menu_item header_link">Корзина</a>
@@ -75,12 +75,12 @@
 
         <section class="section">
             <div class="content_container">
-                <h2 class="section_title">Номера</h2>
+                <h2 class="section_title">Услуги</h2>
     
                 <div class="breadcrumbs">
                     <a href="index.html" class="breadcrumbs_item">Главная</a>
                     <span>&#10148;</span>
-                    <a href="#" class="breadcrumbs_item">Номера</a>
+                    <a href="#" class="breadcrumbs_item">Услуги</a>
                 </div>   
     
                 <div class="offers">
@@ -97,18 +97,18 @@
                                 </div>
         
                                 <div class="filter_item">
-                                    <label class="filter_name filter_name__long" for="people_field">Спальных мест:</label>
+                                    <label class="filter_name filter_name__long" for="people_field">Человек с Вами:</label>
                                     <div class="filter_select">
                                         <select id="people_field" class="input_field select_field">
-                                            <option value="1">1 человек(а)</option>
-                                            <option value="2" selected>3 человек(а)</option>
+                                            <option value="1">нет</option>
+                                            <option value="2" selected>1 человек(а)</option>
                                             <option value="3">2 человек(а)</option>
                                         </select>
                                     </div>
                                 </div>
         
                                 <div class="filter_item">
-                                    <p class="filter_name filter_name__long">Даты прибывания:</p>
+                                    <p class="filter_name filter_name__long">Желаемые даты:</p>
                                     <div class="filter_select">
                                         <div class="filter_select_subfiled">
                                             <label class="filter_subname" for="date_from_field">с</label>
@@ -123,30 +123,9 @@
                             </div>
         
                             <div class="filter_column">
+
                                 <div class="filter_item">
-                                    <label class="filter_name filter_name__long" for="floors_field">Количество этажей:</label>
-                                    <div class="filter_select">
-                                        <select id="floors_field" class="input_field select_field">
-                                            <option value="1" selected>1 этаж(а)</option>
-                                            <option value="2">2 этаж(а)</option>
-                                            <option value="3">3 этаж(а)</option>
-                                        </select>
-                                    </div>
-                                </div>
-        
-                                <div class="filter_item">
-                                    <label class="filter_name filter_name__long" for="rooms_field">Количество комнат:</label>
-                                    <div class="filter_select">
-                                        <select id="rooms_field" class="input_field select_field">
-                                            <option value="1" selected>1 комант(ы)</option>
-                                            <option value="2">2 комант(ы)</option>
-                                            <option value="3">3 комант(ы)</option>
-                                        </select>
-                                    </div>
-                                </div>
-        
-                                <div class="filter_item">
-                                    <p class="filter_name filter_name__long">Цена за 1 сутки:</p>
+                                    <p class="filter_name filter_name__long">Цена за 1 чел/шт:</p>
                                     <div class="filter_select">
                                         <div class="filter_select_subfiled">
                                             <label class="filter_subname" for="price_from_field">от</label>
@@ -172,14 +151,6 @@
                                 <i class="fa-solid fa-arrow-up-short-wide sorting_icon_active"></i>
                                 Цена
                             </p>
-                            <p class="sorting_item">
-                                <i class="fa-solid fa-arrow-down-wide-short"></i>
-                                Спальных мест
-                            </p>
-                            <p class="sorting_item">
-                                <i class="fa-solid fa-arrow-down-wide-short"></i>
-                                Кол-во комнат
-                            </p>
                         </form>
         
                         <form class="mobile_filter_soring">
@@ -193,10 +164,6 @@
                                 <select class="select_sortby">
                                     <option value="1" selected>убыванию цен</option>
                                     <option value="2">возрастанию цен</option>
-                                    <option value="3">убыванию спальных мест</option>
-                                    <option value="2">возрастанию спальных мест</option>
-                                    <option value="3">убыванию кол-ва комнат</option>
-                                    <option value="2">возрастанию кол-ва комнет</option>
                                 </select>
                             </div>
                         </form>
@@ -207,9 +174,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -218,9 +185,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -229,9 +196,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -240,9 +207,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -251,9 +218,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -262,9 +229,9 @@
     
                         <article class="card_short">
                             <div class="card_inner">
-                                <img src="../img/card/house.png" alt="Номер" class="card_img">
+                                <img src="../img/card/service.png" alt="Услуга" class="card_img">
                                 <div class="card_info">
-                                    <p class="card_info_title">Двухэтажный домик у озера</p>
+                                    <p class="card_info_title">Езда верхом</p>
                                     <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                                     <button class="button__card">Забронировать</button>
                                 </div>
@@ -307,8 +274,8 @@
 
                         <div class="footer_menu_column">
                             <a href="index.html" class="footer_link">Главная</a>
-                            <a href="#" class="footer_link">Номера</a>
-                            <a href="services.html" class="footer_link">Услуги</a>
+                            <a href="rooms.html" class="footer_link">Номера</a>
+                            <a href="#" class="footer_link">Услуги</a>
                             <a href="sales.html" class="footer_link">Акции</a>
                         </div>
                         <div class="footer_menu_column">

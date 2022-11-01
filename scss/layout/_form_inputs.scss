@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    width: 100%;
 }
 
 .field_item{
@@ -29,6 +30,7 @@
         .field_subcontent{
             display: flex;
             align-items: center;
+            gap: 0.5em;
         }
 
     }
