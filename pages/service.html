@@ -89,7 +89,13 @@
                 <div class="offer">
                     <div class="photos_description">
                         <div class="photos">
-                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img">
+
+                            <div class="always-slider-required"></div>
+
+                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big slider_content__active">
+                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
+                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
+                            
                             <div class="slider">
                                 <div class="slider_item slider_item__active"></div>
                                 <div class="slider_item"></div>
@@ -283,11 +289,6 @@
                             <button class="button__card">Забронировать</button>
                         </div>
                     </div>
-                    <div class="slider">
-                        <div class="slider_item slider_item_active"></div>
-                        <div class="slider_item"></div>
-                        <div class="slider_item"></div>
-                    </div>
                 </article>
 
                 <article class="card_short recomendations_item">
@@ -311,6 +312,12 @@
                         </div>
                     </div>
                 </article>
+
+                <div class="slider slider__hidden">
+                    <div class="slider_item slider_item__active"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                </div>
 
             </div>
 
@@ -322,7 +329,7 @@
 
             <h2 class="section_title">Похожие предложения</h2>
 
-            <div class="recomendations">
+            <div class="recomendations">        
 
                 <article class="card_short recomendations_item">
                     <div class="card_inner">
@@ -332,11 +339,6 @@
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
                             <button class="button__card">Забронировать</button>
                         </div>
-                    </div>
-                    <div class="slider">
-                        <div class="slider_item slider_item_active"></div>
-                        <div class="slider_item"></div>
-                        <div class="slider_item"></div>
                     </div>
                 </article>
 
@@ -349,11 +351,6 @@
                             <button class="button__card">Забронировать</button>
                         </div>
                     </div>
-                    <div class="slider">
-                        <div class="slider_item slider_item_active"></div>
-                        <div class="slider_item"></div>
-                        <div class="slider_item"></div>
-                    </div>
                 </article>
 
                 <article class="card_short recomendations_item">
@@ -365,12 +362,13 @@
                             <button class="button__card">Забронировать</button>
                         </div>
                     </div>
-                    <div class="slider">
-                        <div class="slider_item slider_item_active"></div>
-                        <div class="slider_item"></div>
-                        <div class="slider_item"></div>
-                    </div>
                 </article>
+
+                <div class="slider slider__hidden">
+                    <div class="slider_item slider_item__active"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                </div>
 
             </div>
 
@@ -433,6 +431,11 @@
         </div>
 
     </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/jquery_migrate.min.js"></script>
+    <script src="../js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 // BASE
 @import 'base/reset';
 @import 'base/typographic';
+@import 'base/media_indicators';
 
 
 // SCSS-UTILS 
@@ -24,7 +25,7 @@
 
 // LAYOUT 
 @import 'layout/section';
-@import 'layout/active_sales';
+@import 'layout/sales';
 @import 'layout/book_form';
 @import 'layout/callback';
 @import 'layout/catalog';

@@ -5,32 +5,27 @@
     display: flex;
     justify-content: space-around;
 
+    position: relative;
+
     .recomendations_item{
+        //width: 200px;
         flex-basis: 30%;
-
-        .slider{
-            display: none;
-
-            @include mixins.device(tablet){
-                display: flex;
-            }
-        }
+        gap: 2em;
 
         @include mixins.device(tablet){
             justify-content: center;
-            display: none;
+            //display: none;
+            flex-basis: 60%;
+            //flex-basis: 300px;
 
-            &:first-child{
-                display: flex;
-                flex-basis: 60%;
-            }
         }
 
         @include mixins.device(mobile){
-            &:first-child{
-                flex-basis: 100%;
-                z-index: 1;
-            }
+            flex-basis: 100%;
         }
     }
+
+    // .recomendations_item__current{
+    //     display: flex;
+    // }
 }

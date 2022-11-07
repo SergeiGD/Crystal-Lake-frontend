@@ -1,0 +1,13 @@
+@use '../utils/mixins' as mixins; 
+
+.tablet-slider-required{
+    display: none;
+    position: absolute;
+    @include mixins.device(tablet){
+        display: block;
+    }
+}
+
+.always-slider-required{
+    position: absolute;
+}
