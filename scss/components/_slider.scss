@@ -122,3 +122,15 @@
 .slider_content__active{
     display: flex;
 }
+
+.tablet-slider-required{
+    display: none;
+    position: absolute;
+    @include mixins.device(tablet){
+        display: block;
+    }
+}
+
+.always-slider-required{
+    position: absolute;
+}

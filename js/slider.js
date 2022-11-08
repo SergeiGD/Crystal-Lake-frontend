@@ -70,6 +70,11 @@ $(document).ready(function(){
     });
 
     function swipe_slider(old_dot, new_dot){
+
+        if (!isSliderRequired($(old_dot).parent())){    // проверяем, не скрыт ли слайдер
+            return;
+        }
+
         var all_cards = old_dot.parent().siblings('.slider_content');
 
         var old_card = all_cards.eq(old_dot.index());
@@ -89,17 +94,16 @@ $(document).ready(function(){
 
     function isSliderRequired(slider) {
         if (slider.siblings('.tablet-slider-required').is(':visible') || slider.siblings('.always-slider-required').length > 0){
-            return true;    // слайдер нужно листать, если у нас планшет / слайдер показывается на всех экранах
+            return true;    // слайдер нужно листать, если у нас планшет / слайдер всегда показывается на всех экранах
         }
+
         return false;
     }
 
     function swipe_auto(){
         auto_play_timer = setInterval(function(){
 
-            $('.slider_content__active').each(function(){
-                if (isSliderRequired($(this))) $(this).trigger('swipeleft');    // тригерим событие переключения следующего слайда
-            });
+            $('.slider_content__active').trigger('swipeleft');  // тригерим событие переключения следующего слайда
 
         }, 5000);
     }
