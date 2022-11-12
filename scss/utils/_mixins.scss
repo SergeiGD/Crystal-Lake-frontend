@@ -25,6 +25,7 @@
     text-decoration: none;
     color: $color;
     transition: color 0.15s linear;
+    cursor: pointer;
 
     &:hover{
         color: vars.$pink_color;

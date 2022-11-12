@@ -19,4 +19,11 @@
         font-size: 0.9em;
         @include mixins.link(#000);
     }
+
+    .breadcrumbs_item__active{
+        cursor: auto;
+        &:hover{
+            color: #000;
+        }
+    }
 }

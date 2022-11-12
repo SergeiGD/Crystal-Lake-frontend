@@ -83,13 +83,14 @@
                 <div class="breadcrumbs">
                     <a href="index.html" class="breadcrumbs_item">Главная</a>
                     <span>&#10148;</span>
-                    <a href="#" class="breadcrumbs_item">Активные заказы</a>
+                    <p class="breadcrumbs_item breadcrumbs_item__active">Активные заказы</p>
                 </div> 
 
                 <div class="profile">
 
                     <div class="profile_burger">
-                        
+                        <span></span>
+                        <p class="profile_burger_title">Личный кабинет</p>
                     </div>
 
                     <div class="profile_menu">
@@ -109,12 +110,28 @@
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
                             <a href="#" class="profile_menu_title">Выйти</a>
                         </div>
-                    </div>
-                    
+                    </div>               
 
                     <div class="profile_content">
 
                         <div class="finder">
+
+                            <form class="mobile_filter_soring">
+                                <div class="mobile_filter">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <p>Фильтр</p>
+                                </div>
+                                <div class="mobile_sorting">
+                                    <i class="fa-solid fa-arrow-up-wide-short"></i>
+                                    <p>Сортировать по:</p>
+                                    <select class="select_sortby select_field">
+                                        <option value="1" selected>ближайшие</option>
+                                        <option value="2">дальние</option>
+                                        <option value="3">убыванию цен</option>
+                                        <option value="4">возрастанию цен</option>
+                                    </select>
+                                </div>
+                            </form>
 
                             <form class="filter">
     
@@ -184,7 +201,7 @@
                                     </div>
                                 </div>
             
-                                <div class="filter_column">
+                                <div class="filter_column filter__buttons">
                                     <button class="filter_button filter_button__find">Применить</button>
                                     <button class="filter_button filter_button__clean">Сбросить</button>
                                 </div>
@@ -202,22 +219,7 @@
                                 </p>
                             </form>
             
-                            <form class="mobile_filter_soring">
-                                <div class="mobile_filter">
-                                    <i class="fa-solid fa-sliders"></i>
-                                    <p>Фильтр</p>
-                                </div>
-                                <div class="mobile_sorting">
-                                    <i class="fa-solid fa-arrow-up-wide-short"></i>
-                                    <p>Сортировать по:</p>
-                                    <select class="select_sortby">
-                                        <option value="1" selected>ближайшие</option>
-                                        <option value="2">дальние</option>
-                                        <option value="3">убыванию цен</option>
-                                        <option value="4">возрастанию цен</option>
-                                    </select>
-                                </div>
-                            </form>
+                            
 
                         </div>
 
@@ -382,6 +384,11 @@
         </div>
 
     </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/header_burger.js"></script>
+    <script type="text/javascript" src="../js/profile_burger.js"></script>
+    <script type="text/javascript" src="../js/filter_mobile.js"></script>
 
 </body>
 

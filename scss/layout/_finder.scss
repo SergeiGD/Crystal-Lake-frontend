@@ -9,28 +9,39 @@
 }
 
 .filter{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    // display: flex;
+    // justify-content: space-between;
     width: 100%;
     box-shadow: vars.$shadow;
     font-size: 1rem;
     border-radius: 5px;
     gap: 0.8em;
+    padding: 1em;
 
     @include mixins.device(mobile){
         display: none;
+        grid-template-columns:  repeat(auto-fill, 100%);
     }
 
     .filter_column{
         display: flex;
         flex-direction: column;
         //justify-content: space-around;
-        padding: 0.8em 0;
+        
         gap: 0.8em;
     }
 
+    .filter__buttons{
+        justify-content: space-around;
+    }
 
+
+}
+
+.filter__active{
+    display: grid;
 }
 
 .filter_item{
@@ -48,6 +59,7 @@
 
     .filter_name{
         min-width: 9em;
+        
     }
 
     .filter_select{
@@ -55,6 +67,9 @@
         gap: 0.5em;
         flex-grow: 1;
         flex-wrap: wrap;
+        @include mixins.device(rotated){
+            width: 100%;
+        }
 
         .filter_select_subfiled{
             display: flex;
@@ -148,6 +163,15 @@
         gap: 0.5em;
         align-items: center;
         max-width: 100%;
+    }
+
+    .mobile_filter{
+        cursor: pointer;
+        transition: all 0.15s linear;
+        &:hover{
+            color: vars.$pink_color;
+        }
+
     }
 
     .mobile_sorting{

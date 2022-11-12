@@ -2,6 +2,21 @@
 
 $(document).ready(function(){
 
+    function spawn_dots(){
+        $('.slider').each(function(){
+            const count = $(this).siblings('.slider_content').length;
+            var dot = '<div class="slider_item"></div>';
+            //var dot = $(this).children('.slider_item').first();
+            for(let i = 0; i < count - 1; i++){
+                $(this).append(dot);
+                //dot.clone().appendTo($(this));
+            }
+            $(this).children('.slider_item').first().addClass('slider_item__active');
+        });
+    }
+
+    spawn_dots();
+
     var auto_play_timer;    // таймер для автоматического переключения слайдов
 
     $('.slider_item').on('click', function(){

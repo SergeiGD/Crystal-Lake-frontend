@@ -60,7 +60,7 @@
                         <a href="sales.html" class="header_menu_item header_link">Акции</a>
                         <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
                         <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                        <a href="profile_active.html" class="header_menu_item header_link">Личный кабинет</a>
+                        <p class="header_menu_item header_link" id="login_open">Личный кабинет</p>
                     </nav>
 
                     <div class="header_burger">
@@ -88,7 +88,7 @@
                                 <a href="cart.html" class="header_menu_item header_link">Корзина</a>
                             </li>
                             <li>
-                                <a href="profile_active.html" class="header_menu_item header_link">Личный кабинет</a>
+                                <p class="header_menu_item header_link" id="login_open">Личный кабинет</p>
                             </li>
                         </ul>
                     </div>
@@ -237,9 +237,9 @@
                 </article>
 
                 <div class="slider slider__hidden">
-                    <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div>
+                    <!-- <div class="slider_item"></div> -->
+                    <!-- <div class="slider_item"></div>
+                    <div class="slider_item"></div> -->
                 </div>
 
             </div>
@@ -290,9 +290,9 @@
                 </article>
 
                 <div class="slider slider__hidden">
-                    <div class="slider_item slider_item__active"></div>
+                    <!-- <div class="slider_item slider_item__active"></div>
                     <div class="slider_item"></div>
-                    <div class="slider_item"></div>
+                    <div class="slider_item"></div> -->
                 </div>
 
             </div>
@@ -335,9 +335,9 @@
                     </div>
                 </article>
                 <div class="slider">
-                    <div class="slider_item slider_item__active"></div>
+                    <!-- <div class="slider_item slider_item__active"></div>
                     <div class="slider_item"></div>
-                    <div class="slider_item"></div>
+                    <div class="slider_item"></div> -->
                 </div>
             </div>
             
@@ -445,7 +445,8 @@
                         <div class="footer_menu_column">
                             <a href="contacts.html" class="footer_link">Контакты</a>
                             <a href="cart.html" class="footer_link">Корзина</a>
-                            <a href="profile_active.html" class="footer_link">Личный кабинет</a>
+                            <p class="footer_link" id="login_open">Личный кабинет</p>
+                            <!-- <a href="profile_active.html" class="footer_link">Личный кабинет</a> -->
                         </div>
 
                     </div>
@@ -477,11 +478,60 @@
 
     </footer>
 
+    <div class="login_popup" id="login_popup">
+
+        <div class="login_title">
+            <a href="#" class="login_link login_link__active">Вход</a>
+            <span>/</span>
+            <a href="#" class="login_link" id="goto_singup">Регистрация</a>
+            <button class="login_close" id="login_close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="login_fields">
+            <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
+            <input class="login_field input_field" type="text" name="password" id="password" placeholder="Пароль">
+        </div>
+
+        <div>
+            <p class="login_reset">Забыли пароль?</p>
+        </div>
+
+        <div class="login_buttons">
+            <button class="login_button" id="end_login_button">Войти</button>
+        </div>
+
+    </div>
+
+    <div class="login_popup" id="signup_popup">
+
+        <div class="login_title">
+            <a href="#" class="login_link" id="goto_login">Вход</a>
+            <span>/</span>
+            <a href="#" class="login_link login_link__active">Регистрация</a>
+            <button class="login_close" id="signup_close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="login_fields">
+            <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
+        </div>
+
+        <div class="login_buttons">
+            <button class="login_button" id="end_signup_button">Прислать пароль</button>
+        </div>
+
+    </div>
+
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../js/jquery_migrate.min.js"></script>
     <script src="../js/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="../js/slider.js"></script>
-    <script type="text/javascript" src="../js/burger.js"></script>
+    <script type="text/javascript" src="../js/header_burger.js"></script>
+    <script type="text/javascript" src="../js/login_popup.js"></script>
+    
 </body>
 
 </html>

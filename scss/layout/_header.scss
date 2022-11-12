@@ -14,6 +14,10 @@
 
     &:hover{
         background-color: #000000;
+
+        .header_menu__mobile{
+            background-color: #000000;
+        }
     }
 
 }
@@ -79,16 +83,20 @@
         @include mixins.device(tablet){
             display: none;
         }
+    }
 
-        .header_menu_item__active{
-            &::after{
-                content: "";
-                height: 2px;
-                width: 100%;
-                background-color: #FFF;
-                display: block;
-                margin-top: 5px;
-            }
+    .header_menu_item{
+        display: inline-block;
+    }
+
+    .header_menu_item__active{
+        &::after{
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: #FFF;
+            display: block;
+            margin-top: 5px;
         }
 
     }
@@ -102,7 +110,7 @@
             display: block;
             position: relative;
             height: 22px;
-            width: 40px;
+            width: 35px;
             
     
             &::before, &::after, span{
@@ -135,7 +143,7 @@
         position: absolute;
         top: 100%;
         left: 100vw;
-        text-align: end;
+        text-align: center;
         width: 100%;
         background-color: vars.$header_color;
         border-bottom-left-radius: vars.$radius;
@@ -143,15 +151,11 @@
         transition: background-color 0.15s linear;
         transition: all linear 0.2s;
 
-        &:hover{
-            background-color: #000000;
-        }
-
         .header_mobile_content{
             display: flex;
             flex-direction: column;
             gap: 1em;
-            padding: 2em 0.5em;
+            padding: 1em 0em;
 
             li{
                 list-style: none;
