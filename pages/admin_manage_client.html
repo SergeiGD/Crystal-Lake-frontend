@@ -99,12 +99,15 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-solid fa-delete-left text-danger icon_delete"></i>
+                    <!-- <i class="fa-regular fa-square-minus text-danger icon_delete"></i> -->
+                    <i class="fa-regular fa-square-minus text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">id клиента: </span>
                         <span class="lead fw-bold">32</span>
                     </div>
+
+                    
 
                     <div class="row">
 
@@ -125,21 +128,21 @@
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto">
                                 <label for="manage_phone" class="input-group-text w-10r" id="basic-addon1">Номер телефона</label>
-                                <input id="manage_phone" type="tel" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="+79358317348">
+                                <input id="manage_phone" type="tel" class="form-control" value="+79358317348">
                             </div>
                         </div>
 
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto">
                                 <label for="manage_birthday" class="input-group-text w-10r" id="basic-addon1">Дата рождения</label>
-                                <input id="manage_birthday" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="не указана">
+                                <input id="manage_birthday" type="date" class="form-control" value="не указана">
                             </div>
                         </div>
 
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto">
                                 <label  for="manage_gender" class="input-group-text w-10r" id="basic-addon1">Пол</label>
-                                <select id="manage_gender" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                <select id="manage_gender" class="form-select">
                                     <option selected>Мужской</option>
                                     <option value="1">Женский</option>
                                     <option value="2">Не выбран</option>
@@ -150,27 +153,27 @@
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto opacity-75">
                                 <span class="input-group-text w-10r" id="basic-addon1">Баллов</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1 ">452</span>
+                                <span class="form-control  ">452</span>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto opacity-75">
                                 <span class="input-group-text w-10r" id="basic-addon1">Кол-во заказов</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1 ">3</span>
+                                <span class="form-control ">3</span>
                             </div>
                         </div>
 
                         <div class="col-md-6 col-12 mt-4">
                             <div class="input-group flex-nowrap w-auto opacity-75">
                                 <span class="input-group-text w-10r" id="basic-addon1">Цена заказов</span>
-                                <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1 ">23353</span>
+                                <span class="form-control  ">23353</span>
                             </div>
                         </div>
 
-                        <div class="col-12 mt-4">
+                        <!-- <div class="col-12 mt-4">
                             <button class="btn btn-lg btn-primary w-100">Заказы клиента</button>
-                        </div>
+                        </div> -->
 
                         <div class="col-12 mt-4">
                             <div class="d-flex justify-content-between">
@@ -183,6 +186,10 @@
 
                     
                 </form>
+
+                <div class="w-100 mt-5">
+                    <button class="btn btn-lg btn-primary w-100">Заказы клиента</button>
+                </div>
 
 
             </main>

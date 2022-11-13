@@ -29,9 +29,6 @@
         </div>
     </header>
 
-    
-    
-
     <section class="pt-5">
 
         <div class="container-xl d-flex flex-column gap-5">
@@ -99,7 +96,7 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-solid fa-delete-left text-danger icon_delete"></i>
+                    <i class="fa-regular fa-square-minus text-danger icon_delete"></i>
 
                     <div class="text-center">
                         <span class="lead">id заказа: </span>
@@ -110,11 +107,18 @@
 
                         <div class="col-lg-6 col-12">
 
-                            <div class="">
+                            <div>
+                                <div class="input-group flex-nowrap w-auto  opacity-75">
+                                    <span class="input-group-text w-10r" id="basic-addon1">Наименование</span>
+                                    <span class="form-control">Двухэтажный домик у озера на 5 дней</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto">
                                     <span class="input-group-text w-10r" id="basic-addon1">Клиент</span>
                                     <div class="d-flex">
-                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-15r flex-grow-1">Иванов Иван Иванович</a>
+                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-100">Иванов Иван Иванович</a>
                                         <button class="btn btn-primary w-5r rounded-0 rounded-end flex-grow-0">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
@@ -122,10 +126,10 @@
                                 </div>
                             </div>
 
-                            <div class="mt-3">
+                            <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto">
                                     <label  for="manage_status" class="input-group-text w-10r" id="basic-addon1">Статус заказа</label>
-                                    <select id="manage_status" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                    <select id="manage_status" class="form-select ">
                                         <option value="1" selected>В процессе</option>
                                         <option value="2">Завершен</option>
                                         <option value="3">Отменен</option>
@@ -136,49 +140,49 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto">
                                     <label for="manage_paid" class="input-group-text w-10r" id="basic-addon1">Внесено средств</label>
-                                    <input id="manage_paid" type="number" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="8999">
+                                    <input id="manage_paid" type="number" class="form-control " value="8999">
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Осталось оплатить</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">4835</span>
+                                    <span class="form-control ">4835</span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Статус оплаты</span>
-                                    <span class="form-control w-100 mw-15r flex-grow-0 flex-shrink-1">Полностью оплачен</span>
+                                    <span class="form-control">Полностью оплачен</span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1 ">Стоимость</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">21424</span>
+                                    <span class="form-control ">21424</span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Предоплата</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">3524</span>
+                                    <span class="form-control ">3524</span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Бонусов списано</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">723</span>
+                                    <span class="form-control ">723</span>
                                 </div>
                             </div>
 
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Сумма при отмене</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">213</span>
+                                    <span class="form-control ">213</span>
                                 </div>
                             </div>
 
@@ -203,7 +207,7 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto">
                                     <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Заселение</label>
-                                    <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-15">
+                                    <input id="manage_date_start" type="date" class="form-control " value="2022-06-15">
                                 </div>
                             </div>
     
@@ -213,21 +217,21 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto">
                                     <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Выселение</label>
-                                    <input id="manage_date_start" type="date" class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1" value="2022-06-30">
+                                    <input id="manage_date_start" type="date" class="form-control " value="2022-06-30">
                                 </div>
                             </div>
     
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Дата создания</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:00</span>
+                                    <span class="form-control ">10.06.2022 12:00</span>
                                 </div>
                             </div>
     
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Дата предоплаты</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">10.06.2022 12:05</span>
+                                    <span class="form-control ">10.06.2022 12:05</span>
                                 </div>
                             </div>
     
@@ -238,7 +242,7 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Дата оплаты</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
+                                    <span class="form-control ">Нет</span>
                                 </div>
                             </div>
     
@@ -247,7 +251,7 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Дата завершения</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">Нет</span>
+                                    <span class="form-control ">Нет</span>
                                 </div>
                             </div>
     
@@ -256,7 +260,7 @@
                             <div class="mt-4">
                                 <div class="input-group flex-nowrap w-auto  opacity-75">
                                     <span class="input-group-text w-10r" id="basic-addon1">Дата отмены</span>
-                                    <span class="form-control w-100 mw-10r flex-grow-0 flex-shrink-1">нет</span>
+                                    <span class="form-control ">нет</span>
                                 </div>
                             </div>
     
@@ -358,7 +362,6 @@
                                 <th scope="col" class="text-nowrap col-hover" role="button">
                                     Описание <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                                 </th>
-                                <th scope="col" class="px-3 text-center" >Удалить</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -366,25 +369,19 @@
                                     <th scope="row">1</th>
                                     <td class="text-nowrap">25.06.2022 12:00</td>
                                     <td>Заказ создан</td>
-                                    <td class="p-0 position-relative">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Удалить</button>
-                                    </td>
+                                    
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td class="text-nowrap">25.06.2022 12:05</td>
                                     <td>Внесение средств: 2345</td>
-                                    <td class="p-0 position-relative">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Удалить</button>
-                                    </td>
+                                    
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td class="text-nowrap">25.06.2022 12:05</td>
                                     <td>Статус оплаты изменен: Внесена предоплата</td>
-                                    <td class="p-0 position-relative">
-                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Удалить</button>
-                                    </td>
+                                    
                                 </tr>
                             </tbody>
                         </table>

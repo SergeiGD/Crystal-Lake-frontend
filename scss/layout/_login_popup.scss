@@ -1,7 +1,22 @@
 @use '../utils/vars' as vars;
 @use '../utils/mixins' as mixins; 
 
-.login_popup, .singup_popup{
+// .modal_wrapper{
+//     height: 100vh;
+//     width: 100vw;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 200;
+//     //display: none;
+// }
+
+// .modal_wrapper__active{
+//     display: block;
+// }
+
+.login_popup{
+    opacity: 1;
     position: fixed;
     left: 50%;
     top: 20%;
@@ -35,6 +50,7 @@
             @include mixins.link(#000);
             font-size: 1.1em;
             position: relative;
+            display: inline-block;
         }
 
         .login_link__active{
@@ -119,9 +135,5 @@
 }
 
 .login_popup__active{
-    display: flex;
-}
-
-.singup_popup{
     display: flex;
 }

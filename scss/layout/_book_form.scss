@@ -56,8 +56,7 @@
     transition: background-color 0.15s linear, color 0.15s linear;
 
     &:hover{
-        background-color: vars.$pink_color;
-        color: #fff;
+        background-color: vars.$yellow_light_color;
     }
 }
 

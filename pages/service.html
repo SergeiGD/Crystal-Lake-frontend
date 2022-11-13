@@ -49,48 +49,22 @@
 
                 <div class="header_under">
 
-                    <a href="#" class="header_logo header_link">
+                    <a href="index.html" class="header_logo header_link">
                         Crystal Lake
                     </a>
 
                     <nav class="header_menu">
-                        <a href="index.html" class="header_menu_item header_link">Главная</a>
-                        <a href="rooms.html" class="header_menu_item header_link">Номера</a>
-                        <a href="services.html" class="header_menu_item header_link header_menu_item__active">Услуги</a>
-                        <a href="sales.html" class="header_menu_item header_link">Акции</a>
-                        <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
-                        <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                        <a href="profile_active.html" class="header_menu_item header_link">Личный кабинет</a>
+                        <a href="index.html" class="header_menu_item header_link" data-text="Главная">Главная</a>
+                        <a href="rooms.html" class="header_menu_item header_link"  data-text="Номера">Номера</a>
+                        <a href="#" class="header_menu_item header_link header_menu_item__active" data-text="Услуги">Услуги</a>
+                        <a href="sales.html" class="header_menu_item header_link" data-text="Акции">Акции</a>
+                        <a href="contacts.html" class="header_menu_item header_link" data-text="Контакты">Контакты</a>
+                        <a href="cart.html" class="header_menu_item header_link" data-text="Корзина">Корзина</a>
+                        <p class="header_menu_item header_link" id="login_open" data-text="Личный кабинет">Личный кабинет</p>
                     </nav>
 
                     <div class="header_burger">
                         <span></span>
-                    </div>
-
-                    <div class="header_menu__mobile">
-                        <ul class="header_mobile_content">
-                            <li>
-                                <a href="index.html" class="header_menu_item header_link">Главная</a>
-                            </li>
-                            <li>
-                                <a href="rooms.html" class="header_menu_item header_link">Номера</a>
-                            </li>
-                            <li>
-                                <a href="services.html" class="header_menu_item header_link header_menu_item__active">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="sales.html" class="header_menu_item header_link">Акции</a>
-                            </li>
-                            <li>
-                                <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                            </li>
-                            <li>
-                                <a href="profile_active.html" class="header_menu_item header_link">Личный кабинет</a>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
@@ -120,14 +94,12 @@
 
                             <div class="always-slider-required"></div>
 
-                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big slider_content__active">
-                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
-                            <img src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
+                            <img data-number="0" src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big slider_content__active">
+                            <img data-number="1" src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
+                            <img data-number="2" src="../img/card/service.png" alt="Езда верхом" class="photos_img slider_content slider_content__big">
                             
                             <div class="slider">
-                                <div class="slider_item slider_item__active"></div>
-                                <div class="slider_item"></div>
-                                <div class="slider_item"></div>
+                                
                             </div>
                         </div>
         
@@ -312,9 +284,6 @@
                     </div>
                 </article>
                 <div class="slider">
-                    <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div>
                 </div>
             </div>
 
@@ -365,9 +334,6 @@
                 </article>
 
                 <div class="slider slider__hidden">
-                    <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div>
                 </div>
 
             </div>
@@ -418,9 +384,6 @@
                 </article>
 
                 <div class="slider slider__hidden">
-                    <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div>
                 </div>
 
             </div>
@@ -485,12 +448,37 @@
 
     </footer>
 
+    <div class="modal_wrapper modal_wrapper__light " id="images_modal">
+        <div class="images_popup" id="images_popup">
+
+            <div class="slick_slider">
+                
+                <div class="slick_slider_item">
+                    <img src="../img/card/service.png" alt="Езда верхом">
+                </div>
+                <div class="slick_slider_item">
+                    <img src="../img/card/service.png" alt="Езда верхом">
+                </div>
+                <div class="slick_slider_item">
+                    <img src="../img/card/service.png" alt="Езда верхом">
+                </div>
+
+            </div>
+            
+            <i class="fa-solid fa-xmark images_close" id="images_close"></i>
+            
+        </div>
+    </div>
+
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../js/jquery_migrate.min.js"></script>
     <script src="../js/jquery.mobile.custom.min.js"></script>
     <script type="text/javascript" src="../js/slider.js"></script>
-    <script type="text/javascript" src="../js/burger.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/slick_slider.js"></script>
+    <script type="text/javascript" src="../js/header_burger.js"></script>
     <script type="text/javascript" src="../js/picked_time.js"></script>
+
 
 </body>
 </html>

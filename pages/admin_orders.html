@@ -105,13 +105,16 @@
                                     <input type="text" class="form-control" id="room_id">
                                 </div>
 
-                                <div class="col-lg-3 col-md-3 col-6">
-                                    <label for="order_type" class="form-label">Тип заказа:</label>
-                                    <select id="order_type" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
-                                        <option selected>Все</option>
-                                        <option value="1">Номер</option>
-                                        <option value="2">Доп. услуга</option>
-                                    </select>
+                                <div class="col-lg-3 col-md-3 col-6 d-flex justify-content-md-end">
+                                    <div>
+                                        <label for="order_type" class="form-label">Тип заказа:</label>
+                                        <select id="order_type" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                            <option selected>Все</option>
+                                            <option value="1">Номер</option>
+                                            <option value="2">Доп. услуга</option>
+                                        </select>
+                                    </div>
+                                    
                                 </div>
 
                                 <div class="col-lg-3 col-md-6 col-6 mt-md-0 mt-3">
@@ -154,11 +157,11 @@
                                     <div class="d-flex justify-content-start gap-0">
                                         <div class="input-group flex-nowrap w-auto">
                                             <span class="input-group-text rounded-start" id="basic-addon1">с</span>
-                                            <input id="order_action" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                            <input id="order_action" type="date" class="form-control w-100 mw-8r rounded-0 flex-grow-0 flex-shrink-1">
                                         </div>
                                         <div class="input-group flex-nowrap w-auto">
                                             <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
-                                            <input type="date" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                            <input type="date" class="form-control w-100 mw-8r rounded-end flex-grow-0 flex-shrink-1">
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +245,7 @@
                                 id <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                             </th>
                             <th scope="col" class="text-nowrap col-hover" role="button">
-                                Заказ на <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                Наименование <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                             </th>
                             <th scope="col" class="text-nowrap col-hover" role="button">
                                 Клиент <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
@@ -274,10 +277,10 @@
                             <tr role="button">
                                 <th scope="row">1</th>
                                 <td>
-                                    <a href="#" class="link-hover">Двухэтажный домик у озера</a>
+                                    <a href="admin_manage_order.html" class="link-hover d-block">Двухэтажный домик у озера на 5 дней</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                    <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
@@ -291,10 +294,10 @@
                             <tr role="button">
                                 <th scope="row">2</th>
                                 <td>
-                                    <a href="#" class="link-hover">Двухэтажный домик у озера</a>
+                                    <a href="admin_manage_order.html" class="link-hover d-block">Двухэтажный домик у озера на 5 дней</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                    <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
@@ -308,10 +311,10 @@
                             <tr role="button">
                                 <th scope="row">3</th>
                                 <td>
-                                    <a href="#" class="link-hover">Двухэтажный домик у озера</a>
+                                    <a href="admin_manage_order.html" class="link-hover d-block">Двухэтажный домик у озера на 5 дней</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                    <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
@@ -325,10 +328,10 @@
                             <tr role="button">
                                 <th scope="row">4</th>
                                 <td>
-                                    <a href="#" class="link-hover">Езда верхом</a>
+                                    <a href="admin_manage_service.html" class="link-hover d-block">Езда верхом на 3 человек(а)</a>
                                 </td>
                                 <td>
-                                    <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                    <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
                                 <td>В процессе</td>
                                 <td>Полностью оплачено</td>

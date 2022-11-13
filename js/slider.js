@@ -7,7 +7,7 @@ $(document).ready(function(){
             const count = $(this).siblings('.slider_content').length;
             var dot = '<div class="slider_item"></div>';
             //var dot = $(this).children('.slider_item').first();
-            for(let i = 0; i < count - 1; i++){
+            for(let i = 0; i < count; i++){
                 $(this).append(dot);
                 //dot.clone().appendTo($(this));
             }

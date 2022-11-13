@@ -54,20 +54,20 @@
                     </a>
 
                     <nav class="header_menu">
-                        <a href="#" class="header_menu_item header_link header_menu_item__active">Главная</a>
-                        <a href="rooms.html" class="header_menu_item header_link">Номера</a>
-                        <a href="services.html" class="header_menu_item header_link">Услуги</a>
-                        <a href="sales.html" class="header_menu_item header_link">Акции</a>
-                        <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
-                        <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                        <p class="header_menu_item header_link" id="login_open">Личный кабинет</p>
+                        <a href="#" class="header_menu_item header_link header_menu_item__active" data-text="Главная">Главная</a>
+                        <a href="rooms.html" class="header_menu_item header_link"  data-text="Номера">Номера</a>
+                        <a href="services.html" class="header_menu_item header_link" data-text="Услуги">Услуги</a>
+                        <a href="sales.html" class="header_menu_item header_link" data-text="Акции">Акции</a>
+                        <a href="contacts.html" class="header_menu_item header_link" data-text="Контакты">Контакты</a>
+                        <a href="cart.html" class="header_menu_item header_link" data-text="Корзина">Корзина</a>
+                        <p class="header_menu_item header_link" id="login_open" data-text="Личный кабинет">Личный кабинет</p>
                     </nav>
 
                     <div class="header_burger">
                         <span></span>
                     </div>
 
-                    <div class="header_menu__mobile">
+                    <!-- <div class="header_menu__mobile">
                         <ul class="header_mobile_content">
                             <li>
                                 <a href="#" class="header_menu_item header_link header_menu_item__active">Главная</a>
@@ -91,7 +91,7 @@
                                 <p class="header_menu_item header_link" id="login_open">Личный кабинет</p>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -445,7 +445,7 @@
                         <div class="footer_menu_column">
                             <a href="contacts.html" class="footer_link">Контакты</a>
                             <a href="cart.html" class="footer_link">Корзина</a>
-                            <p class="footer_link" id="login_open">Личный кабинет</p>
+                            <p class="footer_link" id="login_open__footer">Личный кабинет</p>
                             <!-- <a href="profile_active.html" class="footer_link">Личный кабинет</a> -->
                         </div>
 
@@ -478,52 +478,55 @@
 
     </footer>
 
-    <div class="login_popup" id="login_popup">
+    <div class="modal_wrapper modal_wrapper__dark" id="login_modal">
+        <div class="login_popup" id="login_popup">
 
-        <div class="login_title">
-            <a href="#" class="login_link login_link__active">Вход</a>
-            <span>/</span>
-            <a href="#" class="login_link" id="goto_singup">Регистрация</a>
-            <button class="login_close" id="login_close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+            <div class="login_title">
+                <p class="login_link login_link__active">Вход</p>
+                <span>/</span>
+                <p class="login_link" id="goto_singup">Регистрация</p>
+                <button class="login_close" id="login_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+    
+            <div class="login_fields">
+                <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
+                <input class="login_field input_field" type="text" name="password" id="password" placeholder="Пароль">
+            </div>
+    
+            <div>
+                <p class="login_reset">Забыли пароль?</p>
+            </div>
+    
+            <div class="login_buttons">
+                <button class="login_button" id="end_login_button">Войти</button>
+            </div>
+    
         </div>
 
-        <div class="login_fields">
-            <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
-            <input class="login_field input_field" type="text" name="password" id="password" placeholder="Пароль">
-        </div>
+        <div class="login_popup" id="signup_popup">
 
-        <div>
-            <p class="login_reset">Забыли пароль?</p>
-        </div>
+            <div class="login_title">
+                <p class="login_link" id="goto_login">Вход</p>
+                <span>/</span>
+                <p class="login_link login_link__active">Регистрация</p>
+                <button class="login_close" id="signup_close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
 
-        <div class="login_buttons">
-            <button class="login_button" id="end_login_button">Войти</button>
-        </div>
+            <div class="login_fields">
+                <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
+            </div>
 
+            <div class="login_buttons">
+                <button class="login_button" id="end_signup_button">Прислать пароль</button>
+            </div>
+
+        </div>
     </div>
 
-    <div class="login_popup" id="signup_popup">
-
-        <div class="login_title">
-            <a href="#" class="login_link" id="goto_login">Вход</a>
-            <span>/</span>
-            <a href="#" class="login_link login_link__active">Регистрация</a>
-            <button class="login_close" id="signup_close">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-
-        <div class="login_fields">
-            <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
-        </div>
-
-        <div class="login_buttons">
-            <button class="login_button" id="end_signup_button">Прислать пароль</button>
-        </div>
-
-    </div>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../js/jquery_migrate.min.js"></script>
