@@ -4,6 +4,7 @@
 .dates{
     @include mixins.content_block(1em);
     flex-basis: vars.$block_width_decs;
+    max-width: vars.$block_width_decs;
     line-height: 1.5;
 
     .dates_title{
@@ -13,6 +14,7 @@
     .calendar{
         display: block;
         width: 100%;
+        max-width: 100%;
     }
 
     @include mixins.device(tablet){
