@@ -67,32 +67,6 @@
                         <span></span>
                     </div>
 
-                    <!-- <div class="header_menu__mobile">
-                        <ul class="header_mobile_content">
-                            <li>
-                                <a href="#" class="header_menu_item header_link header_menu_item__active">Главная</a>
-                            </li>
-                            <li>
-                                <a href="rooms.html" class="header_menu_item header_link">Номера</a>
-                            </li>
-                            <li>
-                                <a href="services.html" class="header_menu_item header_link">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="sales.html" class="header_menu_item header_link">Акции</a>
-                            </li>
-                            <li>
-                                <a href="contacts.html" class="header_menu_item header_link">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="cart.html" class="header_menu_item header_link">Корзина</a>
-                            </li>
-                            <li>
-                                <p class="header_menu_item header_link" id="login_open">Личный кабинет</p>
-                            </li>
-                        </ul>
-                    </div> -->
-
                 </div>
 
             </div>
@@ -164,7 +138,7 @@
     
                     </div>
     
-                    <button class="button__find">Найти</button>
+                    <button class="button__find" data-action="goto_rooms" type="button">Найти</button>
     
                 </form>
     
@@ -203,43 +177,40 @@
                 <div class="tablet-slider-required"></div>
 
 
-                <article class="card_short recomendations_item slider_content slider_content__active">
+                <article class="card_short recomendations_item slider_content slider_content__active" data-action="goto_room">
                     <div class="card_inner">
                         <img src="../img/card/house.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Двухэтажный домик у озера 1</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_room__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="card_short recomendations_item slider_content">
+                <article class="card_short recomendations_item slider_content" data-action="goto_room">
                     <div class="card_inner">
                         <img src="../img/card/house.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Двухэтажный домик у озера 2</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_room__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="card_short recomendations_item slider_content">
+                <article class="card_short recomendations_item slider_content"  data-action="goto_room">
                     <div class="card_inner">
                         <img src="../img/card/house.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Двухэтажный домик у озера 3</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_room__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
                 <div class="slider slider__hidden">
-                    <!-- <div class="slider_item"></div> -->
-                    <!-- <div class="slider_item"></div>
-                    <div class="slider_item"></div> -->
                 </div>
 
             </div>
@@ -256,43 +227,40 @@
 
                 <div class="tablet-slider-required"></div>
 
-                <article class="card_short recomendations_item slider_content slider_content__active">
+                <article class="card_short recomendations_item slider_content slider_content__active" data-action="goto_service">
                     <div class="card_inner">
                         <img src="../img/card/service.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Езда верхом 1</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_service__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="card_short recomendations_item slider_content">
+                <article class="card_short recomendations_item slider_content"  data-action="goto_service">
                     <div class="card_inner">
                         <img src="../img/card/service.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Езда верхом 2</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_service__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
-                <article class="card_short recomendations_item slider_content">
+                <article class="card_short recomendations_item slider_content" data-action="goto_service">
                     <div class="card_inner">
                         <img src="../img/card/service.png" alt="Номер" class="card_img">
                         <div class="card_info">
                             <p class="card_info_title">Езда верхом 3</p>
                             <p class="card_info_text">Начиная от: <span class="highlighted">8.999&#8381;</span></p>
-                            <button class="button__card">Забронировать</button>
+                            <button class="card_button card_button__long" data-action="goto_service__book">Забронировать</button>
                         </div>
                     </div>
                 </article>
 
                 <div class="slider slider__hidden">
-                    <!-- <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div> -->
                 </div>
 
             </div>
@@ -310,7 +278,7 @@
 
                 <div class="always-slider-required"></div>
 
-                <article class="card_short slider_content slider_content__big slider_content__active">
+                <article class="card_short slider_content slider_content__big slider_content__active" data-action="goto_sale">
                     <div class="card_inner">
                         <img src="../img/card/sale.jpg" alt="Акции" class="card_img">
                         <div class="card_info">
@@ -318,7 +286,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="card_short slider_content slider_content__big">
+                <article class="card_short slider_content slider_content__big" data-action="goto_sale">
                     <div class="card_inner">
                         <img src="../img/card/sale.jpg" alt="Акции" class="card_img">
                         <div class="card_info">
@@ -326,7 +294,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="card_short slider_content slider_content__big">
+                <article class="card_short slider_content slider_content__big" data-action="goto_sale">
                     <div class="card_inner">
                         <img src="../img/card/sale.jpg" alt="Акции" class="card_img">
                         <div class="card_info">
@@ -335,9 +303,6 @@
                     </div>
                 </article>
                 <div class="slider">
-                    <!-- <div class="slider_item slider_item__active"></div>
-                    <div class="slider_item"></div>
-                    <div class="slider_item"></div> -->
                 </div>
             </div>
             
@@ -429,7 +394,7 @@
                 <div class="footer_section footer_section__info">
                     <h3 class="footer_title">Crystal Lake</h3>
                     <a href="contacts.html#main_map" class="footer_link">Россия, Иркутская область, Кристальные Озера</a>
-                    <button class="button__footer">Забронировать</button>
+                    <button class="button__footer" data-action="goto_rooms">Забронировать</button>
                 </div>
 
                 <div class="footer_section footer_section__menu">
@@ -534,6 +499,7 @@
     <script type="text/javascript" src="../js/slider.js"></script>
     <script type="text/javascript" src="../js/header_burger.js"></script>
     <script type="text/javascript" src="../js/login_popup.js"></script>
+    <script type="text/javascript" src="../js/redirect/redirect.js"></script>
     
 </body>
 

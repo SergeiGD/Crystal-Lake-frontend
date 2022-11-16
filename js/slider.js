@@ -9,7 +9,6 @@ $(document).ready(function(){
             //var dot = $(this).children('.slider_item').first();
             for(let i = 0; i < count; i++){
                 $(this).append(dot);
-                //dot.clone().appendTo($(this));
             }
             $(this).children('.slider_item').first().addClass('slider_item__active');
         });
@@ -125,28 +124,5 @@ $(document).ready(function(){
 
     swipe_auto();
 
-    //do_slide();
-
-    // $('.slider').slick({
-    //     arrows: false,
-    //     dots: false,
-    //     slidesToShow: 3,
-    //     autoplay: true,
-    //     autoplaySpeed: 5000,
-    //     draggable: true,
-    //     swipe: true,
-    //     // variableWidth: true,
-    //     responsive:[
-    //         {
-    //             breakpoint: 1279,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 dots: true,
-    //                 //centerMode: true,
-    //                 //variableWidth: true,
-    //             }
-    //         }
-    //     ]
-    // });
 
 });

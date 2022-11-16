@@ -30,13 +30,6 @@ $(document).ready(function(){
         firstDayOfWeek: 1
     });
 
-
-    // $('#evoCalendar').on('selectMonth', function(){
-    //     $(".event-indicator").each(function(){              // если на день есть событие, то номер занят
-    //         $(this).parent().addClass('day-busy');
-    //     });
-    // });
-
     $('.calendar-events').addClass('calendar-events__required');
    
 
@@ -48,12 +41,6 @@ $(document).ready(function(){
     });
 
     $('#evoCalendar').evoCalendar('selectMonth', new Date().getMonth());    // выбираем текущий месяц
-
-    // $('#evoCalendar').on("selectDate", function(){
-    //     console.log("asd")
-    //     $(this).evoCalendar('toggleEventList', true);
-    // });
-
     
 
     $('#evoCalendar').evoCalendar('selectMonth', new Date().getMonth());    // выбираем текущий месяц
