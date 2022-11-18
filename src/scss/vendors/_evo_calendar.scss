@@ -1008,12 +1008,14 @@ button.icon-button > span.chevron-arrow-right {
 
 .evo-calendar{
     box-shadow: none !important;
+    height: fit-content !important;
 }
 
 .bars, .bars::before, .bars::after {
     background-color: #000 !important;
-
-    @include mixins.device(mobile){
+}
+@media screen and (max-width: 500px) {
+    .bars, .bars::before, .bars::after{
         background-color: #fff !important;
     }
 }
@@ -1038,6 +1040,7 @@ th[colspan="7"]::after{
 .calendar-sidebar{
     background-color: #000 !important;
     box-shadow: 5px 0 15px -3px #000;
+    
 }
 
 .calendar-inner::after{
@@ -1053,6 +1056,10 @@ th[colspan="7"]::after{
 .month-list{
     background-color: #000 !important;
     width: 100% !important;
+    overflow-y: auto !important;
+    position: relative !important;
+    height: calc(100% - 86px) !important;
+    transform: translateY(0) !important;
 }
 
 .active-month{

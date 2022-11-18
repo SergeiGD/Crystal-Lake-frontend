@@ -47,6 +47,11 @@
                             Заказы
                         </a>
                     </li>
+                    <li class="breadcrumb-item">
+                        <a href="admin_show_order.html" class="link-hover text-dark text-decoration-none">
+                            Просмотр заказа
+                        </a>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">Редактирование заказа</li>
                 </ol>
             </nav>
@@ -92,182 +97,90 @@
                 </li>
             </ul>
 
-            <main>
+            
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-square-minus text-danger icon_delete"></i>
+                    <i class="fa-regular fa-square-minus text-danger card_icon"></i>
 
                     <div class="text-center">
-                        <span class="lead">id заказа: </span>
-                        <span class="lead fw-bold">19</span>
+                        <span class="fw-bold fs-5">id заказа: </span>
+                        <span class="fw-bold fs-5">19</span>
                     </div>
 
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-
-                            <div>
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Наименование</span>
-                                    <span class="form-control">Двухэтажный домик у озера на 5 дней</span>
-                                </div>
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1">Клиент</span>
+                                <span class="form-control">Иванов Иван Иванович</span>
                             </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Клиент</span>
-                                    <div class="d-flex">
-                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-100">Иванов Иван Иванович</a>
-                                        <button class="btn btn-primary w-5r rounded-0 rounded-end flex-grow-0">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <label  for="manage_status" class="input-group-text w-10r" id="basic-addon1">Статус заказа</label>
-                                    <select id="manage_status" class="form-select ">
-                                        <option value="1" selected>В процессе</option>
-                                        <option value="2">Завершен</option>
-                                        <option value="3">Отменен</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <label for="manage_paid" class="input-group-text w-10r" id="basic-addon1">Внесено средств</label>
-                                    <input id="manage_paid" type="number" class="form-control " value="8999">
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Осталось оплатить</span>
-                                    <span class="form-control ">4835</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Статус оплаты</span>
-                                    <span class="form-control">Полностью оплачен</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1 ">Стоимость</span>
-                                    <span class="form-control ">21424</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Предоплата</span>
-                                    <span class="form-control ">3524</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Бонусов списано</span>
-                                    <span class="form-control ">723</span>
-                                </div>
-                            </div>
-
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Сумма при отмене</span>
-                                    <span class="form-control ">213</span>
-                                </div>
-                            </div>
-
                         </div>
 
-                        
                         <div class="col-lg-6 col-12">
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1">Наименование</span>
+                                <span class="form-control">Двухэтажный домик у озера на 5 дней</span>
+                            </div>
+                        </div>
 
-                            <div class="mt-lg-0 mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Заказ на</span>
-                                    <div class="d-flex">
-                                        <a href="admin_manage_client.html"  class="form-control rounded-0 text-primary link-hover w-15r flex-grow-1">Двухэтажный домик у озера</a>
-                                        <button class="btn btn-primary w-5r rounded-0 rounded-end flex-grow-0">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_paid" class="input-group-text w-10r" id="basic-addon1">Внесено средств</label>
+                                <input id="manage_paid" type="number" class="form-control " value="8999">
                             </div>
-    
-                            
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Заселение</label>
-                                    <input id="manage_date_start" type="date" class="form-control " value="2022-06-15">
-                                </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto">
+                                <label for="manage_bonus" class="input-group-text w-10r" id="basic-addon1">Бонусов списано</label>
+                                <input id="manage_bonus" type="number" class="form-control " value="1245">
                             </div>
-    
-    
-                            
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto">
-                                    <label for="manage_date_start" class="input-group-text w-10r" id="basic-addon1">Выселение</label>
-                                    <input id="manage_date_start" type="date" class="form-control " value="2022-06-30">
-                                </div>
-                            </div>
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Дата создания</span>
-                                    <span class="form-control ">10.06.2022 12:00</span>
-                                </div>
-                            </div>
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Дата предоплаты</span>
-                                    <span class="form-control ">10.06.2022 12:05</span>
-                                </div>
-                            </div>
-    
-                            
-    
-                            
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Дата оплаты</span>
-                                    <span class="form-control ">Нет</span>
-                                </div>
-                            </div>
-    
-                            
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Дата завершения</span>
-                                    <span class="form-control ">Нет</span>
-                                </div>
-                            </div>
-    
-                            
-    
-                            <div class="mt-4">
-                                <div class="input-group flex-nowrap w-auto  opacity-75">
-                                    <span class="input-group-text w-10r" id="basic-addon1">Дата отмены</span>
-                                    <span class="form-control ">нет</span>
-                                </div>
-                            </div>
-    
-                            
                         </div>
 
                         
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto">
+                                <label  for="manage_status" class="input-group-text w-10r" id="basic-addon1">Статус заказа</label>
+                                <select id="manage_status" class="form-select ">
+                                    <option value="1" selected>В процессе</option>
+                                    <option value="2">Завершен</option>
+                                    <option value="3">Отменен</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1">Осталось оплатить</span>
+                                <span class="form-control ">4835</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1 ">Стоимость</span>
+                                <span class="form-control ">21424</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1">Предоплата</span>
+                                <span class="form-control ">3524</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-4">
+                            <div class="input-group flex-nowrap w-auto  opacity-75">
+                                <span class="input-group-text w-10r" id="basic-addon1">Печеплачено</span>
+                                <span class="form-control ">0</span>
+                            </div>
+                        </div>
+
                         <div class="col-12 mt-4">
 
                             <label class="input-group-text rounded-top rounded-0" for="manage_info">Комментарий к заказу</label>
@@ -275,6 +188,7 @@
                             </textarea>
 
                         </div>
+
 
                         <div class="col-12 mt-4">
                             <div class="d-flex justify-content-between">
@@ -287,131 +201,143 @@
 
                 </form>
 
+                <!-- services -->
 
-                <!-- logs -->
-
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
-
-                    <i class="fa-regular fa-trash-can text-danger icon_delete"></i>
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
 
                     <div class="text-center">
-                        <span class="lead">События заказа</span>
+                        <span class="fw-bold fs-5">Услуги в заказе</span>
                     </div>
-
-                    <div class="shadow p-3 rounded-2 justify-content-between row w-100 mx-auto">
-
-                        <div class="col-12 row justify-content-between mx-auto p-0">
-
-                            <div class="col-md-3 col-6">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <label for="logs_id" class="form-label mb-0">id:</label>
-                                    <input id="logs_id" type="number" class="form-control w-100rounded-end flex-grow-1 flex-shrink-1">
-                                </div>
-                            </div>
-
-                            <div class="col-auto mt-md-0 mt-3">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <label for="logs_date" class="form-label mb-0">Даты:</label>
-                        
-                                    <div class="d-flex justify-content-start gap-0">
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text rounded-start" id="basic-addon1">с</span>
-                                            <input id="logs_date" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
-                                        </div>
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text  rounded-0" id="basic-addon1">по</span>
-                                            <input type="date" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12 mt-3">
-                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
-                        </div>
-
-    
-                    </div>
-
-                    <!-- <div class="shadow rounded-2 mt-4 p-3 d-flex gap-4 overflow-auto">
-
-                        <button class="btn btn-light">
-                            <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                            <span>id</span>    
-                        </button>
-
-                        <button class="btn btn-c_yellow-700 ">
-                            <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                            <span>Дата</span>    
-                        </button>
-    
-                    </div> -->
 
                     <div class="overflow-auto mt-4">
                         <table class="table table-striped table-hover table-bordered">
                             <thead>
                             <tr>
-                                <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
-                                    id <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                                </th>
-                                <th scope="col" class="text-nowrap col-hover" role="button">
-                                    Дата <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                                </th>
-                                <th scope="col" class="text-nowrap col-hover" role="button">
-                                    Описание <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                                </th>
+                                <th scope="col">id</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Начало</th>
+                                <th scope="col">Конец</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col">Стоимость</th>
+                                <th scope="col">Возврат</th>
+                                <th scope="col" class="px-3 text-center" >Изменить</th>
+                                <th scope="col" class="px-3 text-center" >Удалить</th>
                             </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="p-0" colspan="9">
+                                        <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap">2</th>
+                                    <td class="text-nowrap">
+                                        <a href="admin_show_room.html" class="link-hover d-block">Двухэтажный домик у озера</a>
+                                    </td>
+                                    <td class="text-nowrap">23.05.2022</td>
+                                    <td class="text-nowrap">01.06.2022</td>
+                                    <td class="text-nowrap">Нет</td>
+                                    <td>19248&#8381;</td>
+                                    <td>1248&#8381;</td>
+                                    <td class="p-0 position-relative w-10r">
+                                        <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Изменить</button>
+                                    </td>
+                                    <td class="p-0 position-relative w-10r">
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Удалить</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-nowrap">7</th>
+                                    <td class="text-nowrap">
+                                        <a href="admin_manage_service.html" class="link-hover d-block">Езда верхом</a>
+                                    </td>
+                                    <td class="text-nowrap">23.05.2022 17:00</td>
+                                    <td class="text-nowrap">23.05.2022 19:00</td>
+                                    <td class="text-nowrap">2</td>
+                                    <td>9248&#8381;</td>
+                                    <td>1248&#8381;</td>
+                                    <td class="p-0 position-relative w-10r">
+                                        <button class="btn btn-primary w-100 rounded-0 h-100 position-absolute">Изменить</button>
+                                    </td>
+                                    <td class="p-0 position-relative w-10r">
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Удалить</button>
+                                    </td>
+                                </tr>
+     
+                            </tbody>
+                        </table>
+                    </div>
+                    
+ 
+                </form>
+
+                <!-- services end -->
+
+                <!-- sales -->
+
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
+
+                    <div class="text-center">
+                        <span class="fw-bold fs-5">Примененные акции</span>
+                    </div>
+
+                    <div class="overflow-auto mt-4">
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">Наименование</th>
+                                <th scope="col">Действует на</th>
+                                <th scope="col">Скидка</th>
+                                <th scope="col">Итого цена</th>
+                                <th scope="col" class="px-3 text-center" >Убрать</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-0" colspan="8">
+                                        <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <th scope="row">1</th>
-                                    <td class="text-nowrap">25.06.2022 12:00</td>
-                                    <td>Заказ создан</td>
-                                    
+                                    <td>
+                                        <a href="admin_manage_sale.html" class="link-hover">Новогодние скидки</a> 
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="admin_manage_service.html" class="link-hover d-block">Езда верхом</a>
+                                    </td>
+                                    <td>15%</td>
+                                    <td>12354&#8381;</td>
+                                    <td class="p-0 position-relative">
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute">Убрать</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td class="text-nowrap">25.06.2022 12:05</td>
-                                    <td>Внесение средств: 2345</td>
-                                    
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td class="text-nowrap">25.06.2022 12:05</td>
-                                    <td>Статус оплаты изменен: Внесена предоплата</td>
-                                    
+                                    <th scope="row">1</th>
+                                    <td>
+                                        <a href="admin_manage_sale.html" class="link-hover">Живи дольше плати меньше</a> 
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a href="admin_show_room.html" class="link-hover d-block">Двухэтажный домик у озера</a>
+                                    </td>
+                                    <td>15%</td>
+                                    <td>12354&#8381;</td>
+                                    <td class="p-0 position-relative">
+                                        <button class="btn btn-danger w-100 rounded-0 h-100 position-absolute" disabled>Убрать</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
+                    
 
-                    <nav class="d-flex justify-content-center mt-4">
-                        <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                        </ul>
-                    </nav>  
                 </form>
 
-                <!-- logs end -->
+                <!-- end sales -->
 
-                
-
-            </main>
 
         </div>
 

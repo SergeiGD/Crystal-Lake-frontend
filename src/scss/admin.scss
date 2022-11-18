@@ -24,5 +24,8 @@
 // custom classes
 @import "vendors/bootstrap_classes";
 
-// the rest remaining
+// the rest remaining bootstrap
 @import "~bootstrap/scss/bootstrap";
+
+// jquery plugins
+@import "vendors/evo_calendar";

@@ -83,6 +83,6 @@ $(document).ready(function(){
         });
     });
 
-    $('#evoCalendar').evoCalendar('selectMonth', new Date().getMonth());    // выбираем текущий месяц
+    $('.evoCalendar').evoCalendar('selectMonth', new Date().getMonth());    // выбираем текущий месяц
     
 });
