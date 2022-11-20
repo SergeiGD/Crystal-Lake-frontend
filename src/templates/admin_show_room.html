@@ -120,43 +120,43 @@
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Обычная цена:</p>
                             <p class="opacity-75 col-7">8999&#8381;</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Праздничная цена:</p>
                             <p class="opacity-75 col-7">8999&#8381;</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Комнат:</p>
                             <p class="opacity-75 col-7">4</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Площадь (м&#178;):</p>
                             <p class="opacity-75 col-7">142</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Этажей:</p>
                             <p class="opacity-75 col-7">2</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Предоплата:</p>
                             <p class="opacity-75 col-7">10%</p>
                             <hr>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4 row">
+                        <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Возврат:</p>
                             <p class="opacity-75 col-7">25%</p>
                             <hr>
@@ -215,7 +215,7 @@
                             <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
                             <div class="img_wrapper">
                                 <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
-                                <button class="btn open_img btn-dark">
+                                <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                 </button>
                             </div>
@@ -243,7 +243,7 @@
 
                                             <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
-                                            <button class="btn open_img btn-dark">
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
@@ -260,7 +260,7 @@
 
                                             <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
-                                            <button class="btn open_img btn-dark">
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
@@ -278,7 +278,7 @@
 
                                             <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
-                                            <button class="btn open_img btn-dark">
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
@@ -435,6 +435,9 @@
                                 Клиент <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                             </th>
                             <th scope="col" class="text-nowrap col-hover" role="button">
+                                Номер <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                            </th>
+                            <th scope="col" class="text-nowrap col-hover" role="button">
                                 Статус заказа <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                             </th>
                             <th scope="col" class="text-nowrap col-hover" role="button">
@@ -458,6 +461,7 @@
                                 <td>
                                     <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
+                                <td>19</td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
                                 <td>28424</td>
@@ -472,6 +476,7 @@
                                 <td>
                                     <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
+                                <td>19</td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
                                 <td>28424</td>
@@ -486,6 +491,7 @@
                                 <td>
                                     <a href="admin_manage_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                 </td>
+                                <td>36</td>
                                 <td>В процессе</td>
                                 <td>Внесена предоплата</td>
                                 <td>28424</td>
@@ -731,7 +737,23 @@
         </div>
 
     </footer>
-    
+
+
+    <!-- show image modal -->
+    <div class="modal fade" id="show_img_modal" tabindex="-1" aria-labelledby="show_img_label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="show_img_label">Просмотр изображения</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="img_modal" class="w-100" alt="Просмотр изображения" data-asd="asdasd">
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- show image modal end     -->
     
     
 </body>

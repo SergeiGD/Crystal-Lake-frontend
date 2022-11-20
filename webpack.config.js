@@ -82,7 +82,9 @@ module.exports = {
         admin: [
             path.resolve(__dirname,'src/scss/admin.scss'),
             path.resolve(__dirname,'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'),
-            path.resolve(__dirname,'src/js/redirect.js')
+            path.resolve(__dirname,'src/js/redirect.js'),
+            path.resolve(__dirname,'src/js/admin/show_img.js'),
+            path.resolve(__dirname,'src/js/admin/move_img.js'),
         ]
     },
     output: {

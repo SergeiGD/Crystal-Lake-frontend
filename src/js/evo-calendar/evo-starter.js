@@ -72,7 +72,7 @@ $(document).ready(function(){
     $('.calendar__service .calendar-events').addClass('calendar-events__required');
    
     $('.calendar__service').on('selectMonth', function(){
-        $(".event-indicator").each(function(){              // если на день есть событие, то номер занят
+        $(".event-indicator").each(function(){              // если на день есть событие, оказываем услугу в этот день
             $(this).parent().addClass('day-enable');
         });
     });
