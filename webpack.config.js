@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isDev = process.env.PROJECT_ENV == 'development';
@@ -82,7 +81,8 @@ module.exports = {
         ],
         admin: [
             path.resolve(__dirname,'src/scss/admin.scss'),
-            path.resolve(__dirname,'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+            path.resolve(__dirname,'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'),
+            path.resolve(__dirname,'src/js/redirect.js')
         ]
     },
     output: {
@@ -132,12 +132,8 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
         }),
-        new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: [
-                './*'
-            ],
-        }),
-    ].concat(multileHtmlWebpackPages),
+        ...multileHtmlWebpackPages
+    ],
     resolve: {
         alias:{
             '@scss': path.resolve(__dirname, 'src/scss')

@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/scss/admin.scss":
@@ -8,9 +7,33 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/js/redirect.js":
+/*!****************************!*\
+  !*** ./src/js/redirect.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$(document).ready(function(){
+    $("[data-goto]").on('click', function(e){
+        e.stopPropagation();
+        window.location.href = e.currentTarget.getAttribute('data-goto');
+    });
+
+    $(".offers").on('click', function(e){
+        console.log("asd");
+        const elem = e.target.closest('[data-goto]');                                       // в списке офферов (скидки) есть элементы, добавляющиеся диначимески.
+        if(!elem) return;                                                                   // поэтому будет искать в его дочерних элементах
+        if (elem.dataset.goto) window.location.href = elem.dataset.goto;
+    });
+});
 
 /***/ })
 
@@ -150,8 +173,9 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js"], () => (__webpack_require__("./src/scss/admin.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js"], () => (__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")))
+/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js"], () => (__webpack_require__("./src/scss/admin.scss")))
+/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js"], () => (__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery_js","vendors-node_modules_bootstrap_dist_js_bootstrap_bundle_min_js"], () => (__webpack_require__("./src/js/redirect.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

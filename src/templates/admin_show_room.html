@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-main">
     
@@ -99,7 +99,7 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-pen-to-square card_icon"></i>
+                    <i class="fa-regular fa-pen-to-square card_icon" data-goto="admin_manage_room.html"></i>
 
                     <div class="text-center">
                         <span class="fw-bold fs-5">id номера: </span>
@@ -214,7 +214,7 @@
                         <div class="col-lg-6 col-12 mt-lg-0 mt-4">
                             <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
                             <div class="img_wrapper">
-                                <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
                                 <button class="btn open_img btn-dark">
                                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                 </button>
@@ -241,7 +241,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -258,7 +258,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -276,7 +276,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -299,7 +299,7 @@
 
                 <!-- dates -->
 
-                <div class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
+                <div class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5" id="dates">
 
                     <div class="text-center">
                         <span class="fw-bold fs-5">Свободные даты</span>
@@ -335,99 +335,87 @@
                     <i class="fa-regular fa-trash-can text-danger card_icon"></i>
 
                     <div class="row align-items-start justify-content-between">
+                        <div class="col-12 row mx-auto p-0">
 
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <label for="order_id" class="form-label text-nowrap">id заказа:</label>
+                                <input type="text" class="form-control" id="order_id">
+                            </div>
 
-                            <div class="col-12 row mx-auto p-0">
+                            <div class="col-lg-2 col-md-3 col-6">
+                                <label for="order_status" class="form-label">Статус заказа:</label>
+                                <select id="order_status" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
+                                    <option selected>В процессе</option>
+                                    <option value="1">Завершен</option>
+                                    <option value="2">Отменен</option>
+                                    <option value="3">Все</option>
+                                </select>
+                            </div>
 
-                                <div class="col-lg-6 col-md-6 col-12 ">
-                                    <div class="col-md-6 col-12">
-                                        <label for="room_id" class="form-label">id заказа:</label>
-                                        <input type="text" class="form-control" id="room_id">
+                            <div class="col-lg-3 col-md-3 col-6 mt-md-0 mt-3">
+                                <label for="order_payment" class="form-label">Статус оплаты:</label>
+                                <select id="order_payment" class="form-select w-100 mw-15r flex-grow-0 flex-shrink-1">
+                                    <option value="1" selected>Внесена предоплата</option>
+                                    <option value="2">Полностью оплачен</option>
+                                    <option value="3">Средства возвращены</option>
+                                    <option value="4">Все</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-3">
+                                <label for="order_price" class="form-label">Цена заказа:</label>
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">от</span>
+                                        <input id="order_price" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="col-lg-3 col-md-6 col-6 mt-md-0 mt-3">
-                                    <label for="order_status" class="form-label">Статус заказа:</label>
-                                    <select id="order_status" class="form-select w-100 mw-10r flex-grow-0 flex-shrink-1">
-                                        <option selected>В процессе</option>
-                                        <option value="1">Завершен</option>
-                                        <option value="2">Отменен</option>
-                                        <option value="3">Все</option>
-                                    </select>
-                                </div>
 
-                                <div class="col-lg-3 col-md-6 col-6 mt-lg-0 mt-3">
-                                    <label for="order_payment" class="form-label">Статус оплаты:</label>
-                                    <select id="order_payment" class="form-select w-100 mw-15r flex-grow-0 flex-shrink-1">
-                                        <option value="1" selected>Внесена предоплата</option>
-                                        <option value="2">Полностью оплачен</option>
-                                        <option value="3">Средства возвращены</option>
-                                        <option value="4">Все</option>
-                                    </select>
-                                </div>
+                            <div class="col-lg-7 col-md-6 col-12 mt-3">
+                                <label for="order_name" class="form-label">Наименование:</label>
+                                <input type="text" class="form-control" id="order_name">
+                            </div>
 
-                                <div class="col-lg-6 col-md-6 col-12 mt-3">
-                                    <label for="order_price" class="form-label">Цена заказа:</label>
-                                    <div class="d-flex justify-content-start gap-0">
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text rounded-start" id="basic-addon1">от</span>
-                                            <input id="order_price" type="number" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
-                                        </div>
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
-                                            <input type="number" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12 order-lg-0 order-last mt-3">
-                                    <label for="order_action" class="form-label">Даты оказания:</label>
-                                    
-                                    <div class="d-flex justify-content-start gap-0">
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text rounded-start" id="basic-addon1">с</span>
-                                            <input id="order_action" type="date" class="form-control w-100 mw-8r rounded-0 flex-grow-0 flex-shrink-1">
-                                        </div>
-                                        <div class="input-group flex-nowrap w-auto">
-                                            <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
-                                            <input type="date" class="form-control w-100 mw-8r rounded-end flex-grow-0 flex-shrink-1">
-                                        </div>
-                                    </div>
-                                </div>
-
+                            <div class="col-lg-5 col-md-6 col-12 mt-3">
+                                <label for="order_action" class="form-label">Даты оказания:</label>
                                 
-                                <div class="col-lg-6 col-md-6 col-12 mt-3">
-                                    <label for="order_client" class="form-label">Клиент:</label>
-                                    <div class="d-flex">
-                                        <input id="order_client" type="text" class="form-control rounded-0 rounded-start">
-                                        <button class="btn btn-primary w-5r rounded-0">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                        <button class="btn btn-danger w-5r rounded-0 rounded-end">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
+                                <div class="d-flex justify-content-start gap-0">
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text rounded-start" id="basic-addon1">с</span>
+                                        <input id="order_action" type="date" class="form-control w-100 mw-8r rounded-0 flex-grow-0 flex-shrink-1">
+                                    </div>
+                                    <div class="input-group flex-nowrap w-auto">
+                                        <span class="input-group-text  rounded-0" id="basic-addon1">до</span>
+                                        <input type="date" class="form-control w-100 mw-8r rounded-end flex-grow-0 flex-shrink-1">
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="col-lg-6 col-md-6 col-12 mt-3">
-                                    <label for="order_service" class="form-label">Заказ на:</label>
-                                    <div class="d-flex">
-                                        <input id="order_service" type="text" class="form-control rounded-0 rounded-start">
-                                        <button class="btn btn-primary w-5r rounded-0">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </button>
-                                        <button class="btn btn-danger w-5r rounded-0 rounded-end">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
+                            
+                            <div class="col-lg-7 col-md-6 col-12 mt-3">
+                                <label for="order_client" class="form-label">Клиент:</label>
+                                <div class="d-flex">
+                                    <input id="order_client" type="text" class="form-control rounded-0 rounded-start">
+                                    <button class="btn btn-primary w-5r rounded-0">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                    <button class="btn btn-danger w-5r rounded-0 rounded-end">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
                                 </div>
-
-                            </div>
-                        
-                            <div class="col-12 mt-3">
-                                <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
                             </div>
 
+                        </div>
+                    
+                        <div class="col-12 mt-3">
+                            <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
+                        </div>
                     </div>
 
                 </form>

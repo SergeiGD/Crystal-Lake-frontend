@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-main">
     
@@ -104,7 +104,7 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-square-minus text-danger card_icon"></i>
+                    <i class="fa-regular fa-square-minus text-danger card_icon" data-bs-toggle="modal" data-bs-target="#delete_modal"></i>
 
                     <div class="text-center">
                         <span class="fw-bold fs-5">id номера: </span>
@@ -267,7 +267,7 @@
                         <div class="col-lg-6 col-12 mt-lg-0 mt-4">
                             <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
                             <div class="img_wrapper">
-                                <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
                                 <button class="btn btn-primary upload_img">
                                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                     Загрузить фотографию
@@ -298,7 +298,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -330,7 +330,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -362,7 +362,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../img/card/house.png" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -401,12 +401,12 @@
                     <!-- accordion imges end -->               
 
                     
-                    
-                
 
-                    <div class="d-flex justify-content-between">
-                        <button type="button-" class="btn btn-lg btn-c_yellow-700">Сохранить</button>
-                        <button type="button" class="btn btn-lg btn-c_grey-100">Отмена</button>
+                    <div class="col-12 mt-4">
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-lg btn-c_yellow-700" data-bs-toggle="modal" data-bs-target="#save_modal">Сохранить</button>
+                            <button type="button" class="btn btn-lg btn-c_grey-100"  data-goto="admin_show_room.html">Назад</button>
+                        </div>
                     </div>
                     
 
@@ -556,6 +556,11 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="p-0" colspan="4">
+                                        <button class="btn btn-c_grey-100 w-100 rounded-0 py-2 fw-bold">+ Добавить</button>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td class="text-nowrap">01.01.2022 - 10.01.2022</td>
                                     <td>9248&#8381;</td>
                                     <td class="p-0 position-relative w-10r">
@@ -690,7 +695,43 @@
 
     </footer>
     
-    
+    <!-- modal save changes -->
+    <div class="modal fade" id="save_modal" tabindex="-1" aria-labelledby="save_modal_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="save_modal_label">Сохранить изменения?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы уверены, что хотите сохранить изменения?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary w-10r" data-bs-dismiss="modal" data-goto="admin_show_room.html">Да, сохранить</button>
+                    <button type="button" class="btn btn-secondary w-10r" data-bs-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- modal delete -->
+    <div class="modal fade" id="delete_modal" tabindex="-1" aria-labelledby="delete_modal_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="delete_modal_label">Удалить номер?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы уверены, что хотите удалить этот номер?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger w-10r" data-bs-dismiss="modal" data-goto="admin_rooms.html">Да, удалить</button>
+                    <button type="button" class="btn btn-secondary w-10r" data-bs-dismiss="modal">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div> 
     
 </body>
 </html>
