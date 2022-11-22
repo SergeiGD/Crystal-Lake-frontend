@@ -30,7 +30,7 @@ const client_info_pages = ['room', 'service', 'sale', 'profile_history_item'];
 const admin_common_pages = ['admin_clients', 'admin_manage_client', 'admin_manage_order', 'admin_manage_property', 'admin_manage_role', 'admin_manage_room', 
                             'admin_manage_sale', 'admin_manage_service', 'admin_manage_tag', 'admin_manage_worker', 'admin_orders', 'admin_profile', 'admin_properties', 
                             'admin_roles', 'admin_rooms', 'admin_sales', 'admin_services', 'admin_set_main', 'admin_tags', 'admin_weekends', 'admin_workers',
-                            'admin_show_room', 'admin_show_order'];
+                            'admin_show_room', 'admin_show_order', 'admin_show_client'];
 const multileHtmlWebpackPages = [                                                   
     ...client_common_pages.map(name => {                                            
         return new HtmlWebpackPlugin({
