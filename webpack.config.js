@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
@@ -25,36 +26,21 @@ const optimize = () => {
     return conf;
 }
 
-const client_common_pages = ['index', 'rooms', 'services', 'sales', 'contacts', 'cart', 'profile_active', 'profile_history', 'profile_info'];
-const client_info_pages = ['room', 'service', 'sale', 'profile_history_item'];
-const admin_common_pages = ['admin_clients', 'admin_manage_client', 'admin_manage_order', 'admin_manage_property', 'admin_manage_role', 'admin_manage_room', 
-                            'admin_manage_sale', 'admin_manage_service', 'admin_manage_tag', 'admin_manage_worker', 'admin_orders', 'admin_profile', 'admin_properties', 
-                            'admin_roles', 'admin_rooms', 'admin_sales', 'admin_services', 'admin_set_main', 'admin_tags', 'admin_weekends', 'admin_workers',
-                            'admin_show_room', 'admin_show_order', 'admin_show_client'];
 const multileHtmlWebpackPages = [                                                   
-    ...client_common_pages.map(name => {                                            
+    ...fs.readdirSync(path.resolve(__dirname, 'src/templates/client/')).map(name => { 
         return new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, `src/templates/${name}.html`), 
-            filename: path.resolve(__dirname, `dist/pages/${name}.html`), 
-            chunks: ['common'],
+            template: path.resolve(__dirname, `src/templates/client/${name}`), 
+            filename: path.resolve(__dirname, `dist/pages/client/${name}`), 
+            chunks: ['client'],
             inject: true || 'head',
             scriptLoading: 'defer'
         })
     }),
-    ...client_info_pages.map(name => {                                             
+    ...fs.readdirSync(path.resolve(__dirname, 'src/templates/admin/')).map(name => {                                           
         return new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, `src/templates/${name}.html`), 
-            filename: path.resolve(__dirname, `dist/pages/${name}.html`), 
-            chunks: ['info', 'common'],
-            inject: true || 'head',
-            scriptLoading: 'defer'
-        })
-    }),
-    ...admin_common_pages.map(name => {                                             
-        return new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, `src/templates/${name}.html`), 
-            filename: path.resolve(__dirname, `dist/pages/${name}.html`), 
-            chunks: ['info', 'admin'],
+            template: path.resolve(__dirname, `src/templates/admin/${name}`), 
+            filename: path.resolve(__dirname, `dist/pages/admin/${name}`), 
+            chunks: ['admin'],
             inject: true || 'head',
             scriptLoading: 'defer'
         })
@@ -64,25 +50,24 @@ const multileHtmlWebpackPages = [
 module.exports = {
     mode: isDev ? 'development' : 'production',
     entry: {
-        common: [
+        client: [
             path.resolve(__dirname,'src/scss/style.scss'),
-            path.resolve(__dirname,'src/js/header_burger.js'),
-            path.resolve(__dirname,'src/js/redirect.js'),
-            path.resolve(__dirname,'src/js/login_popup.js'),
-            path.resolve(__dirname,'src/js/offers_slider.js'),
-            path.resolve(__dirname,'src/js/profile_burger.js'),
-            path.resolve(__dirname,'src/js/filter_mobile.js'),
-            path.resolve(__dirname,'src/js/infinity_catalog.js')
-        ],
-        info: [
-            path.resolve(__dirname,'src/js/picked_time.js'),
-            path.resolve(__dirname,'src/js/slick-slider/slick_starter.js'),
-            path.resolve(__dirname,'src/js/evo-calendar/evo-starter.js'),
+            path.resolve(__dirname,'src/js/common/redirect.js'),
+            path.resolve(__dirname,'src/js/client/header_burger.js'),
+            path.resolve(__dirname,'src/js/client/login_popup.js'),
+            path.resolve(__dirname,'src/js/client/offers_slider.js'),
+            path.resolve(__dirname,'src/js/client/profile_burger.js'),
+            path.resolve(__dirname,'src/js/client/filter_mobile.js'),
+            path.resolve(__dirname,'src/js/client/infinity_catalog.js'),
+            path.resolve(__dirname,'src/js/client/picked_time.js'),
+            path.resolve(__dirname,'src/js/client/slick-slider/slick_starter.js'),
+            path.resolve(__dirname,'src/js/common/evo-calendar/evo-starter.js'),
         ],
         admin: [
             path.resolve(__dirname,'src/scss/admin.scss'),
+            path.resolve(__dirname,'src/js/common/redirect.js'),
+            path.resolve(__dirname,'src/js/common/evo-calendar/evo-starter.js'),
             path.resolve(__dirname,'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'),
-            path.resolve(__dirname,'src/js/redirect.js'),
             path.resolve(__dirname,'src/js/admin/show_img.js'),
             path.resolve(__dirname,'src/js/admin/move_img.js'),
         ]
@@ -114,6 +99,9 @@ module.exports = {
                 use: [
                   {
                     loader: 'html-loader',
+                    // options: {
+                    //     sources: false                       нужно будет настроить, когда будут пути на картинки с БД
+                    // }
                   }
                 ],
             },

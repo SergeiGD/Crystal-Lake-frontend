@@ -21,8 +21,7 @@
   "homepage": "https://github.com/SergeiGD/Crystal-Lake-frontend#readme",
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "jquery": "^3.6.1",
-    "resolve-url-loader": "^5.0.0"
+    "jquery": "^3.6.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
@@ -32,6 +31,7 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "terser-webpack-plugin": "^5.3.6",
