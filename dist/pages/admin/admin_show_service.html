@@ -46,11 +46,11 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="admin_rooms.html" class="link-hover text-dark text-decoration-none">
-                            Номера
+                        <a href="admin_services.html" class="link-hover text-dark text-decoration-none">
+                            Услуги
                         </a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Просмотр номера</li>
+                    <li class="breadcrumb-item active" aria-current="page">Просмотр услуги</li>
                 </ol>
             </nav>
 
@@ -62,10 +62,10 @@
                     <a class="nav-link active text-dark link-hover" aria-current="page" href="admin_clients.html">Клиенты</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover link-active" href="admin_rooms.html">Номера</a>
+                    <a class="nav-link text-dark link-hover" href="admin_rooms.html">Номера</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark link-hover" href="admin_services.html">Услуги</a>
+                    <a class="nav-link text-dark link-hover link-active" href="admin_services.html">Услуги</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark link-hover" href="admin_workers.html">Сотрудники</a>
@@ -99,10 +99,10 @@
                 
                 <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
 
-                    <i class="fa-regular fa-pen-to-square card_icon" data-goto="admin_manage_room.html"></i>
+                    <i class="fa-regular fa-pen-to-square card_icon" data-goto="admin_manage_service.html"></i>
 
                     <div class="text-center">
-                        <span class="fw-bold fs-5">id номера: </span>
+                        <span class="fw-bold fs-5">id услуги: </span>
                         <span class="fw-bold fs-5">19</span>
                     </div>
 
@@ -110,13 +110,13 @@
 
                         <div class="col-md-6 col-12 row">
                             <p class="fw-bold col-5">Наименование:</p>
-                            <p class="opacity-75 col-7">Двухэтажный домик у озера</p>
+                            <p class="opacity-75 col-7">Езда верхом</p>
                             <hr>
                         </div>
 
                         <div class="col-md-6 col-12 mt-md-0 mt-2 row">
-                            <p class="fw-bold col-5">Спальных мест:</p>
-                            <p class="opacity-75 col-7">7</p>
+                            <p class="fw-bold col-5">Тип расписания:</p>
+                            <p class="opacity-75 col-7">Статическое</p>
                             <hr>
                         </div>
 
@@ -133,20 +133,26 @@
                         </div>
 
                         <div class="col-md-6 col-12 mt-2 row">
-                            <p class="fw-bold col-5">Комнат:</p>
-                            <p class="opacity-75 col-7">4</p>
+                            <p class="fw-bold col-5">Макс. единовременно:</p>
+                            <p class="opacity-75 col-7">8</p>
                             <hr>
                         </div>
 
                         <div class="col-md-6 col-12 mt-2 row">
-                            <p class="fw-bold col-5">Площадь (м&#178;):</p>
-                            <p class="opacity-75 col-7">142</p>
+                            <p class="fw-bold col-5">Макс. в день:</p>
+                            <p class="opacity-75 col-7">10</p>
                             <hr>
                         </div>
 
                         <div class="col-md-6 col-12 mt-2 row">
-                            <p class="fw-bold col-5">Этажей:</p>
-                            <p class="opacity-75 col-7">2</p>
+                            <p class="fw-bold col-5">Макс. в группе:</p>
+                            <p class="opacity-75 col-7">3</p>
+                            <hr>
+                        </div>
+                        
+                        <div class="col-md-6 col-12 mt-2 row">
+                            <p class="fw-bold col-5">Макс. бонусов:</p>
+                            <p class="opacity-75 col-7">30%</p>
                             <hr>
                         </div>
 
@@ -158,7 +164,19 @@
 
                         <div class="col-md-6 col-12 mt-2 row">
                             <p class="fw-bold col-5">Возврат:</p>
-                            <p class="opacity-75 col-7">25%</p>
+                            <p class="opacity-75 col-7">50%</p>
+                            <hr>
+                        </div>
+
+                        <div class="col-md-6 col-12 mt-2 row">
+                            <p class="fw-bold col-5">Длительность:</p>
+                            <p class="opacity-75 col-7">90 мин</p>
+                            <hr>
+                        </div>
+
+                        <div class="col-md-6 col-12 mt-2 row">
+                            <p class="fw-bold col-5">Нужна квалификация:</p>
+                            <p class="opacity-75 col-7">Да</p>
                             <hr>
                         </div>
 
@@ -169,8 +187,8 @@
                         <div class="col-lg-6 col-12">
 
                             <div class="col-12">
-                                <p class="fw-bold col-5">Описание номера:</p>
-                                <p name="" id="manage_info" class="opacity-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum tenetur illum nemo minima consequatur nulla ducimus excepturi itaque hic cumque pariatur beatae veniam, a dolores iste inventore repellat voluptas? Porro, quisquam veniam expedita numquam enim amet quis architecto dolor harum repudiandae, eius quas nihil omnis impedit doloremque aspernatur optio nam nobis fuga facere nostrum. 
+                                <p class="fw-bold col-5">Описание услуги:</p>
+                                <p class="opacity-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum tenetur illum nemo minima consequatur nulla ducimus excepturi itaque hic cumque pariatur beatae veniam, a dolores iste inventore repellat voluptas? Porro, quisquam veniam expedita numquam enim amet quis architecto dolor harum repudiandae, eius quas nihil omnis impedit doloremque aspernatur optio nam nobis fuga facere nostrum. 
                                 </p>
                                 <hr>
                             </div>
@@ -182,28 +200,13 @@
     
                                             <div class="d-flex gap-4 flex-wrap mt-3 p-0 border-0">
                                                 <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
+                                                    <span class="py-1 px-3">Лошади</span>
                                                 </div>
                                                 <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Беседка</span>
+                                                    <span class="py-1 px-3">Животные</span>
                                                 </div>
                                                 <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
-                                                </div>
-                                                <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
-                                                </div>
-                                                <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
-                                                </div>
-                                                <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
-                                                </div>
-                                                <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
-                                                </div>
-                                                <div class="d-flex text-bg-c_blue_100 fs-6 rounded overflow-hidden">
-                                                    <span class="py-1 px-3">Два этажа</span>
+                                                    <span class="py-1 px-3">Природа</span>
                                                 </div>
                                             </div>
                                     </div>
@@ -211,10 +214,11 @@
                             </div>
 
                         </div>
+                        
                         <div class="col-lg-6 col-12 mt-lg-0 mt-4">
                             <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
                             <div class="img_wrapper">
-                                <img src="../../images/house-9edc46a9ad985c23bfe0.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                <img src="../../images/service-4fa3f286054fcd9d8b95.jpg" alt="Главное фото" class="img-fluid w-100 img">
                                 <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                 </button>
@@ -241,7 +245,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../images/house-9edc46a9ad985c23bfe0.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../images/service-4fa3f286054fcd9d8b95.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -258,7 +262,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../images/house-9edc46a9ad985c23bfe0.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../images/service-4fa3f286054fcd9d8b95.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -267,7 +271,6 @@
                                         </div>
                                     </div>
 
-  
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6 col-12 mb-4">
@@ -276,7 +279,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../images/house-9edc46a9ad985c23bfe0.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../images/service-4fa3f286054fcd9d8b95.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -293,13 +296,13 @@
                     </div>
 
                     <!-- accordion imges end -->               
-
+                    
 
                 </form>
 
                 <!-- dates -->
 
-                <div class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5" id="dates">
+                <div class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
 
                     <div class="text-center">
                         <span class="fw-bold fs-5">Свободные даты</span>
@@ -307,26 +310,240 @@
 
                     <div class="row">
                         <div class="mx-auto col-lg-5 col-12">
-                            <span class="input-group-text rounded-top rounded-0">Общие даты (1 день):</span>
-                            <div class="evoCalendar calendar calendar__room"></div>
-                        </div>
-                    </div>
-                    
-
-                    <div class="row mt-5 justify-content-between">
-                        <div class="col-lg-5 col-12">
-                            <span class="input-group-text rounded-top rounded-0">Номер 19:</span>
-                            <div class="evoCalendar calendar calendar__room"></div>
-                        </div>
-                        <div class="col-lg-5 col-12 mt-lg-0 mt-5">
-                            <span class="input-group-text rounded-top rounded-0">Номер 36:</span>
-                            <div  class="evoCalendar calendar calendar__room"></div>
+                            <div class="evoCalendar calendar calendar__service"></div>
                         </div>
                     </div>
 
                 </div>
 
                 <!-- end dates -->
+
+                <!-- timetable -->
+
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
+
+                    <i class="fa-regular fa-trash-can text-danger card_icon"></i>
+
+                    <div class="text-center">
+                        <span class="fw-bold fs-5">Расписание</span>
+                    </div>
+
+                    <div class="mt-4">
+
+                        <div class="shadow p-3 rounded-2 justify-content-between row w-100 mx-auto">
+
+                            <div class="col-12 row mx-auto p-0">
+
+                                <div class="col-lg-6 col-12">
+    
+                                    <label for="timetalbe_date" class="form-label">Даты:</label>
+                        
+                                    <div class="d-flex justify-content-start gap-0">
+                                        <div class="input-group flex-nowrap w-auto">
+                                            <span class="input-group-text rounded-start" id="basic-addon1">с</span>
+                                            <input id="timetalbe_date" type="date" class="form-control w-100 mw-10r rounded-0 flex-grow-0 flex-shrink-1">
+                                        </div>
+                                        <div class="input-group flex-nowrap w-auto">
+                                            <span class="input-group-text  rounded-0" id="basic-addon1">по</span>
+                                            <input type="date" class="form-control w-100 mw-10r rounded-end flex-grow-0 flex-shrink-1">
+                                        </div>
+                                    </div>
+        
+                                </div>
+
+                                <div class="col-lg-6 col-12 mt-lg-0 mt-3">
+
+                                    <label for="timetable_worker" class="form-label">Сотрудник:</label>
+                                    <div class="d-flex">
+                                        <input id="timetable_worker" type="text" class="form-control rounded-0 rounded-start">
+                                        <button class="btn btn-primary w-5r rounded-0">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                        <button class="btn btn-danger w-5r rounded-0 rounded-end">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+    
+                            <div class="col-12 mt-3">
+                                <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
+                            </div>
+        
+                        </div>
+
+                        <div class="mt-4 overflow-auto">
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
+                                        Дата <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Начало <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Конец <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Сотрудник <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-nowrap">06.07.2022</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-nowrap">06.07.2022</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-nowrap">06.07.2022</td>
+                                        <td>15:00</td>
+                                        <td>16:00</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+         
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <nav class="d-flex justify-content-center mt-4">
+                            <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>  
+                    </div>
+                    
+ 
+                </form>
+
+                <!-- end timetable -->
+
+                <!-- workers -->
+
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5 position-relative">
+
+                    <i class="fa-regular fa-trash-can text-danger card_icon"></i>
+
+                    <div class="text-center">
+                        <span class="fw-bold fs-5">Сотрудники, оказывающие эту услугу</span>
+                    </div>
+
+                    <div class="mt-4">
+
+                        <div class="shadow p-3 rounded-2 justify-content-between row w-100 mx-auto">
+
+                            <div class="col-12 row mx-auto p-0">
+
+                                <div class="col-lg-4 col-12">
+    
+                                    <label for="worker_id" class="form-label">id:</label>
+                                    <input id="worker_id" type="number" class="form-control w-auto mw-100">
+        
+                                </div>
+
+                                <div class="col-lg-8 col-12 mt-lg-0 mt-3">
+
+                                    <label for="worker_name" class="form-label">Ф.И.О:</label>
+                                    <input id="worker_name" type="text" class="form-control">
+
+                                </div>
+
+                            </div>
+    
+                            <div class="col-12 mt-3">
+                                <button class="btn btn-c_yellow-700 w-100 ">Найти</button>
+                            </div>
+        
+                        </div>
+
+                        <div class="mt-4 overflow-auto">
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="bg-c_yellow-700 text-nowrap col-hover" role="button">
+                                        id <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                    <th scope="col" class="text-nowrap col-hover" role="button">
+                                        Ф.И.О. <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a href="#" class="link-hover">Иванов Иван Иванович</a>
+                                        </td>
+                                    </tr>
+         
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <nav class="d-flex justify-content-center mt-4">
+                            <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>  
+                    </div>
+                    
+ 
+                </form>
+
+                <!-- end workers -->
+
 
                 <!-- orders -->
 
@@ -416,12 +633,6 @@
                                         </button>
                                     </div>
                                 </div>
-
-
-                                <div class="col-lg-5 col-6 mt-3">
-                                    <label for="order_room" class="form-label text-nowrap">Номер:</label>
-                                    <input type="number" class="form-control" id="order_room">
-                                </div>
     
                             </div>
                         
@@ -447,9 +658,6 @@
                                     Клиент <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                                 </th>
                                 <th scope="col" class="text-nowrap col-hover" role="button">
-                                    Номер <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
-                                </th>
-                                <th scope="col" class="text-nowrap col-hover" role="button">
                                     Статус заказа <i class="fa-solid fa-arrow-up-short-wide text-c_yellow-700"></i>
                                 </th>
                                 <th scope="col" class="text-nowrap col-hover" role="button">
@@ -473,7 +681,6 @@
                                     <td>
                                         <a href="admin_show_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                     </td>
-                                    <td>19</td>
                                     <td>В процессе</td>
                                     <td>Внесена предоплата</td>
                                     <td>28424</td>
@@ -488,7 +695,6 @@
                                     <td>
                                         <a href="admin_show_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                     </td>
-                                    <td>19</td>
                                     <td>В процессе</td>
                                     <td>Внесена предоплата</td>
                                     <td>28424</td>
@@ -503,7 +709,6 @@
                                     <td>
                                         <a href="admin_show_client.html" class="link-hover d-block">Иванов Иван Иванович</a>
                                     </td>
-                                    <td>36</td>
                                     <td>В процессе</td>
                                     <td>Внесена предоплата</td>
                                     <td>28424</td>
@@ -518,37 +723,6 @@
 
                 <!-- end orders -->
 
-                <!-- rooms -->
-
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 mt-5">
-
-                    <div class="text-center">
-                        <span class="fw-bold fs-5">Номера этого типа</span>
-                    </div>
-
-                    <div class="overflow-auto mt-4">
-                        <table class="table table-striped table-hover table-bordered">
-                            <thead>
-                            <tr>
-                                <th scope="col">Номер</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">35</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">36</th>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    
- 
-                </form>
-
-                <!-- end rooms -->
 
                 <!-- sales -->
 
@@ -697,8 +871,6 @@
 
                 <!-- end properties -->
 
-                
-
             
 
         </div>
@@ -751,23 +923,7 @@
         </div>
 
     </footer>
-
-
-    <!-- show image modal -->
-    <div class="modal fade" id="show_img_modal" tabindex="-1" aria-labelledby="show_img_label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="show_img_label">Просмотр изображения</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img id="img_modal" class="w-100" alt="Просмотр изображения" data-asd="asdasd">
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- show image modal end     -->
+    
     
     
 </body>
