@@ -27,18 +27,18 @@ const optimize = () => {
 }
 
 const multileHtmlWebpackPages = [                                                   
-    ...fs.readdirSync(path.resolve(__dirname, 'src/templates/client/')).map(name => { 
+    ...fs.readdirSync(path.resolve(__dirname, 'src/pages/client/')).map(name => { 
         return new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, `src/templates/client/${name}`), 
+            template: path.resolve(__dirname, `src/pages/client/${name}`), 
             filename: path.resolve(__dirname, `dist/pages/client/${name}`), 
             chunks: ['client'],
             inject: true || 'head',
             scriptLoading: 'defer'
         })
     }),
-    ...fs.readdirSync(path.resolve(__dirname, 'src/templates/admin/')).map(name => {                                           
+    ...fs.readdirSync(path.resolve(__dirname, 'src/pages/admin/')).map(name => {                                           
         return new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, `src/templates/admin/${name}`), 
+            template: path.resolve(__dirname, `src/pages/admin/${name}`), 
             filename: path.resolve(__dirname, `dist/pages/admin/${name}`), 
             chunks: ['admin'],
             inject: true || 'head',
@@ -73,8 +73,11 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'js/[name].bundle.js',
+        filename: 'js/[name]-[contenthash].bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: {
+            keep: /images\//,
+        },
     },
     devtool: isDev ? 'source-map' : false,
     module: {
@@ -116,7 +119,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'css/[name].bundle.css'
+            filename: 'css/[name]-[contenthash].bundle.css'
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',

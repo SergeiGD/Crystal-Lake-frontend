@@ -55,8 +55,8 @@
             img{
                 border-radius: vars.$radius;
                 display: block;
-                margin: 0 auto;
                 width: 38%;
+                margin: 0 auto;
     
                 @include mixins.device(tablet){
                     width: 60%;
