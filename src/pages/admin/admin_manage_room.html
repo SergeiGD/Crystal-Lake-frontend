@@ -290,7 +290,7 @@
                             </button>
                           </h2>
                           <div id="images" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#images-accord">
-                            <div class="accordion-body row">
+                            <div class="accordion-body row" id="accordion_body_images">
 
                                 <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="1">
 
@@ -330,7 +330,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../img/card/house2.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -362,7 +362,7 @@
                                         <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../img/card/house3.jpg" alt="Главное фото" class="img-fluid w-100 img">
 
                                             <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -388,9 +388,9 @@
         
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 col-12 my-auto">
-                                    <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto">Загрузить еще</button>
-
+                                <div class="col-lg-4 col-sm-6 col-12 my-auto" id="upload_new_img_container">
+                                    <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto" id="upload_new_img_button" type="button">Загрузить еще</button>
+                                    <input type="file" id="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
                                 </div>
                                 
                             </div>

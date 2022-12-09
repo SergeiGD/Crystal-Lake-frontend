@@ -286,9 +286,9 @@
                             </button>
                           </h2>
                           <div id="images" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#images-accord">
-                            <div class="accordion-body row">
+                            <div class="accordion-body row" id="accordion_body_images">
 
-                                <div class="col-lg-4 col-sm-6 col-12 mb-4">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="1">
 
                                     <div class="w-100">
                                         <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
@@ -311,14 +311,14 @@
                                             </button>
                                         </div>
                                         <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2 opacity-50"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5" role="button"></i>
+                                            <i class="fa-solid fa-arrow-left fs-2 opacity-50 move_prev" role="button"></i>
+                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
                                         </div>
                                     </div>
         
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 col-12 mb-4">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="2">
 
                                     <div class="w-100">
                                         <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
@@ -342,14 +342,14 @@
 
                                         </div>
                                         <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2" role="button"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5" role="button"></i>
+                                            <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
+                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
                                         </div>
                                     </div>
         
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 col-12 mb-4">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="3">
 
                                     <div class="w-100">
                                         <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
@@ -373,16 +373,16 @@
 
                                         </div>
                                         <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2" role="button"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 opacity-50"></i>
+                                            <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
+                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 opacity-50 move_next" role="button"></i>
                                         </div>
                                     </div>
         
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 col-12 my-auto">
-                                    <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto">Загрузить еще</button>
-
+                                <div class="col-lg-4 col-sm-6 col-12 my-auto" id="upload_new_img_container">
+                                    <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto" id="upload_new_img_button" type="button">Загрузить еще</button>
+                                    <input type="file" id="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
                                 </div>
                                 
                             </div>

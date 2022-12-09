@@ -70,6 +70,7 @@ module.exports = {
             path.resolve(__dirname,'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'),
             path.resolve(__dirname,'src/js/admin/show_img.js'),
             path.resolve(__dirname,'src/js/admin/move_img.js'),
+            path.resolve(__dirname,'src/js/admin/add_img.js'),
         ]
     },
     output: {
@@ -102,9 +103,6 @@ module.exports = {
                 use: [
                   {
                     loader: 'html-loader',
-                    // options: {
-                    //     sources: false                       нужно будет настроить, когда будут пути на картинки с БД
-                    // }
                   }
                 ],
             },
