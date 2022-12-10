@@ -288,15 +288,14 @@
                           <div id="images" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#images-accord">
                             <div class="accordion-body row" id="accordion_body_images">
 
-                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="1">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="0">
 
                                     <div class="w-100">
-                                        <span class="input-group-text rounded-top rounded-0">Фото 1:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../img/card/service.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../img/card/service.jpg" alt="Доп. фото" class="img-fluid w-100 img rounded">
 
-                                            <button class="btn open_img btn-dark">
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
@@ -309,11 +308,44 @@
                                                 <i class="fa-solid fa-xmark"></i>
                                                 Удалить
                                             </button>
+
                                         </div>
-                                        <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2 opacity-50 move_prev" role="button"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
+                                    </div>
+
+                                    <div class="mt-2 text-center">
+                                        <i class="fa-solid fa-arrow-left fs-2 opacity-50 move_prev" role="button"></i>
+                                        <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
+                                    </div>
+        
+                                </div>
+
+                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="1">
+
+                                    <div class="w-100">
+                                        <div class="img_wrapper">
+
+                                            <img src="../../img/card/service.jpg" alt="Доп. фото" class="img-fluid w-100 img rounded">
+
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
+                                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                            </button>
+
+                                            <button class="btn btn-primary update_img w-10r">
+                                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                Обновить
+                                            </button>
+
+                                            <button class="btn btn-danger delete_img w-10r">
+                                                <i class="fa-solid fa-xmark"></i>
+                                                Удалить
+                                            </button>
+
                                         </div>
+                                    </div>
+
+                                    <div class="mt-2 text-center">
+                                        <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
+                                        <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
                                     </div>
         
                                 </div>
@@ -321,12 +353,11 @@
                                 <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="2">
 
                                     <div class="w-100">
-                                        <span class="input-group-text rounded-top rounded-0">Фото 2:</span>
                                         <div class="img_wrapper">
 
-                                            <img src="../../img/card/service.jpg" alt="Главное фото" class="img-fluid w-100 img">
+                                            <img src="../../img/card/service.jpg" alt="Доп. фото" class="img-fluid w-100 img rounded">
 
-                                            <button class="btn open_img btn-dark">
+                                            <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
@@ -341,49 +372,22 @@
                                             </button>
 
                                         </div>
-                                        <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 move_next" role="button"></i>
-                                        </div>
+                                    </div>
+
+                                    <div class="mt-2 text-center">
+                                        <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
+                                        <i class="fa-solid fa-arrow-right fs-2 ms-5 opacity-50 move_next" role="button"></i>
                                     </div>
         
                                 </div>
 
-                                <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="3">
-
+                                <div class="col-lg-4 col-sm-6 col-12 my-auto">
                                     <div class="w-100">
-                                        <span class="input-group-text rounded-top rounded-0">Фото 3:</span>
-                                        <div class="img_wrapper">
-
-                                            <img src="../../img/card/service.jpg" alt="Главное фото" class="img-fluid w-100 img">
-
-                                            <button class="btn open_img btn-dark">
-                                                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                            </button>
-
-                                            <button class="btn btn-primary update_img w-10r">
-                                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                                Обновить
-                                            </button>
-
-                                            <button class="btn btn-danger delete_img w-10r">
-                                                <i class="fa-solid fa-xmark"></i>
-                                                Удалить
-                                            </button>
-
-                                        </div>
-                                        <div class="mt-2 text-center">
-                                            <i class="fa-solid fa-arrow-left fs-2 move_prev" role="button"></i>
-                                            <i class="fa-solid fa-arrow-right fs-2 ms-5 opacity-50 move_next" role="button"></i>
-                                        </div>
+                                        <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto upload_new_img_button" type="button">Загрузить еще</button>
+                                        <input type="file" class="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
                                     </div>
-        
                                 </div>
-
-                                <div class="col-lg-4 col-sm-6 col-12 my-auto" id="upload_new_img_container">
-                                    <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto" id="upload_new_img_button" type="button">Загрузить еще</button>
-                                    <input type="file" id="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
-                                </div>
+                                
                                 
                             </div>
                           </div>

@@ -23,46 +23,44 @@ __webpack_require__.r(__webpack_exports__);
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 $(document).ready(function(){
 
-    var last_loaded_index = -1
-
-    $('#upload_new_img_button').on('click', function(){
-        $( '#upload_new_img_input' ).trigger( 'click' );            // при клике вызываем скрытый загрузчик файлов
+    $('#accordion_body_images').on('click', '.upload_new_img_button', function(){
+        $(this).siblings('.upload_new_img_input').trigger('click');     // при клике вызываем скрытый загрузчик файлов
     });
 
-    $('#upload_new_img_input').on('change', function(){
-        files_list = $(this).get(0).files;                          // получаем коллекцию загруженных файлов
+    $('#accordion_body_images').on('change', '.upload_new_img_input', function(){
+        file = $(this).get(0).files[0];                          // получаем коллекцию загруженных файлов
 
-        if(files_list && files_list.length != last_loaded_index){
-            var items_count =  $('#accordion_body_images').children('[data-order]').length;
-            var img_order = items_count + 1;
-            var reader = new FileReader();
+        if(file){
+            const items_count =  $('#accordion_body_images').children('[data-order]').length;
+            const active_load_container = $(this).parent(':first');
+            const img_order = items_count;
+            const reader = new FileReader();
 
-            var img_src = ''
             reader.onloadend = function(){
-                img_src = reader.result;                            // получаем base64 картинки
-                built_elem =  create_container(img_order, img_src);
-                $('#upload_new_img_container').before(built_elem);  // строим новый элемент с картинкой и отображаем его
+                var img_src = reader.result;                            // получаем base64 картинки
 
+                built_img =  create_img_container(img_order, img_src);
+                active_load_container.parent().before(built_img);                           // строим новый элемент с картинкой и отображаем его
+
+                new_load_container = built_load_container();
+                active_load_container.after(new_load_container);                 // создаем новый контейнер с инпутом
+
+                active_load_container.attr('hidden', true);                 // скрываем отработанный инпут
                 $('#accordion_body_images').trigger('refresh_required');    // вызываем обновление стрелок
             }
 
-            var file = files_list[last_loaded_index + 1];           // получаем последнюю картинку
-            if (file){
-                reader.readAsDataURL(file);
-            }
-
+            reader.readAsDataURL(file);
         }
     });
 
-    function create_container(order, src){
+    function create_img_container(order, src){
         return  `
             <div class="col-lg-4 col-sm-6 col-12 mb-4" data-order="${order}">
 
                 <div class="w-100">
-                    <span class="input-group-text rounded-top rounded-0">Фото ${order}:</span>
                     <div class="img_wrapper">
 
-                        <img src="${src}" alt="Фото" class="img-fluid w-100 img">
+                        <img src="${src}" alt="Доп. фото" class="img-fluid w-100 img rounded">
 
                         <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
@@ -87,6 +85,15 @@ $(document).ready(function(){
                 </div>
 
             </div>
+        `
+    }
+
+    function built_load_container(){
+        return `
+        <div class="w-100">
+            <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto upload_new_img_button" type="button">Загрузить еще</button>
+            <input type="file" class="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
+        </div>
         `
     }
 
@@ -117,7 +124,7 @@ $(document).ready(function(){
         const current_item = $(this).closest('[data-order]');
         const number = current_item.attr('data-order');
 
-        if (number == $(current_item).siblings('[data-order]').length + 1) return;
+        if (number == $(current_item).siblings('[data-order]').length) return;      // элемент является крайним, если число его братьев == его номеру (номера с нуля)
 
         const next_item = current_item.next();
 
@@ -132,7 +139,7 @@ $(document).ready(function(){
         const current_item = $(this).closest('[data-order]');
         const number = current_item.attr('data-order');
 
-        if (number == 1) return;
+        if (number == 0) return;
 
         const prev_item = current_item.prev();
 
@@ -161,11 +168,10 @@ $(document).ready(function(){
 /* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 $(document).ready(function(){
 
-    $('.open_img').on('click', function(){
-        const modal_id = $(this).attr("data-bs-target");
-        const img_src = $(this).siblings('img').first().attr('src');
-        $(modal_id + " img").attr('src', img_src);
-        console.log($('#asdqwe').attr('data-asd'))
+    $('#accordion_body_images').on('click', '.open_img', function(){
+        const modal_id = $(this).attr("data-bs-target");                // берем id попапа
+        const img_src = $(this).siblings('img').first().attr('src');    // получаем src каритнки
+        $(modal_id + " img").attr('src', img_src);                      // устанавливаем src картинке в попапе
     });
 
 
@@ -344,4 +350,4 @@ $(document).ready(function(){
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=admin-f2f3629474a0fc4c742b.bundle.js.map
+//# sourceMappingURL=admin-f4aa308c149bfd6f4d8b.bundle.js.map

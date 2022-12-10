@@ -14,7 +14,7 @@ $(document).ready(function(){
         const current_item = $(this).closest('[data-order]');
         const number = current_item.attr('data-order');
 
-        if (number == $(current_item).siblings('[data-order]').length + 1) return;
+        if (number == $(current_item).siblings('[data-order]').length) return;      // элемент является крайним, если число его братьев == его номеру (номера с нуля)
 
         const next_item = current_item.next();
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
         const current_item = $(this).closest('[data-order]');
         const number = current_item.attr('data-order');
 
-        if (number == 1) return;
+        if (number == 0) return;
 
         const prev_item = current_item.prev();
 
