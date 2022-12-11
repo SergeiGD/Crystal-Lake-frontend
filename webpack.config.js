@@ -71,6 +71,7 @@ module.exports = {
             path.resolve(__dirname,'src/js/admin/show_img.js'),
             path.resolve(__dirname,'src/js/admin/move_img.js'),
             path.resolve(__dirname,'src/js/admin/add_img.js'),
+            path.resolve(__dirname,'src/js/admin/update_img.js'),
         ]
     },
     output: {

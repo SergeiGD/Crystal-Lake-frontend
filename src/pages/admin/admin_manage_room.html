@@ -102,7 +102,7 @@
 
             
                 
-                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative">
+                <form class="shadow p-3 rounded-2 d-flex flex-column gap-4 position-relative" id="edit_main_info_form">
 
                     <i class="fa-regular fa-square-minus text-danger card_icon" data-bs-toggle="modal" data-bs-target="#delete_modal"></i>
 
@@ -268,13 +268,17 @@
                             <span class="input-group-text rounded-top rounded-0">Главное фото:</span>
                             <div class="img_wrapper">
                                 <img src="../../img/card/house.jpg" alt="Главное фото" class="img-fluid w-100 img">
-                                <button class="btn btn-primary upload_img" >
+
+                                <button class="btn btn-primary upload_img update_img_button" type="button" >
                                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                     Загрузить фотографию
                                 </button>
+
                                 <button class="btn open_img btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#show_img_modal">
                                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                 </button>
+
+                                <input type="file" class="update_img_input d-none" accept="image/png, image/jpeg"/>
                             </div>
                         </div>
 
@@ -303,7 +307,7 @@
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
-                                            <button class="btn btn-primary update_img w-10r">
+                                            <button class="btn btn-primary update_img w-10r update_img_button" type="button">
                                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                                 Обновить
                                             </button>
@@ -312,6 +316,8 @@
                                                 <i class="fa-solid fa-xmark"></i>
                                                 Удалить
                                             </button>
+
+                                            <input type="file" class="update_img_input d-none" accept="image/png, image/jpeg"/>
 
                                         </div>
                                     </div>
@@ -334,7 +340,7 @@
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
-                                            <button class="btn btn-primary update_img w-10r">
+                                            <button class="btn btn-primary update_img w-10r update_img_button" type="button">
                                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                                 Обновить
                                             </button>
@@ -343,6 +349,8 @@
                                                 <i class="fa-solid fa-xmark"></i>
                                                 Удалить
                                             </button>
+
+                                            <input type="file" class="update_img_input d-none" accept="image/png, image/jpeg"/>
 
                                         </div>
                                     </div>
@@ -365,7 +373,7 @@
                                                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                             </button>
 
-                                            <button class="btn btn-primary update_img w-10r">
+                                            <button class="btn btn-primary update_img w-10r update_img_button" type="button">
                                                 <i class="fa-solid fa-arrow-up-from-bracket"></i>
                                                 Обновить
                                             </button>
@@ -374,6 +382,8 @@
                                                 <i class="fa-solid fa-xmark"></i>
                                                 Удалить
                                             </button>
+
+                                            <input type="file" class="update_img_input d-none" accept="image/png, image/jpeg"/>
 
                                         </div>
                                     </div>
@@ -388,7 +398,7 @@
                                 <div class="col-lg-4 col-sm-6 col-12 my-auto">
                                     <div class="w-100">
                                         <button class="btn btn-c_yellow-700 btn-lg w-100 mx-auto upload_new_img_button" type="button">Загрузить еще</button>
-                                        <input type="file" class="upload_new_img_input" accept="image/png, image/gif, image/jpeg"/ hidden>
+                                        <input type="file" class="upload_new_img_input" accept="image/png, image/jpeg"/ hidden>
                                     </div>
                                 </div>
                                 

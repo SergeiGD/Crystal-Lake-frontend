@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
 
     $('#accordion_body_images').on('change', '.upload_new_img_input', function(){
-        file = $(this).get(0).files[0];                          // получаем коллекцию загруженных файлов
+        file = $(this).get(0).files[0];                          // получаем загруженный файл
 
         if(file){
             const items_count =  $('#accordion_body_images').children('[data-order]').length;
@@ -43,7 +43,7 @@ $(document).ready(function(){
                             <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                         </button>
 
-                        <button class="btn btn-primary update_img w-10r">
+                        <button class="btn btn-primary update_img w-10r update_img_button" type="button">
                             <i class="fa-solid fa-arrow-up-from-bracket"></i>
                             Обновить
                         </button>
@@ -52,6 +52,8 @@ $(document).ready(function(){
                             <i class="fa-solid fa-xmark"></i>
                             Удалить
                         </button>
+
+                        <input type="file" class="update_img_input d-none" accept="image/png, image/gif, image/jpeg"/>
 
                     </div>
                 </div>
