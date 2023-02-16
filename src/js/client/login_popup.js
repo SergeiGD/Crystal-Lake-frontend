@@ -1,14 +1,12 @@
 $( function() {
     $("#login_open, #login_open__footer").on("click", function(){
         $("#login_modal").toggleClass("modal_wrapper__active");
-        $("#login_popup").toggleClass("login_popup__active");
         $('.header_burger, .header_menu').removeClass('burger__active');    // скрываем бургер, чтоб не загораживал
     });
 
     $("#login_close, #signup_close, #login_modal").on("click", function(){
         const login_popup = $('#login_popup');
         const modal = login_popup.parent();
-        login_popup.removeClass("login_popup__active");     // скрываем само окно авторизации / регистарции
         modal.removeClass("modal_wrapper__active");         // скрываем модальную область
     });
 

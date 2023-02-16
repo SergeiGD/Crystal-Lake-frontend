@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    
     <script async src="https://kit.fontawesome.com/c98347f4c9.js" crossorigin="anonymous"></script>
     
 </head>
@@ -212,7 +212,7 @@
     </footer>
 
     <div class="modal_wrapper modal_wrapper__dark" id="login_modal">
-        <div class="login_popup" id="login_popup">
+        <div class="login_popup login_popup__active" id="login_popup">
 
             <div class="login_title">
                 <p class="login_link login_link__active">Вход</p>
@@ -251,10 +251,12 @@
 
             <div class="login_fields">
                 <input class="login_field input_field" type="text" name="phone" id="phone" placeholder="Номер телефона">
+                <input class="login_field input_field" type="text" name="passwd1" id="passwd2" placeholder="Пароль">
+                <input class="login_field input_field" type="text" name="passwd2" id="passwd2" placeholder="Подтвердите пароль">
             </div>
 
             <div class="login_buttons">
-                <button class="login_button" id="end_signup_button">Прислать пароль</button>
+                <button class="login_button" id="end_signup_button">Продолжить</button>
             </div>
 
         </div>

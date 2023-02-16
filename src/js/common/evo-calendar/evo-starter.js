@@ -5,7 +5,6 @@ $(document).ready(function(){
     const serviceEvents = [
         { 
             id: "required-id-1",
-            name: "busy", 
             date: "2022/11/11",
             type: "enable", 
             name:"15:00 - 17:00",
@@ -84,5 +83,6 @@ $(document).ready(function(){
     });
 
     $('.evoCalendar').evoCalendar('selectMonth', new Date().getMonth());    // выбираем текущий месяц
+
     
 });

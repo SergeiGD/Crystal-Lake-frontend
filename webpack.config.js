@@ -30,7 +30,7 @@ const multileHtmlWebpackPages = [
     ...fs.readdirSync(path.resolve(__dirname, 'src/pages/client/')).map(name => { 
         return new HtmlWebpackPlugin({
             template: path.resolve(__dirname, `src/pages/client/${name}`), 
-            filename: path.resolve(__dirname, `dist/pages/client/${name}`), 
+            filename: path.resolve(__dirname, `${name}`), 
             chunks: ['client'],
             inject: true || 'head',
             scriptLoading: 'defer'
@@ -39,7 +39,7 @@ const multileHtmlWebpackPages = [
     ...fs.readdirSync(path.resolve(__dirname, 'src/pages/admin/')).map(name => {                                           
         return new HtmlWebpackPlugin({
             template: path.resolve(__dirname, `src/pages/admin/${name}`), 
-            filename: path.resolve(__dirname, `dist/pages/admin/${name}`), 
+            filename: path.resolve(__dirname, `${name}`), 
             chunks: ['admin'],
             inject: true || 'head',
             scriptLoading: 'defer'
